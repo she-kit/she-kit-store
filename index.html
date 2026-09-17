@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>She-Kit Store - חנות חולצות כדורגל</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation & Sidebar -->
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <h1>She-Kit Store</h1>
+            <div class="nav-controls">
+                <button id="themeToggle" class="theme-btn" title="החלף ערכת צבעים">🌙</button>
+                <select id="languageSelect" class="lang-select">
+                    <option value="he">עברית</option>
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <option value="ru">Русский</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="leagues-menu">
+            <h3 data-translate="leagues">ליגות</h3>
+            <div class="leagues-list">
+                <div class="league-item">
+                    <button class="league-toggle">⚽ Bundesliga</button>
+                    <div class="teams-list hidden">
+                        <a href="#" class="team-link" data-team="Bayern Munich">Bayern Munich</a>
+                        <a href="#" class="team-link" data-team="Borussia Dortmund">Borussia Dortmund</a>
+                        <a href="#" class="team-link" data-team="Bayer Leverkusen">Bayer Leverkusen</a>
+                    </div>
+                </div>
+
+                <div class="league-item">
+                    <button class="league-toggle">⚽ La Liga</button>
+                    <div class="teams-list hidden">
+                        <a href="#" class="team-link" data-team="Real Madrid">Real Madrid</a>
+                        <a href="#" class="team-link" data-team="Barcelona">Barcelona</a>
+                        <a href="#" class="team-link" data-team="Atletico Madrid">Atletico Madrid</a>
+                    </div>
+                </div>
+
+                <div class="league-item">
+                    <button class="league-toggle">⚽ Premier League</button>
+                    <div class="teams-list hidden">
+                        <a href="#" class="team-link" data-team="Manchester United">Manchester United</a>
+                        <a href="#" class="team-link" data-team="Liverpool">Liverpool</a>
+                        <a href="#" class="team-link" data-team="Chelsea">Chelsea</a>
+                    </div>
+                </div>
+
+                <div class="league-item">
+                    <button class="league-toggle">⚽ Serie A</button>
+                    <div class="teams-list hidden">
+                        <a href="#" class="team-link" data-team="Juventus">Juventus</a>
+                        <a href="#" class="team-link" data-team="AS Roma">AS Roma</a>
+                        <a href="#" class="team-link" data-team="AC Milan">AC Milan</a>
+                    </div>
+                </div>
+
+                <div class="league-item">
+                    <button class="league-toggle">⚽ Ligue 1</button>
+                    <div class="teams-list hidden">
+                        <a href="#" class="team-link" data-team="PSG">PSG</a>
+                        <a href="#" class="team-link" data-team="Marseille">Marseille</a>
+                        <a href="#" class="team-link" data-team="Lyon">Lyon</a>
+                    </div>
+                </div>
+
+                <div class="league-item">
+                    <button class="league-toggle">⚽ Eredivisie</button>
+                    <div class="teams-list hidden">
+                        <a href="#" class="team-link" data-team="Ajax">Ajax</a>
+                        <a href="#" class="team-link" data-team="PSV Eindhoven">PSV Eindhoven</a>
+                        <a href="#" class="team-link" data-team="Feyenoord">Feyenoord</a>
+                    </div>
+                </div>
+
+                <div class="league-item">
+                    <button class="league-toggle">⚽ Primeira Liga</button>
+                    <div class="teams-list hidden">
+                        <a href="#" class="team-link" data-team="Benfica">Benfica</a>
+                        <a href="#" class="team-link" data-team="Porto">Porto</a>
+                        <a href="#" class="team-link" data-team="Sporting">Sporting</a>
+                    </div>
+                </div>
+
+                <div class="league-item">
+                    <button class="league-toggle">⚽ Super Lig</button>
+                    <div class="teams-list hidden">
+                        <a href="#" class="team-link" data-team="Galatasaray">Galatasaray</a>
+                        <a href="#" class="team-link" data-team="Fenerbahce">Fenerbahce</a>
+                        <a href="#" class="team-link" data-team="Besiktas">Besiktas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-summary">
+            <button id="cartBtn" class="cart-button">🛒 <span id="cartCount">0</span></button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Page -->
+        <section id="homePage" class="page active">
+            <div class="hero-section">
+                <div class="hero-content">
+                    <h2 data-translate="welcome">ברוכים הבאים ל-She-Kit Store</h2>
+                    <p data-translate="tagline">חנות החולצות הכדורגל המובילה עם איכות וסגנון</p>
+                    <button class="cta-button" data-translate="shop">תחל קניות</button>
+                </div>
+                <div class="hero-image">
+                    <img src="https://via.placeholder.com/400x500/2a2a2a/FFD700?text=📸+דוגמן" alt="דוגמן חולצה">
+                </div>
+            </div>
+
+            <div class="leagues-showcase">
+                <h3 data-translate="ourLeagues">הליגות שלנו</h3>
+                <div class="leagues-grid">
+                    <div class="league-card">
+                        <img src="https://via.placeholder.com/150/1a1a1a/FFD700?text=🇩🇪" alt="Bundesliga">
+                        <p>Bundesliga</p>
+                    </div>
+                    <div class="league-card">
+                        <img src="https://via.placeholder.com/150/1a1a1a/FFD700?text=🇪🇸" alt="La Liga">
+                        <p>La Liga</p>
+                    </div>
+                    <div class="league-card">
+                        <img src="https://via.placeholder.com/150/1a1a1a/FFD700?text=🇬🇧" alt="Premier League">
+                        <p>Premier League</p>
+                    </div>
+                    <div class="league-card">
+                        <img src="https://via.placeholder.com/150/1a1a1a/FFD700?text=🇮🇹" alt="Serie A">
+                        <p>Serie A</p>
+                    </div>
+                    <div class="league-card">
+                        <img src="https://via.placeholder.com/150/1a1a1a/FFD700?text=🇫🇷" alt="Ligue 1">
+                        <p>Ligue 1</p>
+                    </div>
+                    <div class="league-card">
+                        <img src="https://via.placeholder.com/150/1a1a1a/FFD700?text=🇳🇱" alt="Eredivisie">
+                        <p>Eredivisie</p>
+                    </div>
+                    <div class="league-card">
+                        <img src="https://via.placeholder.com/150/1a1a1a/FFD700?text=🇵🇹" alt="Primeira Liga">
+                        <p>Primeira Liga</p>
+                    </div>
+                    <div class="league-card">
+                        <img src="https://via.placeholder.com/150/1a1a1a/FFD700?text=🇹🇷" alt="Super Lig">
+                        <p>Super Lig</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h3 data-translate="whyUs">למה לבחור בנו?</h3>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <span class="icon">✨</span>
+                        <h4 data-translate="quality">איכות גבוהה</h4>
+                        <p data-translate="qualityDesc">חולצות מקוריות עם הדפס מקצועי</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="icon">🚚</span>
+                        <h4 data-translate="delivery">משלוח מהיר</h4>
+                        <p data-translate="deliveryDesc">14-21 ימי עסקים + 3-5 ימים לשילוח</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="icon">💰</span>
+                        <h4 data-translate="pricing">מחירים טובים</h4>
+                        <p data-translate="pricingDesc">חולצה בסיסית מ-99₪ בלבד</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Page -->
+        <section id="teamPage" class="page hidden">
+            <div class="team-header">
+                <button class="back-btn" data-translate="back">← חזרה</button>
+                <div class="team-info">
+                    <img id="teamLogo" src="" alt="Team Logo" class="team-logo">
+                    <h2 id="teamName"></h2>
+                </div>
+            </div>
+
+            <div class="kits-container">
+                <div class="kit-option">
+                    <h3 data-translate="homeKit">חולצת בית</h3>
+                    <div class="kit-image">
+                        <img id="homeKitImg" src="https://via.placeholder.com/300x400/1a1a1a/FFD700?text=חולצת+בית" alt="Home Kit">
+                    </div>
+                    <button class="select-kit-btn" onclick="selectKit('home')" data-translate="select">בחר</button>
+                </div>
+
+                <div class="kit-option">
+                    <h3 data-translate="awayKit">חולצת חוץ</h3>
+                    <div class="kit-image">
+                        <img id="awayKitImg" src="https://via.placeholder.com/300x400/1a1a1a/FFD700?text=חולצת+חוץ" alt="Away Kit">
+                    </div>
+                    <button class="select-kit-btn" onclick="selectKit('away')" data-translate="select">בחר</button>
+                </div>
+
+                <div class="kit-option">
+                    <h3 data-translate="thirdKit">חולצה שלישית</h3>
+                    <div class="kit-image">
+                        <img id="thirdKitImg" src="https://via.placeholder.com/300x400/1a1a1a/FFD700?text=חולצה+שלישית" alt="Third Kit">
+                    </div>
+                    <button class="select-kit-btn" onclick="selectKit('third')" data-translate="select">בחר</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kit Customization Page -->
+        <section id="kitPage" class="page hidden">
+            <div class="kit-header">
+                <button class="back-btn" onclick="goToTeam()" data-translate="back">← חזרה</button>
+                <h2 id="kitTitle"></h2>
+            </div>
+
+            <div class="customization-form">
+                <div class="form-group">
+                    <label for="playerName" data-translate="playerName">שם שחקן/אוהד</label>
+                    <input type="text" id="playerName" placeholder="הכנס שם" maxlength="20">
+                    <small data-translate="nameNote">עד 20 תווים</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="playerNumber" data-translate="playerNumber">מספר</label>
+                    <input type="number" id="playerNumber" min="0" max="99">
+                    <small data-translate="numberCost">+20₪</small>
+                </div>
+
+                <div class="form-group">
+                    <label data-translate="patches">פאצ'ים</label>
+                    <div class="checkboxes">
+                        <label><input type="checkbox" class="addon" value="patch1"> ליגה (5₪)</label>
+                        <label><input type="checkbox" class="addon" value="patch2"> ליגת אלופות (5₪)</label>
+                        <label><input type="checkbox" class="addon" value="patch3"> אחר (5₪)</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="shortsPack">
+                        <span data-translate="addShorts">הוסף מכנס (+50₪)</span>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label data-translate="version">גרסה</label>
+                    <div class="version-select">
+                        <label>
+                            <input type="radio" name="version" value="fan" checked>
+                            <span data-translate="fanVersion">גרסאת אוהד</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="version" value="player">
+                            <span data-translate="playerVersion">גרסאת שחקן</span>
+                            <small data-translate="playerNote">בחר מידה אחת גדולה יותר</small>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantity" data-translate="quantity">כמות</label>
+                    <input type="number" id="quantity" min="1" value="1">
+                </div>
+
+                <div class="price-summary">
+                    <div class="price-line">
+                        <span data-translate="basePrice">מחיר בסיסי:</span>
+                        <span id="basePrice">99₪</span>
+                    </div>
+                    <div class="price-line">
+                        <span data-translate="addons">תוספות:</span>
+                        <span id="addonsPrice">0₪</span>
+                    </div>
+                    <div class="price-line total">
+                        <span data-translate="total">סה"כ:</span>
+                        <span id="totalPrice">99₪</span>
+                    </div>
+                </div>
+
+                <button class="add-to-cart-btn" onclick="addToCart()" data-translate="addToCart">הוסף לעגלה</button>
+            </div>
+        </section>
+
+        <!-- Cart Page -->
+        <section id="cartPage" class="page hidden">
+            <div class="cart-header">
+                <button class="back-btn" onclick="goHome()" data-translate="back">← חזרה</button>
+                <h2 data-translate="cart">עגלת קניות</h2>
+            </div>
+
+            <div id="cartItems" class="cart-items">
+                <p data-translate="emptyCart">העגלה ריקה</p>
+            </div>
+
+            <div class="cart-footer" id="cartFooter" style="display:none;">
+                <div class="delivery-info">
+                    <h4 data-translate="deliveryTime">זמן אספקה</h4>
+                    <p data-translate="deliveryDesc">14-21 ימי עסקים + 3-5 ימים לשילוח</p>
+                </div>
+
+                <div class="cart-total">
+                    <div class="total-line">
+                        <span data-translate="cartTotal">סה"כ:</span>
+                        <span id="cartTotal">0₪</span>
+                    </div>
+                    <button class="checkout-btn" data-translate="checkout">תהליך קנייה</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
