@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League - She-Kit Store</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #1a1a1a;
+            --card-bg: #f5f5f5;
+            --border-color: #ddd;
+            --accent-color: #e74c3c;
+            --hover-bg: #efefef;
+        }
+
+        [data-theme="dark"] {
+            --bg-color: #1a1a1a;
+            --text-color: #ffffff;
+            --card-bg: #2d2d2d;
+            --border-color: #444;
+            --accent-color: #e74c3c;
+            --hover-bg: #3d3d3d;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            background-color: var(--bg-color);
+            z-index: 100;
+        }
+
+        .logo-text {
+            font-size: 28px;
+            font-weight: bold;
+            color: var(--accent-color);
+            cursor: pointer;
+        }
+
+        .header-right {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .theme-toggle {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .theme-toggle:hover {
+            background-color: var(--hover-bg);
+        }
+
+        .back-btn {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: var(--hover-bg);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .league-header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .league-logo {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+        }
+
+        .league-info h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .league-info p {
+            font-size: 16px;
+            opacity: 0.7;
+        }
+
+        .teams-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .team-card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 200px;
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            border-color: var(--accent-color);
+        }
+
+        .team-logo {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        .team-name {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 10px;
+            }
+
+            .league-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .league-info h1 {
+                font-size: 24px;
+            }
+
+            .teams-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 15px;
+            }
+
+            header {
+                padding: 15px 20px;
+            }
+
+            .logo-text {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-text" onclick="goHome()">🛍️ She-Kit Store</div>
+        <div class="header-right">
+            <button class="back-btn" onclick="goHome()">← חזור</button>
+            <button class="theme-toggle" id="themeToggle">🌙 Dark</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="league-header">
+            <img id="leagueLogo" src="" alt="League Logo" class="league-logo" onerror="this.style.display='none'">
+            <div class="league-info">
+                <h1 id="leagueName"></h1>
+                <p id="teamCount"></p>
+            </div>
+        </div>
+        <div class="teams-grid" id="teamsContainer"></div>
+    </div>
+
+    <script>
+        const teamsData = {
+            "bundesliga": {
+                "name": "Bundesliga",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/d/df/Bundesliga_logo_%282017%29.svg",
+                "teams": [
+                    {"id": "bayer-leverkusen", "name": "Bayer Leverkusen", "logo": "https://upload.wikimedia.org/wikipedia/en/e/e2/Bayer_Leverkusen_logo.svg"},
+                    {"id": "bayern-munich", "name": "Bayern München", "logo": "https://upload.wikimedia.org/wikipedia/en/1/1b/FC_Bayern_Munich_logo.svg"},
+                    {"id": "borussia-dortmund", "name": "Borussia Dortmund", "logo": "https://upload.wikimedia.org/wikipedia/en/f/f3/Borussia_Dortmund_logo.svg"},
+                    {"id": "borussia-monchengladbach", "name": "Borussia M'Gladbach", "logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Borussia_M%C3%B6nchengladbach_logo.svg"},
+                    {"id": "rb-leipzig", "name": "RB Leipzig", "logo": "https://upload.wikimedia.org/wikipedia/en/7/7d/RB_Leipzig_2023.svg"}
+                ]
+            },
+            "eredivisie": {
+                "name": "Eredivisie",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/2/2e/Eredivisie_logo.png",
+                "teams": [
+                    {"id": "ajax", "name": "Ajax", "logo": "https://upload.wikimedia.org/wikipedia/en/7/79/Ajax_Amsterdam_logo.svg"},
+                    {"id": "az-alkmaar", "name": "AZ Alkmaar", "logo": "https://upload.wikimedia.org/wikipedia/en/5/5f/AZ_Alkmaar_logo.svg"},
+                    {"id": "feyenoord", "name": "Feyenoord", "logo": "https://upload.wikimedia.org/wikipedia/en/c/c0/Feyenoord_logo.svg"},
+                    {"id": "psv-eindhoven", "name": "PSV Eindhoven", "logo": "https://upload.wikimedia.org/wikipedia/en/9/94/PSV_Eindhoven_logo.svg"},
+                    {"id": "vitesse", "name": "Vitesse", "logo": "https://upload.wikimedia.org/wikipedia/en/e/e9/Vitesse_Arnhem_logo.svg"}
+                ]
+            },
+            "la-liga": {
+                "name": "La Liga",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/f/f4/LaLiga_Easports_logo.svg",
+                "teams": [
+                    {"id": "atletico-madrid", "name": "Atlético Madrid", "logo": "https://upload.wikimedia.org/wikipedia/en/3/3a/Atletico_Madrid_2017_logo.svg"},
+                    {"id": "barcelona", "name": "FC Barcelona", "logo": "https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%282009%E2%80%932011%29.svg"},
+                    {"id": "real-madrid", "name": "Real Madrid", "logo": "https://upload.wikimedia.org/wikipedia/en/f/f1/Real_Madrid_CF.svg"},
+                    {"id": "real-sociedad", "name": "Real Sociedad", "logo": "https://upload.wikimedia.org/wikipedia/en/2/2e/Real_Sociedad_logo.svg"},
+                    {"id": "sevilla-fc", "name": "Sevilla FC", "logo": "https://upload.wikimedia.org/wikipedia/en/3/3d/Sevilla_FC_logo.svg"}
+                ]
+            },
+            "ligue1": {
+                "name": "Ligue 1",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Ligue_1_Uber_Eats_logo.png",
+                "teams": [
+                    {"id": "as-monaco", "name": "AS Monaco", "logo": "https://upload.wikimedia.org/wikipedia/en/d/db/AS_Monaco_logo.svg"},
+                    {"id": "olympique-lyonnais", "name": "Olympique Lyonnais", "logo": "https://upload.wikimedia.org/wikipedia/en/1/13/Olympique_Lyonnais_logo.svg"},
+                    {"id": "olympique-marseille", "name": "Olympique Marseille", "logo": "https://upload.wikimedia.org/wikipedia/en/a/ab/Olympique_de_Marseille_logo.svg"},
+                    {"id": "paris-saint-germain", "name": "Paris Saint-Germain", "logo": "https://upload.wikimedia.org/wikipedia/en/a/a7/Paris_Saint-Germain_2021.svg"},
+                    {"id": "rc-lens", "name": "RC Lens", "logo": "https://upload.wikimedia.org/wikipedia/en/5/5e/RC_Lens_logo.svg"}
+                ]
+            },
+            "premier-league": {
+                "name": "Premier League",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/f/f9/Premier_League_Logo.svg",
+                "teams": [
+                    {"id": "arsenal-fc", "name": "Arsenal FC", "logo": "https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg"},
+                    {"id": "chelsea-fc", "name": "Chelsea FC", "logo": "https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"},
+                    {"id": "liverpool-fc", "name": "Liverpool FC", "logo": "https://upload.wikimedia.org/wikipedia/en/0/0c/Liverpool_FC.svg"},
+                    {"id": "manchester-city", "name": "Manchester City", "logo": "https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg"},
+                    {"id": "manchester-united", "name": "Manchester United", "logo": "https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_badge.svg"}
+                ]
+            },
+            "primeira-liga": {
+                "name": "Primeira Liga",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/2/2f/Primeira_Liga_Logo.png",
+                "teams": [
+                    {"id": "benfica", "name": "Benfica", "logo": "https://upload.wikimedia.org/wikipedia/en/6/60/SL_Benfica_logo.svg"},
+                    {"id": "braga", "name": "Braga", "logo": "https://upload.wikimedia.org/wikipedia/en/1/1f/SC_Braga_logo.svg"},
+                    {"id": "fc-porto", "name": "FC Porto", "logo": "https://upload.wikimedia.org/wikipedia/en/c/cc/FC_Porto_logo.svg"},
+                    {"id": "sporting-cp", "name": "Sporting CP", "logo": "https://upload.wikimedia.org/wikipedia/en/3/3e/Sporting_CP_logo.svg"}
+                ]
+            },
+            "serie-a": {
+                "name": "Serie A",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/b/b1/Serie_A_logo.svg",
+                "teams": [
+                    {"id": "ac-milan", "name": "AC Milan", "logo": "https://upload.wikimedia.org/wikipedia/en/d/d0/Associazione_Calcio_Milan_logo.svg"},
+                    {"id": "as-roma", "name": "AS Roma", "logo": "https://upload.wikimedia.org/wikipedia/en/f/f7/AS_Roma_logo_%282017%29.svg"},
+                    {"id": "inter-milan", "name": "Inter Milan", "logo": "https://upload.wikimedia.org/wikipedia/en/0/05/FC_Internazionale_Milano_logo.svg"},
+                    {"id": "juventus-fc", "name": "Juventus FC", "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/Juventus_FC_logo.svg"},
+                    {"id": "napoli", "name": "Napoli", "logo": "https://upload.wikimedia.org/wikipedia/en/2/2d/SSC_Napoli_logo.svg"}
+                ]
+            },
+            "super-lig": {
+                "name": "Super Lig",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/c/cd/Super_Lig_logo.svg",
+                "teams": [
+                    {"id": "besiktas", "name": "Beşiktaş", "logo": "https://upload.wikimedia.org/wikipedia/en/8/8c/Besiktas_JK_logo.svg"},
+                    {"id": "fenerbahce", "name": "Fenerbahçe", "logo": "https://upload.wikimedia.org/wikipedia/en/0/0a/Fenerbah%C3%A7e_SK_logo.svg"},
+                    {"id": "galatasaray", "name": "Galatasaray", "logo": "https://upload.wikimedia.org/wikipedia/en/9/9f/Galatasaray_logo.svg"},
+                    {"id": "trabzonspor", "name": "Trabzonspor", "logo": "https://upload.wikimedia.org/wikipedia/en/a/a4/Trabzonspor_logo.svg"}
+                ]
+            }
+        };
+
+        // Theme toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const htmlElement = document.documentElement;
+
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        if (currentTheme === 'dark') {
+            htmlElement.setAttribute('data-theme', 'dark');
+            themeToggle.textContent = '☀️ Light';
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const theme = htmlElement.getAttribute('data-theme');
+            const newTheme = theme === 'dark' ? 'light' : 'dark';
+            htmlElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeToggle.textContent = newTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
+        });
+
+        function goHome() {
+            window.location.href = 'index.html';
+        }
+
+        function getLeagueIdFromURL() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('id') || 'bundesliga';
+        }
+
+        function renderLeague() {
+            const leagueId = getLeagueIdFromURL();
+            const league = teamsData[leagueId];
+
+            if (!league) {
+                document.getElementById('teamsContainer').innerHTML = '<p>League not found</p>';
+                return;
+            }
+
+            document.getElementById('leagueLogo').src = league.logo;
+            document.getElementById('leagueName').textContent = league.name;
+            document.getElementById('teamCount').textContent = `${league.teams.length} קבוצות`;
+
+            const container = document.getElementById('teamsContainer');
+            let html = '';
+
+            league.teams.forEach(team => {
+                html += `
+                    <div class="team-card" onclick="selectTeam('${team.id}')">
+                        <img src="${team.logo}" alt="${team.name}" class="team-logo" onerror="this.style.display='none'">
+                        <div class="team-name">${team.name}</div>
+                    </div>
+                `;
+            });
+
+            container.innerHTML = html;
+        }
+
+        function selectTeam(teamId) {
+            window.location.href = `team.html?id=${teamId}`;
+        }
+
+        renderLeague();
+    </script>
+</body>
+</html>

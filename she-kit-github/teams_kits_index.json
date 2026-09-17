@@ -1,0 +1,104 @@
+{
+  "leagues": [
+    {
+      "id": "bundesliga",
+      "name": "Bundesliga",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/d/df/Bundesliga_logo_%282017%29.svg",
+      "teams": [
+        {"id": "bayer-leverkusen", "name": "Bayer Leverkusen", "logo": "https://upload.wikimedia.org/wikipedia/en/e/e2/Bayer_Leverkusen_logo.svg"},
+        {"id": "bayern-munich", "name": "Bayern München", "logo": "https://upload.wikimedia.org/wikipedia/en/1/1b/FC_Bayern_Munich_logo.svg"},
+        {"id": "borussia-dortmund", "name": "Borussia Dortmund", "logo": "https://upload.wikimedia.org/wikipedia/en/f/f3/Borussia_Dortmund_logo.svg"},
+        {"id": "borussia-monchengladbach", "name": "Borussia M'Gladbach", "logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Borussia_M%C3%B6nchengladbach_logo.svg"},
+        {"id": "rb-leipzig", "name": "RB Leipzig", "logo": "https://upload.wikimedia.org/wikipedia/en/7/7d/RB_Leipzig_2023.svg"}
+      ]
+    },
+    {
+      "id": "eredivisie",
+      "name": "Eredivisie",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/2/2e/Eredivisie_logo.png",
+      "teams": [
+        {"id": "ajax", "name": "Ajax", "logo": "https://upload.wikimedia.org/wikipedia/en/7/79/Ajax_Amsterdam_logo.svg"},
+        {"id": "az-alkmaar", "name": "AZ Alkmaar", "logo": "https://upload.wikimedia.org/wikipedia/en/5/5f/AZ_Alkmaar_logo.svg"},
+        {"id": "feyenoord", "name": "Feyenoord", "logo": "https://upload.wikimedia.org/wikipedia/en/c/c0/Feyenoord_logo.svg"},
+        {"id": "psv-eindhoven", "name": "PSV Eindhoven", "logo": "https://upload.wikimedia.org/wikipedia/en/9/94/PSV_Eindhoven_logo.svg"},
+        {"id": "vitesse", "name": "Vitesse", "logo": "https://upload.wikimedia.org/wikipedia/en/e/e9/Vitesse_Arnhem_logo.svg"}
+      ]
+    },
+    {
+      "id": "la-liga",
+      "name": "La Liga",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/f/f4/LaLiga_Easports_logo.svg",
+      "teams": [
+        {"id": "atletico-madrid", "name": "Atlético Madrid", "logo": "https://upload.wikimedia.org/wikipedia/en/3/3a/Atletico_Madrid_2017_logo.svg"},
+        {"id": "barcelona", "name": "FC Barcelona", "logo": "https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%282009%E2%80%932011%29.svg"},
+        {"id": "real-madrid", "name": "Real Madrid", "logo": "https://upload.wikimedia.org/wikipedia/en/f/f1/Real_Madrid_CF.svg"},
+        {"id": "real-sociedad", "name": "Real Sociedad", "logo": "https://upload.wikimedia.org/wikipedia/en/2/2e/Real_Sociedad_logo.svg"},
+        {"id": "sevilla-fc", "name": "Sevilla FC", "logo": "https://upload.wikimedia.org/wikipedia/en/3/3d/Sevilla_FC_logo.svg"}
+      ]
+    },
+    {
+      "id": "ligue1",
+      "name": "Ligue 1",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/4/47/Ligue_1_Uber_Eats_logo.png",
+      "teams": [
+        {"id": "as-monaco", "name": "AS Monaco", "logo": "https://upload.wikimedia.org/wikipedia/en/d/db/AS_Monaco_logo.svg"},
+        {"id": "olympique-lyonnais", "name": "Olympique Lyonnais", "logo": "https://upload.wikimedia.org/wikipedia/en/1/13/Olympique_Lyonnais_logo.svg"},
+        {"id": "olympique-marseille", "name": "Olympique Marseille", "logo": "https://upload.wikimedia.org/wikipedia/en/a/ab/Olympique_de_Marseille_logo.svg"},
+        {"id": "paris-saint-germain", "name": "Paris Saint-Germain", "logo": "https://upload.wikimedia.org/wikipedia/en/a/a7/Paris_Saint-Germain_2021.svg"},
+        {"id": "rc-lens", "name": "RC Lens", "logo": "https://upload.wikimedia.org/wikipedia/en/5/5e/RC_Lens_logo.svg"}
+      ]
+    },
+    {
+      "id": "premier-league",
+      "name": "Premier League",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/f/f9/Premier_League_Logo.svg",
+      "teams": [
+        {"id": "arsenal-fc", "name": "Arsenal FC", "logo": "https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg"},
+        {"id": "chelsea-fc", "name": "Chelsea FC", "logo": "https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"},
+        {"id": "liverpool-fc", "name": "Liverpool FC", "logo": "https://upload.wikimedia.org/wikipedia/en/0/0c/Liverpool_FC.svg"},
+        {"id": "manchester-city", "name": "Manchester City", "logo": "https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg"},
+        {"id": "manchester-united", "name": "Manchester United", "logo": "https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_badge.svg"}
+      ]
+    },
+    {
+      "id": "primeira-liga",
+      "name": "Primeira Liga",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/2/2f/Primeira_Liga_Logo.png",
+      "teams": [
+        {"id": "benfica", "name": "Benfica", "logo": "https://upload.wikimedia.org/wikipedia/en/6/60/SL_Benfica_logo.svg"},
+        {"id": "braga", "name": "Braga", "logo": "https://upload.wikimedia.org/wikipedia/en/1/1f/SC_Braga_logo.svg"},
+        {"id": "fc-porto", "name": "FC Porto", "logo": "https://upload.wikimedia.org/wikipedia/en/c/cc/FC_Porto_logo.svg"},
+        {"id": "sporting-cp", "name": "Sporting CP", "logo": "https://upload.wikimedia.org/wikipedia/en/3/3e/Sporting_CP_logo.svg"}
+      ]
+    },
+    {
+      "id": "serie-a",
+      "name": "Serie A",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/b/b1/Serie_A_logo.svg",
+      "teams": [
+        {"id": "ac-milan", "name": "AC Milan", "logo": "https://upload.wikimedia.org/wikipedia/en/d/d0/Associazione_Calcio_Milan_logo.svg"},
+        {"id": "as-roma", "name": "AS Roma", "logo": "https://upload.wikimedia.org/wikipedia/en/f/f7/AS_Roma_logo_%282017%29.svg"},
+        {"id": "inter-milan", "name": "Inter Milan", "logo": "https://upload.wikimedia.org/wikipedia/en/0/05/FC_Internazionale_Milano_logo.svg"},
+        {"id": "juventus-fc", "name": "Juventus FC", "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/Juventus_FC_logo.svg"},
+        {"id": "napoli", "name": "Napoli", "logo": "https://upload.wikimedia.org/wikipedia/en/2/2d/SSC_Napoli_logo.svg"}
+      ]
+    },
+    {
+      "id": "super-lig",
+      "name": "Super Lig",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/c/cd/Super_Lig_logo.svg",
+      "teams": [
+        {"id": "besiktas", "name": "Beşiktaş", "logo": "https://upload.wikimedia.org/wikipedia/en/8/8c/Besiktas_JK_logo.svg"},
+        {"id": "fenerbahce", "name": "Fenerbahçe", "logo": "https://upload.wikimedia.org/wikipedia/en/0/0a/Fenerbah%C3%A7e_SK_logo.svg"},
+        {"id": "galatasaray", "name": "Galatasaray", "logo": "https://upload.wikimedia.org/wikipedia/en/9/9f/Galatasaray_logo.svg"},
+        {"id": "trabzonspor", "name": "Trabzonspor", "logo": "https://upload.wikimedia.org/wikipedia/en/a/a4/Trabzonspor_logo.svg"}
+      ]
+    }
+  ],
+  "kitAddOns": [
+    {"id": "nameprint", "name": "הדפסת שם", "price": 15},
+    {"id": "numberprint", "name": "הדפסת מספר", "price": 20},
+    {"id": "patches", "name": "תגי טיטולים", "price": 25},
+    {"id": "sleeve-badges", "name": "תגי שרוול", "price": 18}
+  ]
+}
