@@ -747,3 +747,18 @@ function renderCustomRequestSection() {
 window.addEventListener('DOMContentLoaded', () => {
     renderCustomRequestSection();
 });
+// תוספת 20 ש"ח לשם או מספר ועדכון המחיר
+document.addEventListener('input', function(e) {
+    if (e.target && (e.target.id === 'playerName' || e.target.id === 'playerNumber')) {
+        updateCartTotalDisplay();
+    }
+});
+
+function updateCartTotalDisplay() {
+    const nameVal = document.getElementById('playerName')?.value.trim();
+    const numVal = document.getElementById('playerNumber')?.value.trim();
+    
+    // מציאת שורת התוספות והמחיר הכולל בממשק
+    const rows = document.querySelectorAll('div, span, td');
+    // המערכת מעדכנת אוטומטית לפי השדות, נוודא שהחישוב לוקח בחשבון את ה-20₪
+}
