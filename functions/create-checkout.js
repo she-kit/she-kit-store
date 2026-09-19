@@ -1,14 +1,13 @@
-const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+const stripe = require('stripe')('כאן_תדביק_את_המפתח_הסודי_שלך');
 
 exports.handler = async (event) => {
-    if (event.HTTPMethod !== 'POST') {
+    if (event.httpMethod !== 'POST') {
         return { statusCode: 405, body: 'Method Not Allowed' };
     }
 
     try {
         const { items, customer } = JSON.parse(event.body);
 
-        // יצירת סשן תשלום מאובטח מול סטרייפ בשקלים
         const session = await stripe.checkout.sessions.create({
             payment_method_types: ['card'],
             line_items: items,
