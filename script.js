@@ -26,7 +26,7 @@ const translations = {
         addShorts: 'הוסף מכנס (+50₪)',
         version: 'גרסה',
         fanVersion: 'גרסאת אוהד',
-        playerVersion: 'גרסאת שחקן',
+        playerVersion: 'גרסאת שחקן (+10₪)',
         playerNote: 'בחר מידה אחת גדולה יותר',
         quantity: 'כמות',
         basePrice: 'מחיר בסיסי:',
@@ -69,7 +69,7 @@ const translations = {
         addShorts: 'Add Shorts (+50₪)',
         version: 'Version',
         fanVersion: 'Fan Version',
-        playerVersion: 'Player Version',
+        playerVersion: 'Player Version (+10₪)',
         playerNote: 'Choose one size larger',
         quantity: 'Quantity',
         basePrice: 'Base Price:',
@@ -112,7 +112,7 @@ const translations = {
         addShorts: 'Ajouter Short (+50₪)',
         version: 'Version',
         fanVersion: 'Version Fan',
-        playerVersion: 'Version Joueur',
+        playerVersion: 'Version Joueur (+10₪)',
         playerNote: 'Choisir une taille plus grande',
         quantity: 'Quantité',
         basePrice: 'Prix de base:',
@@ -155,7 +155,7 @@ const translations = {
         addShorts: 'Добавить шорты (+50₪)',
         version: 'Версия',
         fanVersion: 'Версия фаната',
-        playerVersion: 'Версия игрока',
+        playerVersion: 'Версия игрока (+10₪)',
         playerNote: 'Выберите размер больше',
         quantity: 'Количество',
         basePrice: 'Базовая цена:',
@@ -550,6 +550,10 @@ function setupPriceCalculations() {
     document.querySelectorAll('.addon').forEach(checkbox => {
         checkbox.addEventListener('change', calculatePrice);
     });
+
+    document.querySelectorAll('input[name="version"]').forEach(radio => {
+        radio.addEventListener('change', calculatePrice);
+    });
     
     if (shortsPack) shortsPack.addEventListener('change', calculatePrice);
     if (quantity) quantity.addEventListener('change', calculatePrice);
@@ -571,6 +575,11 @@ function calculatePrice() {
     const shortsPack = document.getElementById('shortsPack');
     if (shortsPack && shortsPack.checked) {
         addonsTotal += 50;
+    }
+
+    const playerVersionRadio = document.querySelector('input[name="version"][value="player"]');
+    if (playerVersionRadio && playerVersionRadio.checked) {
+        addonsTotal += 10;
     }
     
     const quantityInput = document.getElementById('quantity');
@@ -604,6 +613,7 @@ function addToCart() {
     if (number && number !== 'ללא מספר') price += 20;
     if (addons.length > 0) price += addons.length * 5;
     if (hasShorts) price += 50;
+    if (version === 'player') price += 10;
     
     const item = {
         id: Date.now(),
@@ -729,3 +739,7 @@ function submitCustomRequest() {
     if (notesEl) notesEl.value = '';
     if (fileEl) fileEl.value = '';
 }
+
+window.addEventListener('load', () => {
+    applyLanguage(currentLanguage);
+});
