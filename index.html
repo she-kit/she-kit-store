@@ -42,36 +42,52 @@
                 <div class="hero-content">
                     <h2 data-translate="welcome">ברוכים הבאים ל-She-Kit Store</h2>
                     <p data-translate="tagline">חנות החולצות הכדורגל המובילה עם איכות וסגנון</p>
-                    <button class="cta-button" data-translate="shop">התחל קניות</button>
+                    <button class="cta-button" data-translate="shop">התחל קניון</button>
                 </div>
-              <div class="hero-image">
-    <img id="heroImage" src="" alt="" loading="eager" decoding="async">
-</div>
+            </div>
 
             <div class="leagues-showcase">
                 <h3 data-translate="ourLeagues">הליגות שלנו</h3>
                 <div class="leagues-grid" id="leaguesGrid"></div>
             </div>
 
-            <div class="info-section">
-  </div56>
-<!-- טופס בקשה מיוחדת שיועבר למעלה -->
-<section class="custom-request-section" style="padding: 30px 20px; background: var(--dark-secondary); border-radius: 12px; border: 2px solid var(--primary-color); margin-bottom: 30px;">
-    <h3 style="color: var(--primary-color); text-align: center; margin-bottom: 10px;">מחפש חולצת קבוצה או רטרו שלא נמצאת באתר?</h3>
-    <p style="text-align: center; color: #fff; margin-bottom: 20px;">שלח אלינו בקשה מיוחדת, צרף תמונה ונחזור אליך בהקדם!</p>
-    <div style="max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px;">
-        <input type="text" id="customName" placeholder="שם מלא" style="padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff;">
-        <input type="text" id="customContact" placeholder="מספר טלפון או אימייל לחזרה" style="padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff;">
-        <textarea id="customNotes" placeholder="תיאור אודות קבוצה, עונה או חולצה רטרו, מידת פאץ'..." style="padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff; height: 80px;"></textarea>
-        <div>
-            <label style="color: #ccc; display: block; margin-bottom: 5px;">העלאת תמונה / קובץ להמחשה:</label>
-            <input type="file" id="customFile" style="color: #fff;">
-        </div>
-        <button type="button" onclick="submitCustomRequest()" style="background: var(--primary-color); color: var(--dark-bg); font-weight: bold; padding: 12px; border: none; border-radius: 6px; cursor: pointer;">שלח בקשה לשירות לקוחות</button>
-    </div>
-</section>
+            <!-- טופס בקשה מיוחדת ממוקם מעל "למה לבחור בנו" -->
+            <section class="custom-request-section" style="padding: 30px 20px; background: var(--dark-secondary); border-radius: 12px; border: 2px solid var(--primary-color); margin-bottom: 30px;">
+                <h3 style="color: var(--primary-color); text-align: center; margin-bottom: 10px;">מחפש חולצת קבוצה או רטרו שלא נמצאת באתר?</h3>
+                <p style="text-align: center; color: #fff; margin-bottom: 20px;">שלח אלינו בקשה מיוחדת, צרף תמונה ונחזור אליך בהקדם!</p>
+                <div style="max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px;">
+                    <input type="text" id="customName" placeholder="שם מלא" style="padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff;">
+                    <input type="text" id="customContact" placeholder="מספר טלפון או אימייל לחזרה" style="padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff;">
+                    <textarea id="customNotes" placeholder="תיאור אודות קבוצה, עונה או חולצה רטרו, מידת פאץ'..." style="padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff; height: 80px;"></textarea>
+                    <div>
+                        <label style="color: #ccc; display: block; margin-bottom: 5px;">העלאת תמונה / קובץ להמחשה:</label>
+                        <input type="file" id="customFile" style="color: #fff;">
+                    </div>
+                    <button type="button" onclick="submitCustomRequest()" style="background: var(--primary-color); color: var(--dark-bg); font-weight: bold; padding: 12px; border: none; border-radius: 6px; cursor: pointer;">שלח בקשה לשירות לקוחות</button>
+                </div>
+            </section>
 
-<section id="info-section" class="info-section">
+            <div class="info-section">
+                <h3 data-translate="whyUs">למה לבחור בנו?</h3>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <span class="icon">💰</span>
+                        <h4 data-translate="pricing">מחירים טובים</h4>
+                        <p data-translate="pricingDesc">חולצה בסיסית מ-99₪ בלבד</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="icon">🚚</span>
+                        <h4 data-translate="delivery">משלוח מהיר</h4>
+                        <p data-translate="deliveryDesc">14-21 ימי עסקים + 3-5 ימים לשילוח</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="icon">✨</span>
+                        <h4 data-translate="quality">איכות גבוהה</h4>
+                        <p data-translate="qualityDesc">חולצות מקוריות עם הדפס מקצועي</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Team Page -->
         <section id="teamPage" class="page hidden">
