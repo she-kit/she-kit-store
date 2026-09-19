@@ -762,3 +762,6 @@ function updateCartTotalDisplay() {
     const rows = document.querySelectorAll('div, span, td');
     // המערכת מעדכנת אוטומטית לפי השדות, נוודא שהחישוב לוקח בחשבון את ה-20₪
 }
+window.addEventListener('DOMContentLoaded', () => {
+    renderCustomRequestSection();
+});
