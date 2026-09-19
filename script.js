@@ -705,8 +705,8 @@ function goToCartFromForm() {
     goToCart();
 }
 
-// תהליך סליקה מאובטח מהטופס
-async function processSecureCheckout(event) {
+// תהליך סליקה ישיר דרך Stripe Payment Link (עוקף שרת ונטפליי)
+function processSecureCheckout(event) {
     event.preventDefault();
 
     if (cart.length === 0) {
@@ -725,45 +725,16 @@ async function processSecureCheckout(event) {
         notes: document.getElementById('shipNotes').value
     };
 
-    const lineItems = cart.map(item => ({
-        price_data: {
-            currency: 'ils',
-            product_data: {
-                name: `${item.team} - ${t(`${item.kit}Kit`)} (מידה: ${item.size}, שם: ${item.name}, מס': ${item.number})`,
-            },
-            unit_amount: Math.round((item.total / item.quantity) * 100),
-        },
-        quantity: item.quantity,
-    }));
+    // שמירת פרטי הלקוח מקומית
+    localStorage.setItem('lastCustomer', JSON.stringify(customer));
 
-    try {
-        const response = await fetch('/.netlify/functions/create-checkout', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ items: lineItems, customer: customer })
-        });
+    // החלף את המחרוזת למטה בקישור התשלום שלך מ-Stripe (לדוגמה: 'https://buy.stripe.com/test_...')
+    const stripePaymentLink = 'https://buy.stripe.com/test_your_link_here';
 
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-
-        const session = await response.json();
-        if (session.id) {
-            if (typeof Stripe === 'undefined') {
-                alert('טוען מערכת תשלום, אנא המתן רגע ונסה שוב.');
-                return;
-            }
-            const stripe = Stripe(STRIPE_PUBLIC_KEY);
-            const result = await stripe.redirectToCheckout({ sessionId: session.id });
-            if (result.error) {
-                alert(result.error.message);
-            }
-        } else {
-            alert('שגיאה ביצירת תהליך התשלום');
-        }
-    } catch (error) {
-        console.error('Stripe Checkout Error:', error);
-        alert('שגיאה בתקשורת עם שרת התשלומים. אנא נסה שוב.');
+    if (stripePaymentLink && stripePaymentLink.startsWith('http')) {
+        window.location.href = stripePaymentLink;
+    } else {
+        alert('נא להגדיר את קישור התשלום של Stripe בקוד.');
     }
 }
 
