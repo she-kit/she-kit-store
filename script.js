@@ -334,15 +334,14 @@ function renderTeamPage(team) {
     document.getElementById('teamName').textContent = team.name;
     document.getElementById('teamLeague').textContent = team.league;
 
-    const logo = document.getElementById('teamLogo');
-    // No logo image files exist in the repository, so show a monogram badge.
-    logo.textContent = team.name
-        .split(/\s+/)
-        .filter((word) => /[a-z0-9]/i.test(word[0] || ''))
-        .slice(0, 2)
-        .map((word) => word[0].toUpperCase())
-        .join('');
-
+    const logoContainer = document.getElementById('teamLogo');
+    logoContainer.innerHTML = '';
+    const logoImg = document.createElement('img');
+    logoImg.src = `team logo/${team.folder}.webp`;
+    logoImg.alt = team.name;
+    logoImg.style.width = '40px';
+    logoImg.style.height = '40px';
+    logoContainer.appendChild(logoImg);
     const container = document.getElementById('kitsContainer');
     container.innerHTML = '';
 
