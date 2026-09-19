@@ -1,0 +1,26 @@
+# The site is plain static files served from the repository root.
+[build]
+  publish = "."
+  # Regenerates kits-manifest.json from the folders on disk, so newly uploaded
+  # team or kit folders appear on the site without editing any code by hand.
+  # Falls back to the committed manifest rather than failing the deploy: the
+  # generator writes its output in one step, so a failed run leaves the last
+  # known-good manifest in place and the site still ships.
+  command = "node tools/build-manifest.mjs || echo 'WARNING: manifest generation failed; deploying committed kits-manifest.json'"
+
+# Kit photos are large and change rarely, but their filenames are NOT
+# content-hashed: replacing a photo reuses its name. A one-year immutable cache
+# would therefore pin a replaced photo in visitors' browsers, so cache for a day
+# and revalidate in the background instead.
+# If this pattern turns out not to match at nested depth, Netlify's default
+# ETag revalidation still applies, so correctness does not depend on this rule.
+[[headers]]
+  for = "/*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
+
+# The manifest must never be served stale, or the site would point at old paths.
+[[headers]]
+  for = "/kits-manifest.json"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

@@ -37,7 +37,11 @@ const translations = {
         emptyCart: 'העגלה ריקה',
         deliveryTime: 'זמן אספקה',
         cartTotal: 'סה"כ:',
-        checkout: 'תהליך קנייה'
+        checkout: 'תהליך קנייה',
+        loading: 'טוען...',
+        photos: 'תמונות',
+        noImages: 'אין תמונות',
+        teamsLabel: 'קבוצות'
     },
     en: {
         leagues: 'Leagues',
@@ -76,7 +80,11 @@ const translations = {
         emptyCart: 'Cart is empty',
         deliveryTime: 'Delivery Time',
         cartTotal: 'Total:',
-        checkout: 'Checkout'
+        checkout: 'Checkout',
+        loading: 'Loading...',
+        photos: 'photos',
+        noImages: 'No images',
+        teamsLabel: 'teams'
     },
     fr: {
         leagues: 'Ligues',
@@ -115,7 +123,11 @@ const translations = {
         emptyCart: 'Le panier est vide',
         deliveryTime: 'Délai de Livraison',
         cartTotal: 'Total:',
-        checkout: 'Passer la Commande'
+        checkout: 'Passer la Commande',
+        loading: 'Chargement...',
+        photos: 'photos',
+        noImages: 'Aucune image',
+        teamsLabel: 'équipes'
     },
     ru: {
         leagues: 'Лиги',
@@ -154,7 +166,11 @@ const translations = {
         emptyCart: 'Корзина пуста',
         deliveryTime: 'Время доставки',
         cartTotal: 'Итого:',
-        checkout: 'Оформить заказ'
+        checkout: 'Оформить заказ',
+        loading: 'Загрузка...',
+        photos: 'фото',
+        noImages: 'Нет изображений',
+        teamsLabel: 'команды'
     }
 };
 
@@ -163,13 +179,236 @@ let currentTheme = 'dark';
 let currentTeam = null;
 let currentKit = null;
 let cart = [];
+let catalog = null;
 
 document.addEventListener('DOMContentLoaded', () => {
     initializeTheme();
     initializeLanguage();
     setupEventListeners();
     loadCart();
+    loadCatalog();
 });
+
+/* ------------------------------------------------------------------------- *
+ * Catalog: every image path comes from kits-manifest.json, which is generated
+ * from the folders on disk by tools/build-manifest.mjs. Paths are never typed
+ * by hand because some kit folders use decomposed Unicode, double spaces or
+ * misspellings that would otherwise 404 in production.
+ * ------------------------------------------------------------------------- */
+
+async function loadCatalog() {
+    try {
+        const response = await fetch('kits-manifest.json');
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        catalog = await response.json();
+    } catch (error) {
+        console.error('Failed to load kits-manifest.json', error);
+        const list = document.getElementById('leaguesList');
+        if (list) list.innerHTML = `<p class="menu-loading">${t('noImages')}</p>`;
+        return;
+    }
+
+    renderLeagueMenu();
+    renderLeaguesShowcase();
+    renderHeroImage();
+}
+
+function t(key) {
+    return (translations[currentLanguage] && translations[currentLanguage][key]) || key;
+}
+
+/** Percent-encode a repository path so spaces and accents survive the CDN. */
+function assetUrl(path) {
+    return encodeURI(path);
+}
+
+/**
+ * Point an <img> at a repository path, retrying the other Unicode
+ * normalization if the first form is not found.
+ */
+function setImage(img, path, altText) {
+    const candidates = [path, path.normalize('NFC'), path.normalize('NFD')]
+        .filter((value, index, all) => all.indexOf(value) === index);
+    let attempt = 0;
+
+    img.classList.remove('img-missing');
+
+    // Assigned rather than added as a listener: the same <img> is re-pointed on
+    // every thumbnail click, and stacked listeners would revert a later source.
+    img.onerror = () => {
+        attempt += 1;
+        if (attempt < candidates.length) {
+            img.src = assetUrl(candidates[attempt]);
+            return;
+        }
+        img.onerror = null;
+        img.classList.add('img-missing');
+    };
+
+    if (altText !== undefined) img.alt = altText;
+    if (!img.hasAttribute('loading')) img.loading = 'lazy';
+    img.src = assetUrl(candidates[0]);
+}
+
+function allTeams() {
+    if (!catalog) return [];
+    return catalog.leagues.flatMap((league) => league.teams);
+}
+
+function findTeam(teamId) {
+    return allTeams().find((team) => team.id === teamId) || null;
+}
+
+function renderLeagueMenu() {
+    const list = document.getElementById('leaguesList');
+    if (!list) return;
+
+    list.innerHTML = '';
+    for (const league of catalog.leagues) {
+        const item = document.createElement('div');
+        item.className = 'league-item';
+
+        const toggle = document.createElement('button');
+        toggle.className = 'league-toggle';
+        toggle.type = 'button';
+        toggle.textContent = `${league.flag} ${league.name}`;
+
+        const teams = document.createElement('div');
+        teams.className = 'teams-list hidden';
+
+        for (const team of league.teams) {
+            const link = document.createElement('a');
+            link.href = '#';
+            link.className = 'team-link';
+            link.dataset.teamId = team.id;
+            link.textContent = team.name;
+            teams.appendChild(link);
+        }
+
+        toggle.addEventListener('click', () => teams.classList.toggle('hidden'));
+        item.append(toggle, teams);
+        list.appendChild(item);
+    }
+}
+
+function renderLeaguesShowcase() {
+    const grid = document.getElementById('leaguesGrid');
+    if (!grid) return;
+
+    grid.innerHTML = '';
+    for (const league of catalog.leagues) {
+        const flagship = league.teams[0];
+        if (!flagship) continue;
+
+        const card = document.createElement('button');
+        card.className = 'league-card';
+        card.type = 'button';
+
+        const img = document.createElement('img');
+        setImage(img, flagship.kits.home.cover, `${league.name} - ${flagship.name}`);
+
+        const label = document.createElement('p');
+        label.innerHTML = `<span class="league-flag">${league.flag}</span> ${league.name}`;
+
+        const count = document.createElement('small');
+        count.textContent = `${league.teams.length} ${t('teamsLabel')}`;
+
+        card.append(img, label, count);
+        card.addEventListener('click', () => {
+            goToTeam(flagship.id);
+        });
+        grid.appendChild(card);
+    }
+}
+
+function renderHeroImage() {
+    const hero = document.getElementById('heroImage');
+    if (!hero) return;
+
+    const teams = allTeams();
+    const featured = teams.find((team) => team.folder === 'Real Madrid') || teams[0];
+    if (featured) setImage(hero, featured.kits.home.cover, featured.name);
+}
+
+function renderTeamPage(team) {
+    document.getElementById('teamName').textContent = team.name;
+    document.getElementById('teamLeague').textContent = team.league;
+
+    const logo = document.getElementById('teamLogo');
+    // No logo image files exist in the repository, so show a monogram badge.
+    logo.textContent = team.name
+        .split(/\s+/)
+        .filter((word) => /[a-z0-9]/i.test(word[0] || ''))
+        .slice(0, 2)
+        .map((word) => word[0].toUpperCase())
+        .join('');
+
+    const container = document.getElementById('kitsContainer');
+    container.innerHTML = '';
+
+    for (const type of ['home', 'away', 'third']) {
+        const kit = team.kits[type];
+        if (!kit) continue;
+
+        const option = document.createElement('div');
+        option.className = 'kit-option';
+
+        const heading = document.createElement('h3');
+        heading.dataset.translate = `${type}Kit`;
+        heading.textContent = t(`${type}Kit`);
+
+        const frame = document.createElement('div');
+        frame.className = 'kit-image';
+        const img = document.createElement('img');
+        setImage(img, kit.cover, `${team.name} - ${t(`${type}Kit`)}`);
+        frame.appendChild(img);
+
+        const count = document.createElement('small');
+        count.className = 'kit-count';
+        count.textContent = `${kit.images.length} ${t('photos')}`;
+
+        const button = document.createElement('button');
+        button.className = 'select-kit-btn';
+        button.type = 'button';
+        button.dataset.translate = 'select';
+        button.textContent = t('select');
+        button.addEventListener('click', () => selectKit(type));
+
+        frame.addEventListener('click', () => selectKit(type));
+        option.append(heading, frame, count, button);
+        container.appendChild(option);
+    }
+}
+
+function renderKitGallery(team, type) {
+    const kit = team.kits[type];
+    const main = document.getElementById('kitGalleryMain');
+    const thumbs = document.getElementById('kitThumbs');
+    if (!kit || !main || !thumbs) return;
+
+    main.setAttribute('loading', 'eager');
+    setImage(main, kit.cover, `${team.name} - ${t(`${type}Kit`)}`);
+    thumbs.innerHTML = '';
+
+    kit.images.forEach((path, index) => {
+        const thumb = document.createElement('button');
+        thumb.className = 'kit-thumb';
+        thumb.type = 'button';
+        if (index === 0) thumb.classList.add('active');
+
+        const img = document.createElement('img');
+        setImage(img, path, `${team.name} ${index + 1}`);
+        thumb.appendChild(img);
+
+        thumb.addEventListener('click', () => {
+            setImage(main, path, `${team.name} - ${t(`${type}Kit`)}`);
+            thumbs.querySelectorAll('.kit-thumb').forEach((node) => node.classList.remove('active'));
+            thumb.classList.add('active');
+        });
+
+        thumbs.appendChild(thumb);
+    });
+}
 
 function initializeTheme() {
     const saved = localStorage.getItem('theme') || 'dark';
@@ -219,6 +458,18 @@ function applyLanguage(lang) {
     });
     
     document.getElementById('languageSelect').value = lang;
+    
+    // Re-render the parts built from the manifest so their labels follow the language.
+    if (catalog) {
+        renderLeaguesShowcase();
+        if (currentTeam) {
+            renderTeamPage(currentTeam);
+            if (currentKit) {
+                document.getElementById('kitTitle').textContent = `${currentTeam.name} - ${t(`${currentKit}Kit`)}`;
+            }
+        }
+        if (document.getElementById('cartPage').classList.contains('active')) displayCartItems();
+    }
 }
 
 function setupEventListeners() {
@@ -227,31 +478,23 @@ function setupEventListeners() {
         applyLanguage(e.target.value);
     });
     
-    document.querySelectorAll('.league-toggle').forEach(btn => {
-        btn.addEventListener('click', function() {
-            const teamsList = this.nextElementSibling;
-            teamsList.classList.toggle('hidden');
-        });
-    });
-    
-    document.querySelectorAll('.team-link').forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const teamName = link.getAttribute('data-team');
-            goToTeam(teamName);
-        });
+    // The league menu is rendered from the manifest, so team clicks are delegated.
+    document.getElementById('leaguesList').addEventListener('click', (e) => {
+        const link = e.target.closest('.team-link');
+        if (!link) return;
+        e.preventDefault();
+        goToTeam(link.dataset.teamId);
     });
     
     document.getElementById('cartBtn').addEventListener('click', goToCart);
     
+    document.querySelector('#teamPage .back-btn')?.addEventListener('click', goHome);
+    
     document.querySelector('.cta-button')?.addEventListener('click', () => {
-        document.getElementById('homePage').classList.remove('active');
-        document.getElementById('cartPage').classList.remove('active');
-        document.getElementById('kitPage').classList.remove('active');
-        const firstLeague = document.querySelector('.league-item');
-        if (firstLeague) {
-            firstLeague.querySelector('.league-toggle').click();
-        }
+        showPage('homePage');
+        document.querySelector('.leagues-showcase')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        const firstLeague = document.querySelector('.league-item .league-toggle');
+        if (firstLeague) firstLeague.click();
     });
     
     setupPriceCalculations();
@@ -261,22 +504,26 @@ function goHome() {
     showPage('homePage');
 }
 
-function goToTeam(teamName) {
-    currentTeam = teamName;
-    document.getElementById('teamName').textContent = teamName;
+function goToTeam(teamId) {
+    // Called with an id from the menu, and with no argument by the kit page's
+    // back button, which should return to whichever team is already open.
+    const team = teamId ? findTeam(teamId) : currentTeam;
+    if (!team) return;
+
+    currentTeam = team;
+    renderTeamPage(team);
     showPage('teamPage');
 }
 
 function goToKit(kitType) {
+    if (!currentTeam || !currentTeam.kits[kitType]) return;
+
     currentKit = kitType;
-    const kitNames = {
-        home: translations[currentLanguage].homeKit || 'Home Kit',
-        away: translations[currentLanguage].awayKit || 'Away Kit',
-        third: translations[currentLanguage].thirdKit || 'Third Kit'
-    };
-    document.getElementById('kitTitle').textContent = `${currentTeam} - ${kitNames[kitType]}`;
+    document.getElementById('kitTitle').textContent = `${currentTeam.name} - ${t(`${kitType}Kit`)}`;
+    renderKitGallery(currentTeam, kitType);
     resetCustomizationForm();
     showPage('kitPage');
+    window.scrollTo({ top: 0 });
 }
 
 function showPage(pageId) {
@@ -339,8 +586,10 @@ function addToCart() {
     
     const item = {
         id: Date.now(),
-        team: currentTeam,
+        teamId: currentTeam.id,
+        team: currentTeam.name,
         kit: currentKit,
+        image: currentTeam.kits[currentKit].cover,
         name: name,
         number: number,
         addons: addons,
@@ -379,8 +628,9 @@ function displayCartItems() {
     cartFooter.style.display = 'block';
     cartItems.innerHTML = cart.map(item => `
         <div class="cart-item">
+            ${item.image ? `<img class="cart-item-thumb" src="${assetUrl(item.image)}" alt="" loading="lazy">` : ''}
             <div class="cart-item-details">
-                <h4>${item.team} - ${item.kit}</h4>
+                <h4>${item.team} - ${t(`${item.kit}Kit`)}</h4>
                 <p>${translations[currentLanguage].playerName}: ${item.name}</p>
                 <p>${translations[currentLanguage].playerNumber}: ${item.number}</p>
                 <p>x${item.quantity}</p>

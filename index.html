@@ -24,78 +24,8 @@
 
         <div class="leagues-menu">
             <h3 data-translate="leagues">ליגות</h3>
-            <div class="leagues-list">
-                <div class="league-item">
-                    <button class="league-toggle">⚽ Bundesliga</button>
-                    <div class="teams-list hidden">
-                        <a href="#" class="team-link" data-team="Bayern Munich">Bayern Munich</a>
-                        <a href="#" class="team-link" data-team="Borussia Dortmund">Borussia Dortmund</a>
-                        <a href="#" class="team-link" data-team="Bayer Leverkusen">Bayer Leverkusen</a>
-                    </div>
-                </div>
-
-                <div class="league-item">
-                    <button class="league-toggle">⚽ La Liga</button>
-                    <div class="teams-list hidden">
-                        <a href="#" class="team-link" data-team="Real Madrid">Real Madrid</a>
-                        <a href="#" class="team-link" data-team="Barcelona">Barcelona</a>
-                        <a href="#" class="team-link" data-team="Atletico Madrid">Atletico Madrid</a>
-                    </div>
-                </div>
-
-                <div class="league-item">
-                    <button class="league-toggle">⚽ Premier League</button>
-                    <div class="teams-list hidden">
-                        <a href="#" class="team-link" data-team="Manchester United">Manchester United</a>
-                        <a href="#" class="team-link" data-team="Liverpool">Liverpool</a>
-                        <a href="#" class="team-link" data-team="Chelsea">Chelsea</a>
-                    </div>
-                </div>
-
-                <div class="league-item">
-                    <button class="league-toggle">⚽ Serie A</button>
-                    <div class="teams-list hidden">
-                        <a href="#" class="team-link" data-team="Juventus">Juventus</a>
-                        <a href="#" class="team-link" data-team="AS Roma">AS Roma</a>
-                        <a href="#" class="team-link" data-team="AC Milan">AC Milan</a>
-                    </div>
-                </div>
-
-                <div class="league-item">
-                    <button class="league-toggle">⚽ Ligue 1</button>
-                    <div class="teams-list hidden">
-                        <a href="#" class="team-link" data-team="PSG">PSG</a>
-                        <a href="#" class="team-link" data-team="Marseille">Marseille</a>
-                        <a href="#" class="team-link" data-team="Lyon">Lyon</a>
-                    </div>
-                </div>
-
-                <div class="league-item">
-                    <button class="league-toggle">⚽ Eredivisie</button>
-                    <div class="teams-list hidden">
-                        <a href="#" class="team-link" data-team="Ajax">Ajax</a>
-                        <a href="#" class="team-link" data-team="PSV Eindhoven">PSV Eindhoven</a>
-                        <a href="#" class="team-link" data-team="Feyenoord">Feyenoord</a>
-                    </div>
-                </div>
-
-                <div class="league-item">
-                    <button class="league-toggle">⚽ Primeira Liga</button>
-                    <div class="teams-list hidden">
-                        <a href="#" class="team-link" data-team="Benfica">Benfica</a>
-                        <a href="#" class="team-link" data-team="Porto">Porto</a>
-                        <a href="#" class="team-link" data-team="Sporting">Sporting</a>
-                    </div>
-                </div>
-
-                <div class="league-item">
-                    <button class="league-toggle">⚽ Super Lig</button>
-                    <div class="teams-list hidden">
-                        <a href="#" class="team-link" data-team="Galatasaray">Galatasaray</a>
-                        <a href="#" class="team-link" data-team="Fenerbahce">Fenerbahce</a>
-                        <a href="#" class="team-link" data-team="Besiktas">Besiktas</a>
-                    </div>
-                </div>
+            <div class="leagues-list" id="leaguesList">
+                <p class="menu-loading" data-translate="loading">טוען...</p>
             </div>
         </div>
 
@@ -115,46 +45,13 @@
                     <button class="cta-button" data-translate="shop">תחל קניות</button>
                 </div>
                 <div class="hero-image">
-                    <img src="https://via.placeholder.com/400x500/2a2a2a/FFD700?text=📸+דוגמן" alt="דוגמן חולצה">
+                    <img id="heroImage" src="" alt="" loading="eager" decoding="async">
                 </div>
             </div>
 
             <div class="leagues-showcase">
                 <h3 data-translate="ourLeagues">הליגות שלנו</h3>
-                <div class="leagues-grid">
-                    <div class="league-card">
-                        <img src="https://via.placeholder.com/150/1a1a1a/FFD700?text=🇩🇪" alt="Bundesliga">
-                        <p>Bundesliga</p>
-                    </div>
-                    <div class="league-card">
-                        <img src="https://via.placeholder.com/150/1a1a1a/FFD700?text=🇪🇸" alt="La Liga">
-                        <p>La Liga</p>
-                    </div>
-                    <div class="league-card">
-                        <img src="https://via.placeholder.com/150/1a1a1a/FFD700?text=🇬🇧" alt="Premier League">
-                        <p>Premier League</p>
-                    </div>
-                    <div class="league-card">
-                        <img src="https://via.placeholder.com/150/1a1a1a/FFD700?text=🇮🇹" alt="Serie A">
-                        <p>Serie A</p>
-                    </div>
-                    <div class="league-card">
-                        <img src="https://via.placeholder.com/150/1a1a1a/FFD700?text=🇫🇷" alt="Ligue 1">
-                        <p>Ligue 1</p>
-                    </div>
-                    <div class="league-card">
-                        <img src="https://via.placeholder.com/150/1a1a1a/FFD700?text=🇳🇱" alt="Eredivisie">
-                        <p>Eredivisie</p>
-                    </div>
-                    <div class="league-card">
-                        <img src="https://via.placeholder.com/150/1a1a1a/FFD700?text=🇵🇹" alt="Primeira Liga">
-                        <p>Primeira Liga</p>
-                    </div>
-                    <div class="league-card">
-                        <img src="https://via.placeholder.com/150/1a1a1a/FFD700?text=🇹🇷" alt="Super Lig">
-                        <p>Super Lig</p>
-                    </div>
-                </div>
+                <div class="leagues-grid" id="leaguesGrid"></div>
             </div>
 
             <div class="info-section">
@@ -184,36 +81,15 @@
             <div class="team-header">
                 <button class="back-btn" data-translate="back">← חזרה</button>
                 <div class="team-info">
-                    <img id="teamLogo" src="" alt="Team Logo" class="team-logo">
-                    <h2 id="teamName"></h2>
+                    <div id="teamLogo" class="team-logo" aria-hidden="true"></div>
+                    <div class="team-titles">
+                        <h2 id="teamName"></h2>
+                        <p id="teamLeague" class="team-league"></p>
+                    </div>
                 </div>
             </div>
 
-            <div class="kits-container">
-                <div class="kit-option">
-                    <h3 data-translate="homeKit">חולצת בית</h3>
-                    <div class="kit-image">
-                        <img id="homeKitImg" src="https://via.placeholder.com/300x400/1a1a1a/FFD700?text=חולצת+בית" alt="Home Kit">
-                    </div>
-                    <button class="select-kit-btn" onclick="selectKit('home')" data-translate="select">בחר</button>
-                </div>
-
-                <div class="kit-option">
-                    <h3 data-translate="awayKit">חולצת חוץ</h3>
-                    <div class="kit-image">
-                        <img id="awayKitImg" src="https://via.placeholder.com/300x400/1a1a1a/FFD700?text=חולצת+חוץ" alt="Away Kit">
-                    </div>
-                    <button class="select-kit-btn" onclick="selectKit('away')" data-translate="select">בחר</button>
-                </div>
-
-                <div class="kit-option">
-                    <h3 data-translate="thirdKit">חולצה שלישית</h3>
-                    <div class="kit-image">
-                        <img id="thirdKitImg" src="https://via.placeholder.com/300x400/1a1a1a/FFD700?text=חולצה+שלישית" alt="Third Kit">
-                    </div>
-                    <button class="select-kit-btn" onclick="selectKit('third')" data-translate="select">בחר</button>
-                </div>
-            </div>
+            <div class="kits-container" id="kitsContainer"></div>
         </section>
 
         <!-- Kit Customization Page -->
@@ -221,6 +97,13 @@
             <div class="kit-header">
                 <button class="back-btn" onclick="goToTeam()" data-translate="back">← חזרה</button>
                 <h2 id="kitTitle"></h2>
+            </div>
+
+            <div class="kit-gallery" id="kitGallery">
+                <div class="kit-gallery-main">
+                    <img id="kitGalleryMain" src="" alt="" decoding="async">
+                </div>
+                <div class="kit-thumbs" id="kitThumbs"></div>
             </div>
 
             <div class="customization-form">

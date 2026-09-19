@@ -1,0 +1,2828 @@
+{
+  "generatedAt": "2026-09-19T08:46:18.003Z",
+  "teamCount": 38,
+  "imageCount": 1777,
+  "leagues": [
+    {
+      "id": "bundesliga",
+      "name": "Bundesliga",
+      "flag": "🇩🇪",
+      "teams": [
+        {
+          "id": "bayern-munchen",
+          "folder": "Bayern Munchen",
+          "name": "Bayern München",
+          "league": "Bundesliga",
+          "kits": {
+            "away": {
+              "folder": "Bayern Munchen/Bayern München Away Kit",
+              "cover": "Bayern Munchen/Bayern München Away Kit/Bayern Munich Away Kit.jpg",
+              "images": [
+                "Bayern Munchen/Bayern München Away Kit/Bayern Munich Away Kit.jpg",
+                "Bayern Munchen/Bayern München Away Kit/Bayern Munich Away Kit 2.jpg",
+                "Bayern Munchen/Bayern München Away Kit/Bayern Munich Away Kit 3.jpg",
+                "Bayern Munchen/Bayern München Away Kit/Bayern Munich Away Kit 4.jpg",
+                "Bayern Munchen/Bayern München Away Kit/Bayern Munich Away Kit 5.jpg",
+                "Bayern Munchen/Bayern München Away Kit/Bayern Munich Away Kit 6.jpg",
+                "Bayern Munchen/Bayern München Away Kit/Bayern Munich Away Kit 7.jpg",
+                "Bayern Munchen/Bayern München Away Kit/Bayern Munich Away Kit 8.jpg",
+                "Bayern Munchen/Bayern München Away Kit/Bayern Munich Away Kit 9.jpg",
+                "Bayern Munchen/Bayern München Away Kit/Bayern Munich Away Kit 10.jpg",
+                "Bayern Munchen/Bayern München Away Kit/Bayern Munich Away Kit 11.jpg",
+                "Bayern Munchen/Bayern München Away Kit/Bayern Munich Away Kit 12.jpg",
+                "Bayern Munchen/Bayern München Away Kit/Bayern Munich Away Kit 13.jpg",
+                "Bayern Munchen/Bayern München Away Kit/Bayern Munich Away Kit 14.jpg",
+                "Bayern Munchen/Bayern München Away Kit/Bayern Munich Away Kit 15.jpg",
+                "Bayern Munchen/Bayern München Away Kit/Bayern Munich Away Kit 16.jpg",
+                "Bayern Munchen/Bayern München Away Kit/Bayern Munich Away Kit 17.jpg",
+                "Bayern Munchen/Bayern München Away Kit/Bayern Munich Away Kit 18.jpg"
+              ]
+            },
+            "home": {
+              "folder": "Bayern Munchen/Bayern München Home Kit",
+              "cover": "Bayern Munchen/Bayern München Home Kit/Bayern Munich Home Kit.jpg",
+              "images": [
+                "Bayern Munchen/Bayern München Home Kit/Bayern Munich Home Kit.jpg",
+                "Bayern Munchen/Bayern München Home Kit/Bayern Munich Home Kit 2.jpg",
+                "Bayern Munchen/Bayern München Home Kit/Bayern Munich Home Kit 3.jpg",
+                "Bayern Munchen/Bayern München Home Kit/Bayern Munich Home Kit 4.jpg",
+                "Bayern Munchen/Bayern München Home Kit/Bayern Munich Home Kit 5.jpg",
+                "Bayern Munchen/Bayern München Home Kit/Bayern Munich Home Kit 6.jpg",
+                "Bayern Munchen/Bayern München Home Kit/Bayern Munich Home Kit 7.jpg",
+                "Bayern Munchen/Bayern München Home Kit/Bayern Munich Home Kit 8.jpg",
+                "Bayern Munchen/Bayern München Home Kit/Bayern Munich Home Kit 9.jpg",
+                "Bayern Munchen/Bayern München Home Kit/Bayern Munich Home Kit 10.jpg",
+                "Bayern Munchen/Bayern München Home Kit/Bayern Munich Home Kit 11.jpg",
+                "Bayern Munchen/Bayern München Home Kit/Bayern Munich Home Kit 12.jpg",
+                "Bayern Munchen/Bayern München Home Kit/Bayern Munich Home Kit 13.jpg",
+                "Bayern Munchen/Bayern München Home Kit/Bayern Munich Home Kit 14.jpg"
+              ]
+            },
+            "third": {
+              "folder": "Bayern Munchen/Bayern München Third Kit",
+              "cover": "Bayern Munchen/Bayern München Third Kit/Bayern Munich Third Kit.jpg",
+              "images": [
+                "Bayern Munchen/Bayern München Third Kit/Bayern Munich Third Kit.jpg",
+                "Bayern Munchen/Bayern München Third Kit/Bayern Munich Third Kit 2.jpg",
+                "Bayern Munchen/Bayern München Third Kit/Bayern Munich Third Kit 3.jpg",
+                "Bayern Munchen/Bayern München Third Kit/Bayern Munich Third Kit 4.jpg",
+                "Bayern Munchen/Bayern München Third Kit/Bayern Munich Third Kit 5.jpg",
+                "Bayern Munchen/Bayern München Third Kit/Bayern Munich Third Kit 6.jpg",
+                "Bayern Munchen/Bayern München Third Kit/Bayern Munich Third Kit 7.jpg",
+                "Bayern Munchen/Bayern München Third Kit/Bayern Munich Third Kit 8.jpg",
+                "Bayern Munchen/Bayern München Third Kit/Bayern Munich Third Kit 9.jpg",
+                "Bayern Munchen/Bayern München Third Kit/Bayern Munich Third Kit 10.jpg",
+                "Bayern Munchen/Bayern München Third Kit/Bayern Munich Third Kit 11.jpg",
+                "Bayern Munchen/Bayern München Third Kit/Bayern Munich Third Kit 12.jpg",
+                "Bayern Munchen/Bayern München Third Kit/Bayern Munich Third Kit 13.jpg",
+                "Bayern Munchen/Bayern München Third Kit/Bayern Munich Third Kit 14.jpg",
+                "Bayern Munchen/Bayern München Third Kit/Bayern Munich Third Kit 15.jpg",
+                "Bayern Munchen/Bayern München Third Kit/Bayern Munich Third Kit 16.jpg",
+                "Bayern Munchen/Bayern München Third Kit/Bayern Munich Third Kit 17.jpg",
+                "Bayern Munchen/Bayern München Third Kit/Bayern Munich Third Kit 18.jpg",
+                "Bayern Munchen/Bayern München Third Kit/Bayern Munich Third Kit 19.jpg",
+                "Bayern Munchen/Bayern München Third Kit/Bayern Munich Third Kit 20.jpg",
+                "Bayern Munchen/Bayern München Third Kit/Bayern Munich Third Kit 21.jpg",
+                "Bayern Munchen/Bayern München Third Kit/Bayern Munich Third Kit 22.jpg",
+                "Bayern Munchen/Bayern München Third Kit/Bayern Munich Third Kit 23.jpg"
+              ]
+            }
+          }
+        },
+        {
+          "id": "borussia-dortmund",
+          "folder": "Borussia Dortmund",
+          "name": "Borussia Dortmund",
+          "league": "Bundesliga",
+          "kits": {
+            "away": {
+              "folder": "Borussia Dortmund/Borussia Dortmund Away Kit",
+              "cover": "Borussia Dortmund/Borussia Dortmund Away Kit/Borussia Dortmund Away Kit.jpg",
+              "images": [
+                "Borussia Dortmund/Borussia Dortmund Away Kit/Borussia Dortmund Away Kit.jpg",
+                "Borussia Dortmund/Borussia Dortmund Away Kit/Borussia Dortmund Away Kit 2.jpg",
+                "Borussia Dortmund/Borussia Dortmund Away Kit/Borussia Dortmund Away Kit 3.jpg",
+                "Borussia Dortmund/Borussia Dortmund Away Kit/Borussia Dortmund Away Kit 4.jpg",
+                "Borussia Dortmund/Borussia Dortmund Away Kit/Borussia Dortmund Away Kit 5.jpg",
+                "Borussia Dortmund/Borussia Dortmund Away Kit/Borussia Dortmund Away Kit 6.jpg",
+                "Borussia Dortmund/Borussia Dortmund Away Kit/Borussia Dortmund Away Kit 7.jpg",
+                "Borussia Dortmund/Borussia Dortmund Away Kit/Borussia Dortmund Away Kit 8.jpg",
+                "Borussia Dortmund/Borussia Dortmund Away Kit/Borussia Dortmund Away Kit 9.jpg",
+                "Borussia Dortmund/Borussia Dortmund Away Kit/Borussia Dortmund Away Kit 10.jpg",
+                "Borussia Dortmund/Borussia Dortmund Away Kit/Borussia Dortmund Away Kit 11.jpg",
+                "Borussia Dortmund/Borussia Dortmund Away Kit/Borussia Dortmund Away Kit 12.jpg",
+                "Borussia Dortmund/Borussia Dortmund Away Kit/Borussia Dortmund Away Kit 13.jpg",
+                "Borussia Dortmund/Borussia Dortmund Away Kit/Borussia Dortmund Away Kit 14.jpg",
+                "Borussia Dortmund/Borussia Dortmund Away Kit/Borussia Dortmund Away Kit 15.jpg",
+                "Borussia Dortmund/Borussia Dortmund Away Kit/Borussia Dortmund Away Kit 16.jpg",
+                "Borussia Dortmund/Borussia Dortmund Away Kit/Borussia Dortmund Away Kit 17.jpg",
+                "Borussia Dortmund/Borussia Dortmund Away Kit/Borussia Dortmund Away Kit 18.jpg"
+              ]
+            },
+            "home": {
+              "folder": "Borussia Dortmund/Borussia Dortmund Home Kit",
+              "cover": "Borussia Dortmund/Borussia Dortmund Home Kit/Borussia Dortmund Home Kit.jpg",
+              "images": [
+                "Borussia Dortmund/Borussia Dortmund Home Kit/Borussia Dortmund Home Kit.jpg",
+                "Borussia Dortmund/Borussia Dortmund Home Kit/Borussia Dortmund Home Kit 2.jpg",
+                "Borussia Dortmund/Borussia Dortmund Home Kit/Borussia Dortmund Home Kit 3.jpg",
+                "Borussia Dortmund/Borussia Dortmund Home Kit/Borussia Dortmund Home Kit 4.jpg",
+                "Borussia Dortmund/Borussia Dortmund Home Kit/Borussia Dortmund Home Kit 5.jpg",
+                "Borussia Dortmund/Borussia Dortmund Home Kit/Borussia Dortmund Home Kit 6.jpg",
+                "Borussia Dortmund/Borussia Dortmund Home Kit/Borussia Dortmund Home Kit 7.jpg",
+                "Borussia Dortmund/Borussia Dortmund Home Kit/Borussia Dortmund Home Kit 8.jpg",
+                "Borussia Dortmund/Borussia Dortmund Home Kit/Borussia Dortmund Home Kit 9.jpg",
+                "Borussia Dortmund/Borussia Dortmund Home Kit/Borussia Dortmund Home Kit 10.jpg",
+                "Borussia Dortmund/Borussia Dortmund Home Kit/Borussia Dortmund Home Kit 11.jpg",
+                "Borussia Dortmund/Borussia Dortmund Home Kit/Borussia Dortmund Home Kit 12.jpg",
+                "Borussia Dortmund/Borussia Dortmund Home Kit/Borussia Dortmund Home Kit 13.jpg",
+                "Borussia Dortmund/Borussia Dortmund Home Kit/Borussia Dortmund Home Kit 14.jpg",
+                "Borussia Dortmund/Borussia Dortmund Home Kit/Borussia Dortmund Home Kit 15.jpg",
+                "Borussia Dortmund/Borussia Dortmund Home Kit/Borussia Dortmund Home Kit 16.jpg",
+                "Borussia Dortmund/Borussia Dortmund Home Kit/Borussia Dortmund Home Kit 17.jpg",
+                "Borussia Dortmund/Borussia Dortmund Home Kit/Borussia Dortmund Home Kit 18.jpg"
+              ]
+            },
+            "third": {
+              "folder": "Borussia Dortmund/Borussia Dortmund Third Kit",
+              "cover": "Borussia Dortmund/Borussia Dortmund Third Kit/Borussia Dortmund Third Kit.jpg",
+              "images": [
+                "Borussia Dortmund/Borussia Dortmund Third Kit/Borussia Dortmund Third Kit.jpg",
+                "Borussia Dortmund/Borussia Dortmund Third Kit/Borussia Dortmund Third Kit 2.jpg",
+                "Borussia Dortmund/Borussia Dortmund Third Kit/Borussia Dortmund Third Kit 3.jpg",
+                "Borussia Dortmund/Borussia Dortmund Third Kit/Borussia Dortmund Third Kit 4.jpg",
+                "Borussia Dortmund/Borussia Dortmund Third Kit/Borussia Dortmund Third Kit 5.jpg",
+                "Borussia Dortmund/Borussia Dortmund Third Kit/Borussia Dortmund Third Kit 6.jpg",
+                "Borussia Dortmund/Borussia Dortmund Third Kit/Borussia Dortmund Third Kit 7.jpg",
+                "Borussia Dortmund/Borussia Dortmund Third Kit/Borussia Dortmund Third Kit 8.jpg",
+                "Borussia Dortmund/Borussia Dortmund Third Kit/Borussia Dortmund Third Kit 9.jpg",
+                "Borussia Dortmund/Borussia Dortmund Third Kit/Borussia Dortmund Third Kit 10.jpg",
+                "Borussia Dortmund/Borussia Dortmund Third Kit/Borussia Dortmund Third Kit 11.jpg",
+                "Borussia Dortmund/Borussia Dortmund Third Kit/Borussia Dortmund Third Kit 12.jpg",
+                "Borussia Dortmund/Borussia Dortmund Third Kit/Borussia Dortmund Third Kit 13.jpg",
+                "Borussia Dortmund/Borussia Dortmund Third Kit/Borussia Dortmund Third Kit 14.jpg",
+                "Borussia Dortmund/Borussia Dortmund Third Kit/Borussia Dortmund Third Kit 15.jpg",
+                "Borussia Dortmund/Borussia Dortmund Third Kit/Borussia Dortmund Third Kit 16.jpg",
+                "Borussia Dortmund/Borussia Dortmund Third Kit/Borussia Dortmund Third Kit 17.jpg"
+              ]
+            }
+          }
+        },
+        {
+          "id": "bayer-04-leverkusen",
+          "folder": "Bayer 04 Leverkusen",
+          "name": "Bayer 04 Leverkusen",
+          "league": "Bundesliga",
+          "kits": {
+            "away": {
+              "folder": "Bayer 04 Leverkusen/Bayer 04 Leverkusen Away Kit",
+              "cover": "Bayer 04 Leverkusen/Bayer 04 Leverkusen Away Kit/Bayer 04 Leverkusen Away Kit.jpg",
+              "images": [
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Away Kit/Bayer 04 Leverkusen Away Kit.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Away Kit/Bayer 04 Leverkusen Away Kit 2.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Away Kit/Bayer 04 Leverkusen Away Kit 3.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Away Kit/Bayer 04 Leverkusen Away Kit 4.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Away Kit/Bayer 04 Leverkusen Away Kit 5.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Away Kit/Bayer 04 Leverkusen Away Kit 6.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Away Kit/Bayer 04 Leverkusen Away Kit 7.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Away Kit/Bayer 04 Leverkusen Away Kit 8.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Away Kit/Bayer 04 Leverkusen Away Kit 9.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Away Kit/Bayer 04 Leverkusen Away Kit 10.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Away Kit/Bayer 04 Leverkusen Away Kit 11.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Away Kit/Bayer 04 Leverkusen Away Kit 12.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Away Kit/Bayer 04 Leverkusen Away Kit 13.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Away Kit/Bayer 04 Leverkusen Away Kit 14.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Away Kit/Bayer 04 Leverkusen Away Kit 15.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Away Kit/Bayer 04 Leverkusen Away Kit 16.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Away Kit/Bayer 04 Leverkusen Away Kit 17.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Away Kit/Bayer 04 Leverkusen Away Kit 18.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Away Kit/Bayer 04 Leverkusen Away Kit 19.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Away Kit/Bayer 04 Leverkusen Away Kit 20.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Away Kit/Bayer 04 Leverkusen Away Kit 21.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Away Kit/Bayer 04 Leverkusen Away Kit 22.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Away Kit/Bayer 04 Leverkusen Away Kit 23.jpg"
+              ]
+            },
+            "home": {
+              "folder": "Bayer 04 Leverkusen/Bayer 04 Leverkusen Home Kit",
+              "cover": "Bayer 04 Leverkusen/Bayer 04 Leverkusen Home Kit/Bayer 04 Leverkusen Home Kit.jpg",
+              "images": [
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Home Kit/Bayer 04 Leverkusen Home Kit.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Home Kit/Bayer 04 Leverkusen Home Kit 2.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Home Kit/Bayer 04 Leverkusen Home Kit 3.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Home Kit/Bayer 04 Leverkusen Home Kit 4.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Home Kit/Bayer 04 Leverkusen Home Kit 5.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Home Kit/Bayer 04 Leverkusen Home Kit 6.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Home Kit/Bayer 04 Leverkusen Home Kit 7.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Home Kit/Bayer 04 Leverkusen Home Kit 8.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Home Kit/Bayer 04 Leverkusen Home Kit 9.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Home Kit/Bayer 04 Leverkusen Home Kit 10.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Home Kit/Bayer 04 Leverkusen Home Kit 11.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Home Kit/Bayer 04 Leverkusen Home Kit 12.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Home Kit/Bayer 04 Leverkusen Home Kit 13.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Home Kit/Bayer 04 Leverkusen Home Kit 14.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Home Kit/Bayer 04 Leverkusen Home Kit 15.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Home Kit/Bayer 04 Leverkusen Home Kit 16.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Home Kit/Bayer 04 Leverkusen Home Kit 17.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Home Kit/Bayer 04 Leverkusen Home Kit 18.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Home Kit/Bayer 04 Leverkusen Home Kit 19.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Home Kit/Bayer 04 Leverkusen Home Kit 20.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Home Kit/Bayer 04 Leverkusen Home Kit 21.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Home Kit/Bayer 04 Leverkusen Home Kit 22.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Home Kit/Bayer 04 Leverkusen Home Kit 23.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Home Kit/Bayer 04 Leverkusen Home Kit 24.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Home Kit/Bayer 04 Leverkusen Home Kit 25.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Home Kit/Bayer 04 Leverkusen Home Kit 26.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Home Kit/Bayer 04 Leverkusen Home Kit 27.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Home Kit/Bayer 04 Leverkusen Home Kit 28.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Home Kit/Bayer 04 Leverkusen Home Kit 29.jpg"
+              ]
+            },
+            "third": {
+              "folder": "Bayer 04 Leverkusen/Bayer 04 Leverkusen Third Kit",
+              "cover": "Bayer 04 Leverkusen/Bayer 04 Leverkusen Third Kit/Bayer 04 Leverkusen Third Kit.jpg",
+              "images": [
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Third Kit/Bayer 04 Leverkusen Third Kit.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Third Kit/Bayer 04 Leverkusen Third Kit 2.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Third Kit/Bayer 04 Leverkusen Third Kit 3.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Third Kit/Bayer 04 Leverkusen Third Kit 4.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Third Kit/Bayer 04 Leverkusen Third Kit 5.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Third Kit/Bayer 04 Leverkusen Third Kit 6.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Third Kit/Bayer 04 Leverkusen Third Kit 7.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Third Kit/Bayer 04 Leverkusen Third Kit 8.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Third Kit/Bayer 04 Leverkusen Third Kit 9.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Third Kit/Bayer 04 Leverkusen Third Kit 10.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Third Kit/Bayer 04 Leverkusen Third Kit 11.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Third Kit/Bayer 04 Leverkusen Third Kit 12.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Third Kit/Bayer 04 Leverkusen Third Kit 13.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Third Kit/Bayer 04 Leverkusen Third Kit 14.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Third Kit/Bayer 04 Leverkusen Third Kit 15.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Third Kit/Bayer 04 Leverkusen Third Kit 16.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Third Kit/Bayer 04 Leverkusen Third Kit 17.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Third Kit/Bayer 04 Leverkusen Third Kit 18.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Third Kit/Bayer 04 Leverkusen Third Kit 19.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Third Kit/Bayer 04 Leverkusen Third Kit 20.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Third Kit/Bayer 04 Leverkusen Third Kit 21.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Third Kit/Bayer 04 Leverkusen Third Kit 22.jpg",
+                "Bayer 04 Leverkusen/Bayer 04 Leverkusen Third Kit/Bayer 04 Leverkusen Third Kit 23.jpg"
+              ]
+            }
+          }
+        },
+        {
+          "id": "rb-leipzig",
+          "folder": "RB Leipzig",
+          "name": "RB Leipzig",
+          "league": "Bundesliga",
+          "kits": {
+            "third": {
+              "folder": "RB Leipzig/RB Leipzig  Third Kit",
+              "cover": "RB Leipzig/RB Leipzig  Third Kit/RB Leipzig Third Kit.jpg",
+              "images": [
+                "RB Leipzig/RB Leipzig  Third Kit/RB Leipzig Third Kit.jpg",
+                "RB Leipzig/RB Leipzig  Third Kit/RB Leipzig Third Kit 2.jpg",
+                "RB Leipzig/RB Leipzig  Third Kit/RB Leipzig Third Kit 3.jpg",
+                "RB Leipzig/RB Leipzig  Third Kit/RB Leipzig Third Kit 4.jpg",
+                "RB Leipzig/RB Leipzig  Third Kit/RB Leipzig Third Kit 5.jpg",
+                "RB Leipzig/RB Leipzig  Third Kit/RB Leipzig Third Kit 6.jpg",
+                "RB Leipzig/RB Leipzig  Third Kit/RB Leipzig Third Kit 7.jpg",
+                "RB Leipzig/RB Leipzig  Third Kit/RB Leipzig Third Kit 8.jpg",
+                "RB Leipzig/RB Leipzig  Third Kit/RB Leipzig Third Kit 9.jpg",
+                "RB Leipzig/RB Leipzig  Third Kit/RB Leipzig Third Kit 10.jpg",
+                "RB Leipzig/RB Leipzig  Third Kit/RB Leipzig Third Kit 11.jpg",
+                "RB Leipzig/RB Leipzig  Third Kit/RB Leipzig Third Kit 12.jpg",
+                "RB Leipzig/RB Leipzig  Third Kit/RB Leipzig Third Kit 13.jpg",
+                "RB Leipzig/RB Leipzig  Third Kit/RB Leipzig Third Kit 14.jpg",
+                "RB Leipzig/RB Leipzig  Third Kit/RB Leipzig Third Kit 15.jpg",
+                "RB Leipzig/RB Leipzig  Third Kit/RB Leipzig Third Kit 16.jpg",
+                "RB Leipzig/RB Leipzig  Third Kit/RB Leipzig Third Kit 17.jpg",
+                "RB Leipzig/RB Leipzig  Third Kit/RB Leipzig Third Kit 18.jpg",
+                "RB Leipzig/RB Leipzig  Third Kit/RB Leipzig Third Kit 19.jpg",
+                "RB Leipzig/RB Leipzig  Third Kit/RB Leipzig Third Kit 20.jpg",
+                "RB Leipzig/RB Leipzig  Third Kit/RB Leipzig Third Kit 21.jpg",
+                "RB Leipzig/RB Leipzig  Third Kit/RB Leipzig Third Kit 22.jpg"
+              ]
+            },
+            "away": {
+              "folder": "RB Leipzig/RB Leipzig Away Kit",
+              "cover": "RB Leipzig/RB Leipzig Away Kit/RB Leipzig Away Kit.jpg",
+              "images": [
+                "RB Leipzig/RB Leipzig Away Kit/RB Leipzig Away Kit.jpg",
+                "RB Leipzig/RB Leipzig Away Kit/RB Leipzig Away Kit 2.jpg",
+                "RB Leipzig/RB Leipzig Away Kit/RB Leipzig Away Kit 3.jpg",
+                "RB Leipzig/RB Leipzig Away Kit/RB Leipzig Away Kit 4.jpg",
+                "RB Leipzig/RB Leipzig Away Kit/RB Leipzig Away Kit 5.jpg",
+                "RB Leipzig/RB Leipzig Away Kit/RB Leipzig Away Kit 6.jpg",
+                "RB Leipzig/RB Leipzig Away Kit/RB Leipzig Away Kit 7.jpg",
+                "RB Leipzig/RB Leipzig Away Kit/RB Leipzig Away Kit 8.jpg",
+                "RB Leipzig/RB Leipzig Away Kit/RB Leipzig Away Kit 9.jpg",
+                "RB Leipzig/RB Leipzig Away Kit/RB Leipzig Away Kit 10.jpg",
+                "RB Leipzig/RB Leipzig Away Kit/RB Leipzig Away Kit 11.jpg",
+                "RB Leipzig/RB Leipzig Away Kit/RB Leipzig Away Kit 12.jpg",
+                "RB Leipzig/RB Leipzig Away Kit/RB Leipzig Away Kit 13.jpg",
+                "RB Leipzig/RB Leipzig Away Kit/RB Leipzig Away Kit 14.jpg",
+                "RB Leipzig/RB Leipzig Away Kit/RB Leipzig Away Kit 15.jpg",
+                "RB Leipzig/RB Leipzig Away Kit/RB Leipzig Away Kit 16.jpg",
+                "RB Leipzig/RB Leipzig Away Kit/RB Leipzig Away Kit 17.jpg",
+                "RB Leipzig/RB Leipzig Away Kit/RB Leipzig Away Kit 18.jpg"
+              ]
+            },
+            "home": {
+              "folder": "RB Leipzig/RB Leipzig Home Kit",
+              "cover": "RB Leipzig/RB Leipzig Home Kit/RB Leipzig Home Kit.jpg",
+              "images": [
+                "RB Leipzig/RB Leipzig Home Kit/RB Leipzig Home Kit.jpg",
+                "RB Leipzig/RB Leipzig Home Kit/RB Leipzig Home Kit 2.jpg",
+                "RB Leipzig/RB Leipzig Home Kit/RB Leipzig Home Kit 3.jpg",
+                "RB Leipzig/RB Leipzig Home Kit/RB Leipzig Home Kit 4.jpg",
+                "RB Leipzig/RB Leipzig Home Kit/RB Leipzig Home Kit 5.jpg",
+                "RB Leipzig/RB Leipzig Home Kit/RB Leipzig Home Kit 6.jpg",
+                "RB Leipzig/RB Leipzig Home Kit/RB Leipzig Home Kit 7.jpg",
+                "RB Leipzig/RB Leipzig Home Kit/RB Leipzig Home Kit 8.jpg",
+                "RB Leipzig/RB Leipzig Home Kit/RB Leipzig Home Kit 9.jpg",
+                "RB Leipzig/RB Leipzig Home Kit/RB Leipzig Home Kit 10.jpg",
+                "RB Leipzig/RB Leipzig Home Kit/RB Leipzig Home Kit 11.jpg",
+                "RB Leipzig/RB Leipzig Home Kit/RB Leipzig Home Kit 12.jpg",
+                "RB Leipzig/RB Leipzig Home Kit/RB Leipzig Home Kit 13.jpg",
+                "RB Leipzig/RB Leipzig Home Kit/RB Leipzig Home Kit 14.jpg",
+                "RB Leipzig/RB Leipzig Home Kit/RB Leipzig Home Kit 15.jpg",
+                "RB Leipzig/RB Leipzig Home Kit/RB Leipzig Home Kit 16.jpg",
+                "RB Leipzig/RB Leipzig Home Kit/RB Leipzig Home Kit 17.jpg"
+              ]
+            }
+          }
+        },
+        {
+          "id": "borussia-monchengladbach",
+          "folder": "Borussia Monchengladbach",
+          "name": "Borussia Mönchengladbach",
+          "league": "Bundesliga",
+          "kits": {
+            "away": {
+              "folder": "Borussia Monchengladbach/Borussia Mönchengladbach Away Kit",
+              "cover": "Borussia Monchengladbach/Borussia Mönchengladbach Away Kit/Borussia Mönchengladbach Away Kit.jpg",
+              "images": [
+                "Borussia Monchengladbach/Borussia Mönchengladbach Away Kit/Borussia Mönchengladbach Away Kit.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Away Kit/Borussia Mönchengladbach Away Kit 2.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Away Kit/Borussia Mönchengladbach Away Kit 3.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Away Kit/Borussia Mönchengladbach Away Kit 4.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Away Kit/Borussia Mönchengladbach Away Kit 5.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Away Kit/Borussia Mönchengladbach Away Kit 6.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Away Kit/Borussia Mönchengladbach Away Kit 7.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Away Kit/Borussia Mönchengladbach Away Kit 8.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Away Kit/Borussia Mönchengladbach Away Kit 9.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Away Kit/Borussia Mönchengladbach Away Kit 10.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Away Kit/Borussia Mönchengladbach Away Kit 11.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Away Kit/Borussia Mönchengladbach Away Kit 12.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Away Kit/Borussia Mönchengladbach Away Kit 13.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Away Kit/Borussia Mönchengladbach Away Kit 14.jpg"
+              ]
+            },
+            "home": {
+              "folder": "Borussia Monchengladbach/Borussia Mönchengladbach Home Kit",
+              "cover": "Borussia Monchengladbach/Borussia Mönchengladbach Home Kit/Borussia Mönchengladbach Home Kit.jpg",
+              "images": [
+                "Borussia Monchengladbach/Borussia Mönchengladbach Home Kit/Borussia Mönchengladbach Home Kit.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Home Kit/Borussia Mönchengladbach Home Kit 2.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Home Kit/Borussia Mönchengladbach Home Kit 3.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Home Kit/Borussia Mönchengladbach Home Kit 4.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Home Kit/Borussia Mönchengladbach Home Kit 5.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Home Kit/Borussia Mönchengladbach Home Kit 6.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Home Kit/Borussia Mönchengladbach Home Kit 7.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Home Kit/Borussia Mönchengladbach Home Kit 8.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Home Kit/Borussia Mönchengladbach Home Kit 9.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Home Kit/Borussia Mönchengladbach Home Kit 10.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Home Kit/Borussia Mönchengladbach Home Kit 11.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Home Kit/Borussia Mönchengladbach Home Kit 12.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Home Kit/Borussia Mönchengladbach Home Kit 13.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Home Kit/Borussia Mönchengladbach Home Kit 14.jpg"
+              ]
+            },
+            "third": {
+              "folder": "Borussia Monchengladbach/Borussia Mönchengladbach Third Kit",
+              "cover": "Borussia Monchengladbach/Borussia Mönchengladbach Third Kit/Borussia Mönchengladbach Third Kit 2.jpg",
+              "images": [
+                "Borussia Monchengladbach/Borussia Mönchengladbach Third Kit/Borussia Mönchengladbach Third Kit 2.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Third Kit/Borussia Mönchengladbach Third Kit 3.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Third Kit/Borussia Mönchengladbach Third Kit 6.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Third Kit/Borussia Mönchengladbach Third Kit 8.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Third Kit/Borussia Mönchengladbach Third Kit 9.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Third Kit/Borussia Mönchengladbach Third Kit 10.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Third Kit/Borussia Mönchengladbach Third Kit 11.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Third Kit/Borussia Mönchengladbach Third Kit 12.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Third Kit/Borussia Mönchengladbach Third Kit 13.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Third Kit/Borussia Mönchengladbach Third Kit 14.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Third Kit/Borussia Mönchengladbach Third Kit 15.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Third Kit/Borussia Mönchengladbach Third Kit 16.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Third Kit/Borussia Mönchengladbach Third Kit 17.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Third Kit/Borussia Mönchengladbach Third Kit 18.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Third Kit/Borussia Mönchengladbach Third Kit 19.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Third Kit/Borussia Mönchengladbach Third Kit 20.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Third Kit/Borussia Mönchengladbach Third Kit 21.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Third Kit/Borussia Mönchengladbach Third Kit 22.jpg",
+                "Borussia Monchengladbach/Borussia Mönchengladbach Third Kit/Borussia Mönchengladbach Third Kit 23.jpg"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "la-liga",
+      "name": "La Liga",
+      "flag": "🇪🇸",
+      "teams": [
+        {
+          "id": "real-madrid",
+          "folder": "Real Madrid",
+          "name": "Real Madrid",
+          "league": "La Liga",
+          "kits": {
+            "away": {
+              "folder": "Real Madrid/Real Madrid Away Kit",
+              "cover": "Real Madrid/Real Madrid Away Kit/Real Madrid CF Away Kit.jpg",
+              "images": [
+                "Real Madrid/Real Madrid Away Kit/Real Madrid CF Away Kit.jpg",
+                "Real Madrid/Real Madrid Away Kit/Real Madrid CF Away Kit 2.jpg",
+                "Real Madrid/Real Madrid Away Kit/Real Madrid CF Away Kit 3.jpg",
+                "Real Madrid/Real Madrid Away Kit/Real Madrid CF Away Kit 4.jpg",
+                "Real Madrid/Real Madrid Away Kit/Real Madrid CF Away Kit 5.jpg",
+                "Real Madrid/Real Madrid Away Kit/Real Madrid CF Away Kit 6.jpg",
+                "Real Madrid/Real Madrid Away Kit/Real Madrid CF Away Kit 7.jpg",
+                "Real Madrid/Real Madrid Away Kit/Real Madrid CF Away Kit 8.jpg",
+                "Real Madrid/Real Madrid Away Kit/Real Madrid CF Away Kit 9.jpg",
+                "Real Madrid/Real Madrid Away Kit/Real Madrid CF Away Kit 10.jpg",
+                "Real Madrid/Real Madrid Away Kit/Real Madrid CF Away Kit 11.jpg",
+                "Real Madrid/Real Madrid Away Kit/Real Madrid CF Away Kit 12.jpg",
+                "Real Madrid/Real Madrid Away Kit/Real Madrid CF Away Kit 13.jpg",
+                "Real Madrid/Real Madrid Away Kit/Real Madrid CF Away Kit 14.jpg",
+                "Real Madrid/Real Madrid Away Kit/Real Madrid CF Away Kit 15.jpg",
+                "Real Madrid/Real Madrid Away Kit/Real Madrid CF Away Kit 16.jpg",
+                "Real Madrid/Real Madrid Away Kit/Real Madrid CF Away Kit 17.jpg",
+                "Real Madrid/Real Madrid Away Kit/Real Madrid CF Away Kit 18.jpg",
+                "Real Madrid/Real Madrid Away Kit/Real Madrid CF Away Kit 19.jpg"
+              ]
+            },
+            "home": {
+              "folder": "Real Madrid/Real Madrid Home Kit",
+              "cover": "Real Madrid/Real Madrid Home Kit/Real Madrid CF Home Kit.jpg",
+              "images": [
+                "Real Madrid/Real Madrid Home Kit/Real Madrid CF Home Kit.jpg",
+                "Real Madrid/Real Madrid Home Kit/Real Madrid CF Home Kit 2.jpg",
+                "Real Madrid/Real Madrid Home Kit/Real Madrid CF Home Kit 3.jpg",
+                "Real Madrid/Real Madrid Home Kit/Real Madrid CF Home Kit 4.jpg",
+                "Real Madrid/Real Madrid Home Kit/Real Madrid CF Home Kit 5.jpg",
+                "Real Madrid/Real Madrid Home Kit/Real Madrid CF Home Kit 6.jpg",
+                "Real Madrid/Real Madrid Home Kit/Real Madrid CF Home Kit 7.jpg",
+                "Real Madrid/Real Madrid Home Kit/Real Madrid CF Home Kit 8.jpg",
+                "Real Madrid/Real Madrid Home Kit/Real Madrid CF Home Kit 9.jpg",
+                "Real Madrid/Real Madrid Home Kit/Real Madrid CF Home Kit 10.jpg",
+                "Real Madrid/Real Madrid Home Kit/Real Madrid CF Home Kit 11.jpg",
+                "Real Madrid/Real Madrid Home Kit/Real Madrid CF Home Kit 12.jpg",
+                "Real Madrid/Real Madrid Home Kit/Real Madrid CF Home Kit 13.jpg",
+                "Real Madrid/Real Madrid Home Kit/Real Madrid CF Home Kit 14.jpg",
+                "Real Madrid/Real Madrid Home Kit/Real Madrid CF Home Kit 15.jpg",
+                "Real Madrid/Real Madrid Home Kit/Real Madrid CF Home Kit 16.jpg",
+                "Real Madrid/Real Madrid Home Kit/Real Madrid CF Home Kit 17.jpg",
+                "Real Madrid/Real Madrid Home Kit/Real Madrid CF Home Kit 18.jpg",
+                "Real Madrid/Real Madrid Home Kit/Real Madrid CF Home Kit 19.jpg"
+              ]
+            },
+            "third": {
+              "folder": "Real Madrid/Real Madrid Third Kit",
+              "cover": "Real Madrid/Real Madrid Third Kit/Real Madrid CF Third Kit.jpg",
+              "images": [
+                "Real Madrid/Real Madrid Third Kit/Real Madrid CF Third Kit.jpg",
+                "Real Madrid/Real Madrid Third Kit/Real Madrid CF Third Kit 2.jpg",
+                "Real Madrid/Real Madrid Third Kit/Real Madrid CF Third Kit 3.jpg",
+                "Real Madrid/Real Madrid Third Kit/Real Madrid CF Third Kit 4.jpg",
+                "Real Madrid/Real Madrid Third Kit/Real Madrid CF Third Kit 5.jpg",
+                "Real Madrid/Real Madrid Third Kit/Real Madrid CF Third Kit 6.jpg",
+                "Real Madrid/Real Madrid Third Kit/Real Madrid CF Third Kit 7.jpg",
+                "Real Madrid/Real Madrid Third Kit/Real Madrid CF Third Kit 8.jpg",
+                "Real Madrid/Real Madrid Third Kit/Real Madrid CF Third Kit 9.jpg",
+                "Real Madrid/Real Madrid Third Kit/Real Madrid CF Third Kit 10.jpg",
+                "Real Madrid/Real Madrid Third Kit/Real Madrid CF Third Kit 11.jpg",
+                "Real Madrid/Real Madrid Third Kit/Real Madrid CF Third Kit 12.jpg",
+                "Real Madrid/Real Madrid Third Kit/Real Madrid CF Third Kit 13.jpg",
+                "Real Madrid/Real Madrid Third Kit/Real Madrid CF Third Kit 14.jpg"
+              ]
+            }
+          }
+        },
+        {
+          "id": "barcelona",
+          "folder": "Barcelona",
+          "name": "Barcelona",
+          "league": "La Liga",
+          "kits": {
+            "away": {
+              "folder": "Barcelona/Barcelona Away Kit",
+              "cover": "Barcelona/Barcelona Away Kit/FC Barcelona Away Kit.jpg",
+              "images": [
+                "Barcelona/Barcelona Away Kit/FC Barcelona Away Kit.jpg",
+                "Barcelona/Barcelona Away Kit/FC Barcelona Away Kit 2.jpg",
+                "Barcelona/Barcelona Away Kit/FC Barcelona Away Kit 3.jpg",
+                "Barcelona/Barcelona Away Kit/FC Barcelona Away Kit 4.jpg",
+                "Barcelona/Barcelona Away Kit/FC Barcelona Away Kit 5.jpg",
+                "Barcelona/Barcelona Away Kit/FC Barcelona Away Kit 6.jpg",
+                "Barcelona/Barcelona Away Kit/FC Barcelona Away Kit 7.jpg",
+                "Barcelona/Barcelona Away Kit/FC Barcelona Away Kit 8.jpg",
+                "Barcelona/Barcelona Away Kit/FC Barcelona Away Kit 9.jpg",
+                "Barcelona/Barcelona Away Kit/FC Barcelona Away Kit 10.jpg",
+                "Barcelona/Barcelona Away Kit/FC Barcelona Away Kit 11.jpg",
+                "Barcelona/Barcelona Away Kit/FC Barcelona Away Kit 12.jpg",
+                "Barcelona/Barcelona Away Kit/FC Barcelona Away Kit 13.jpg",
+                "Barcelona/Barcelona Away Kit/FC Barcelona Away Kit 14.jpg",
+                "Barcelona/Barcelona Away Kit/FC Barcelona Away Kit 15.jpg"
+              ]
+            },
+            "home": {
+              "folder": "Barcelona/Barcelona Home Kit",
+              "cover": "Barcelona/Barcelona Home Kit/FC Barcelona Home Kit.jpg",
+              "images": [
+                "Barcelona/Barcelona Home Kit/FC Barcelona Home Kit.jpg",
+                "Barcelona/Barcelona Home Kit/FC Barcelona Home Kit 2.jpg",
+                "Barcelona/Barcelona Home Kit/FC Barcelona Home Kit 3.jpg",
+                "Barcelona/Barcelona Home Kit/FC Barcelona Home Kit 4.jpg",
+                "Barcelona/Barcelona Home Kit/FC Barcelona Home Kit 5.jpg",
+                "Barcelona/Barcelona Home Kit/FC Barcelona Home Kit 6.jpg",
+                "Barcelona/Barcelona Home Kit/FC Barcelona Home Kit 7.jpg",
+                "Barcelona/Barcelona Home Kit/FC Barcelona Home Kit 8.jpg",
+                "Barcelona/Barcelona Home Kit/FC Barcelona Home Kit 9.jpg",
+                "Barcelona/Barcelona Home Kit/FC Barcelona Home Kit 10.jpg",
+                "Barcelona/Barcelona Home Kit/FC Barcelona Home Kit 11.jpg",
+                "Barcelona/Barcelona Home Kit/FC Barcelona Home Kit 12.jpg",
+                "Barcelona/Barcelona Home Kit/FC Barcelona Home Kit 13.jpg",
+                "Barcelona/Barcelona Home Kit/FC Barcelona Home Kit 14.jpg",
+                "Barcelona/Barcelona Home Kit/FC Barcelona Home Kit 15.jpg",
+                "Barcelona/Barcelona Home Kit/FC Barcelona Home Kit 16.jpg",
+                "Barcelona/Barcelona Home Kit/FC Barcelona Home Kit 17.jpg",
+                "Barcelona/Barcelona Home Kit/FC Barcelona Home Kit 18.jpg"
+              ]
+            },
+            "third": {
+              "folder": "Barcelona/Barcelona Third Kit",
+              "cover": "Barcelona/Barcelona Third Kit/FC Barcelona Third Kit.jpg",
+              "images": [
+                "Barcelona/Barcelona Third Kit/FC Barcelona Third Kit.jpg",
+                "Barcelona/Barcelona Third Kit/FC Barcelona Third Kit 2.jpg",
+                "Barcelona/Barcelona Third Kit/FC Barcelona Third Kit 3.jpg",
+                "Barcelona/Barcelona Third Kit/FC Barcelona Third Kit 4.jpg",
+                "Barcelona/Barcelona Third Kit/FC Barcelona Third Kit 5.jpg",
+                "Barcelona/Barcelona Third Kit/FC Barcelona Third Kit 6.jpg",
+                "Barcelona/Barcelona Third Kit/FC Barcelona Third Kit 7.jpg",
+                "Barcelona/Barcelona Third Kit/FC Barcelona Third Kit 8.jpg",
+                "Barcelona/Barcelona Third Kit/FC Barcelona Third Kit 9.jpg",
+                "Barcelona/Barcelona Third Kit/FC Barcelona Third Kit 10.jpg",
+                "Barcelona/Barcelona Third Kit/FC Barcelona Third Kit 11.jpg",
+                "Barcelona/Barcelona Third Kit/FC Barcelona Third Kit 12.jpg",
+                "Barcelona/Barcelona Third Kit/FC Barcelona Third Kit 13.jpg",
+                "Barcelona/Barcelona Third Kit/FC Barcelona Third Kit 14.jpg",
+                "Barcelona/Barcelona Third Kit/FC Barcelona Third Kit 15.jpg",
+                "Barcelona/Barcelona Third Kit/FC Barcelona Third Kit 16.jpg"
+              ]
+            }
+          }
+        },
+        {
+          "id": "atletico-madrid",
+          "folder": "Atletico Madrid",
+          "name": "Atlético Madrid",
+          "league": "La Liga",
+          "kits": {
+            "away": {
+              "folder": "Atletico Madrid/Atletico Madrid Away Kit",
+              "cover": "Atletico Madrid/Atletico Madrid Away Kit/Atlético Madrid Away Kit.jpg",
+              "images": [
+                "Atletico Madrid/Atletico Madrid Away Kit/Atlético Madrid Away Kit.jpg",
+                "Atletico Madrid/Atletico Madrid Away Kit/Atlético Madrid Away Kit 2.jpg",
+                "Atletico Madrid/Atletico Madrid Away Kit/Atlético Madrid Away Kit 3.jpg",
+                "Atletico Madrid/Atletico Madrid Away Kit/Atlético Madrid Away Kit 4.jpg",
+                "Atletico Madrid/Atletico Madrid Away Kit/Atlético Madrid Away Kit 5.jpg",
+                "Atletico Madrid/Atletico Madrid Away Kit/Atlético Madrid Away Kit 6.jpg",
+                "Atletico Madrid/Atletico Madrid Away Kit/Atlético Madrid Away Kit 7.jpg",
+                "Atletico Madrid/Atletico Madrid Away Kit/Atlético Madrid Away Kit 8.jpg",
+                "Atletico Madrid/Atletico Madrid Away Kit/Atlético Madrid Away Kit 9.jpg"
+              ]
+            },
+            "home": {
+              "folder": "Atletico Madrid/Atlético Madrid Home Kit",
+              "cover": "Atletico Madrid/Atlético Madrid Home Kit/Atlético Madrid Home Kit.jpg",
+              "images": [
+                "Atletico Madrid/Atlético Madrid Home Kit/Atlético Madrid Home Kit.jpg",
+                "Atletico Madrid/Atlético Madrid Home Kit/Atlético Madrid Home Kit 2.jpg",
+                "Atletico Madrid/Atlético Madrid Home Kit/Atlético Madrid Home Kit 3.jpg",
+                "Atletico Madrid/Atlético Madrid Home Kit/Atlético Madrid Home Kit 4.jpg",
+                "Atletico Madrid/Atlético Madrid Home Kit/Atlético Madrid Home Kit 5.jpg",
+                "Atletico Madrid/Atlético Madrid Home Kit/Atlético Madrid Home Kit 6.jpg",
+                "Atletico Madrid/Atlético Madrid Home Kit/Atlético Madrid Home Kit 7.jpg",
+                "Atletico Madrid/Atlético Madrid Home Kit/Atlético Madrid Home Kit 8.jpg",
+                "Atletico Madrid/Atlético Madrid Home Kit/Atlético Madrid Home Kit 9.jpg",
+                "Atletico Madrid/Atlético Madrid Home Kit/Atlético Madrid Home Kit 10.jpg"
+              ]
+            },
+            "third": {
+              "folder": "Atletico Madrid/Atlético Madrid Third Kit",
+              "cover": "Atletico Madrid/Atlético Madrid Third Kit/Atlético Madrid Third Kit.jpg",
+              "images": [
+                "Atletico Madrid/Atlético Madrid Third Kit/Atlético Madrid Third Kit.jpg",
+                "Atletico Madrid/Atlético Madrid Third Kit/Atlético Madrid Third Kit 2.jpg",
+                "Atletico Madrid/Atlético Madrid Third Kit/Atlético Madrid Third Kit 3.jpg",
+                "Atletico Madrid/Atlético Madrid Third Kit/Atlético Madrid Third Kit 4.jpg",
+                "Atletico Madrid/Atlético Madrid Third Kit/Atlético Madrid Third Kit 5.jpg",
+                "Atletico Madrid/Atlético Madrid Third Kit/Atlético Madrid Third Kit 6.jpg",
+                "Atletico Madrid/Atlético Madrid Third Kit/Atlético Madrid Third Kit 7.jpg",
+                "Atletico Madrid/Atlético Madrid Third Kit/Atlético Madrid Third Kit 8.jpg",
+                "Atletico Madrid/Atlético Madrid Third Kit/Atlético Madrid Third Kit 9.jpg",
+                "Atletico Madrid/Atlético Madrid Third Kit/Atlético Madrid Third Kit 10.jpg",
+                "Atletico Madrid/Atlético Madrid Third Kit/Atlético Madrid Third Kit 11.jpg",
+                "Atletico Madrid/Atlético Madrid Third Kit/Atlético Madrid Third Kit 12.jpg",
+                "Atletico Madrid/Atlético Madrid Third Kit/Atlético Madrid Third Kit 13.jpg"
+              ]
+            }
+          }
+        },
+        {
+          "id": "sevilla-fc",
+          "folder": "Sevilla FC",
+          "name": "Sevilla FC",
+          "league": "La Liga",
+          "kits": {
+            "away": {
+              "folder": "Sevilla FC/Sevilla FC Away Kit",
+              "cover": "Sevilla FC/Sevilla FC Away Kit/Sevilla FC Away Kit.jpg",
+              "images": [
+                "Sevilla FC/Sevilla FC Away Kit/Sevilla FC Away Kit.jpg",
+                "Sevilla FC/Sevilla FC Away Kit/Sevilla FC Away Kit 2.jpg",
+                "Sevilla FC/Sevilla FC Away Kit/Sevilla FC Away Kit 3.jpg",
+                "Sevilla FC/Sevilla FC Away Kit/Sevilla FC Away Kit 4.jpg",
+                "Sevilla FC/Sevilla FC Away Kit/Sevilla FC Away Kit 5.jpg",
+                "Sevilla FC/Sevilla FC Away Kit/Sevilla FC Away Kit 6.jpg",
+                "Sevilla FC/Sevilla FC Away Kit/Sevilla FC Away Kit 7.jpg",
+                "Sevilla FC/Sevilla FC Away Kit/Sevilla FC Away Kit 8.jpg",
+                "Sevilla FC/Sevilla FC Away Kit/Sevilla FC Away Kit 9.jpg",
+                "Sevilla FC/Sevilla FC Away Kit/Sevilla FC Away Kit 10.jpg",
+                "Sevilla FC/Sevilla FC Away Kit/Sevilla FC Away Kit 11.jpg",
+                "Sevilla FC/Sevilla FC Away Kit/Sevilla FC Away Kit 12.jpg",
+                "Sevilla FC/Sevilla FC Away Kit/Sevilla FC Away Kit 13.jpg",
+                "Sevilla FC/Sevilla FC Away Kit/Sevilla FC Away Kit 14.jpg",
+                "Sevilla FC/Sevilla FC Away Kit/Sevilla FC Away Kit 15.jpg",
+                "Sevilla FC/Sevilla FC Away Kit/Sevilla FC Away Kit 16.jpg"
+              ]
+            },
+            "home": {
+              "folder": "Sevilla FC/Sevilla FC Home Kit",
+              "cover": "Sevilla FC/Sevilla FC Home Kit/Sevilla FC Home Kit.jpg",
+              "images": [
+                "Sevilla FC/Sevilla FC Home Kit/Sevilla FC Home Kit.jpg",
+                "Sevilla FC/Sevilla FC Home Kit/Sevilla FC Home Kit 2.jpg",
+                "Sevilla FC/Sevilla FC Home Kit/Sevilla FC Home Kit 3.jpg",
+                "Sevilla FC/Sevilla FC Home Kit/Sevilla FC Home Kit 4.jpg",
+                "Sevilla FC/Sevilla FC Home Kit/Sevilla FC Home Kit 5.jpg",
+                "Sevilla FC/Sevilla FC Home Kit/Sevilla FC Home Kit 6.jpg",
+                "Sevilla FC/Sevilla FC Home Kit/Sevilla FC Home Kit 7.jpg",
+                "Sevilla FC/Sevilla FC Home Kit/Sevilla FC Home Kit 8.jpg",
+                "Sevilla FC/Sevilla FC Home Kit/Sevilla FC Home Kit 9.jpg",
+                "Sevilla FC/Sevilla FC Home Kit/Sevilla FC Home Kit 10.jpg",
+                "Sevilla FC/Sevilla FC Home Kit/Sevilla FC Home Kit 11.jpg",
+                "Sevilla FC/Sevilla FC Home Kit/Sevilla FC Home Kit 12.jpg",
+                "Sevilla FC/Sevilla FC Home Kit/Sevilla FC Home Kit 13.jpg"
+              ]
+            },
+            "third": {
+              "folder": "Sevilla FC/Sevilla FC Third Kit",
+              "cover": "Sevilla FC/Sevilla FC Third Kit/Sevilla FC Third Kit.jpg",
+              "images": [
+                "Sevilla FC/Sevilla FC Third Kit/Sevilla FC Third Kit.jpg",
+                "Sevilla FC/Sevilla FC Third Kit/Sevilla FC Third Kit 2.jpg",
+                "Sevilla FC/Sevilla FC Third Kit/Sevilla FC Third Kit 3.jpg",
+                "Sevilla FC/Sevilla FC Third Kit/Sevilla FC Third Kit 4.jpg",
+                "Sevilla FC/Sevilla FC Third Kit/Sevilla FC Third Kit 5.jpg",
+                "Sevilla FC/Sevilla FC Third Kit/Sevilla FC Third Kit 6.jpg",
+                "Sevilla FC/Sevilla FC Third Kit/Sevilla FC Third Kit 7.jpg",
+                "Sevilla FC/Sevilla FC Third Kit/Sevilla FC Third Kit 8.jpg",
+                "Sevilla FC/Sevilla FC Third Kit/Sevilla FC Third Kit 9.jpg",
+                "Sevilla FC/Sevilla FC Third Kit/Sevilla FC Third Kit 10.jpg",
+                "Sevilla FC/Sevilla FC Third Kit/Sevilla FC Third Kit 11.jpg"
+              ]
+            }
+          }
+        },
+        {
+          "id": "real-sociedad",
+          "folder": "Real Sociedad",
+          "name": "Real Sociedad",
+          "league": "La Liga",
+          "kits": {
+            "away": {
+              "folder": "Real Sociedad/Real Sociedad Away Kit",
+              "cover": "Real Sociedad/Real Sociedad Away Kit/Real Sociedad Away Kit.jpg",
+              "images": [
+                "Real Sociedad/Real Sociedad Away Kit/Real Sociedad Away Kit.jpg",
+                "Real Sociedad/Real Sociedad Away Kit/Real Sociedad Away Kit 2.jpg",
+                "Real Sociedad/Real Sociedad Away Kit/Real Sociedad Away Kit 3.jpg",
+                "Real Sociedad/Real Sociedad Away Kit/Real Sociedad Away Kit 4.jpg",
+                "Real Sociedad/Real Sociedad Away Kit/Real Sociedad Away Kit 5.jpg",
+                "Real Sociedad/Real Sociedad Away Kit/Real Sociedad Away Kit 6.jpg",
+                "Real Sociedad/Real Sociedad Away Kit/Real Sociedad Away Kit 7.jpg",
+                "Real Sociedad/Real Sociedad Away Kit/Real Sociedad Away Kit 8.jpg",
+                "Real Sociedad/Real Sociedad Away Kit/Real Sociedad Away Kit 9.jpg",
+                "Real Sociedad/Real Sociedad Away Kit/Real Sociedad Away Kit 10.jpg",
+                "Real Sociedad/Real Sociedad Away Kit/Real Sociedad Away Kit 11.jpg",
+                "Real Sociedad/Real Sociedad Away Kit/Real Sociedad Away Kit 12.jpg",
+                "Real Sociedad/Real Sociedad Away Kit/Real Sociedad Away Kit 13.jpg"
+              ]
+            },
+            "home": {
+              "folder": "Real Sociedad/Real Sociedad Home Kit",
+              "cover": "Real Sociedad/Real Sociedad Home Kit/Real Sociedad Home Kit.jpg",
+              "images": [
+                "Real Sociedad/Real Sociedad Home Kit/Real Sociedad Home Kit.jpg",
+                "Real Sociedad/Real Sociedad Home Kit/Real Sociedad Home Kit 2.jpg",
+                "Real Sociedad/Real Sociedad Home Kit/Real Sociedad Home Kit 3.jpg",
+                "Real Sociedad/Real Sociedad Home Kit/Real Sociedad Home Kit 4.jpg",
+                "Real Sociedad/Real Sociedad Home Kit/Real Sociedad Home Kit 5.jpg",
+                "Real Sociedad/Real Sociedad Home Kit/Real Sociedad Home Kit 6.jpg",
+                "Real Sociedad/Real Sociedad Home Kit/Real Sociedad Home Kit 7.jpg",
+                "Real Sociedad/Real Sociedad Home Kit/Real Sociedad Home Kit 8.jpg",
+                "Real Sociedad/Real Sociedad Home Kit/Real Sociedad Home Kit 9.jpg"
+              ]
+            },
+            "third": {
+              "folder": "Real Sociedad/Real Sociedad Third Kit",
+              "cover": "Real Sociedad/Real Sociedad Third Kit/Real Sociedad Third Kit.jpg",
+              "images": [
+                "Real Sociedad/Real Sociedad Third Kit/Real Sociedad Third Kit.jpg",
+                "Real Sociedad/Real Sociedad Third Kit/Real Sociedad Third Kit 2.jpg",
+                "Real Sociedad/Real Sociedad Third Kit/Real Sociedad Third Kit 3.jpg",
+                "Real Sociedad/Real Sociedad Third Kit/Real Sociedad Third Kit 4.jpg",
+                "Real Sociedad/Real Sociedad Third Kit/Real Sociedad Third Kit 5.jpg",
+                "Real Sociedad/Real Sociedad Third Kit/Real Sociedad Third Kit 6.jpg",
+                "Real Sociedad/Real Sociedad Third Kit/Real Sociedad Third Kit 7.jpg",
+                "Real Sociedad/Real Sociedad Third Kit/Real Sociedad Third Kit 8.jpg",
+                "Real Sociedad/Real Sociedad Third Kit/Real Sociedad Third Kit 9.jpg"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "premier-league",
+      "name": "Premier League",
+      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "teams": [
+        {
+          "id": "manchester-united",
+          "folder": "Manchester United",
+          "name": "Manchester United",
+          "league": "Premier League",
+          "kits": {
+            "away": {
+              "folder": "Manchester United/Away Kit",
+              "cover": "Manchester United/Away Kit/Manchester United FC Away kit.jpg",
+              "images": [
+                "Manchester United/Away Kit/Manchester United FC Away kit.jpg",
+                "Manchester United/Away Kit/Manchester United FC Away kit 2.jpg",
+                "Manchester United/Away Kit/Manchester United FC Away kit 3.jpg",
+                "Manchester United/Away Kit/Manchester United FC Away kit 4.jpg",
+                "Manchester United/Away Kit/Manchester United FC Away kit 5.jpg",
+                "Manchester United/Away Kit/Manchester United FC Away kit 6.jpg",
+                "Manchester United/Away Kit/Manchester United FC Away kit 7.jpg",
+                "Manchester United/Away Kit/Manchester United FC Away kit 8.jpg",
+                "Manchester United/Away Kit/Manchester United FC Away kit 9.jpg",
+                "Manchester United/Away Kit/Manchester United FC Away kit 10.jpg",
+                "Manchester United/Away Kit/Manchester United FC Away kit 11.jpg",
+                "Manchester United/Away Kit/Manchester United FC Away kit 12.jpg",
+                "Manchester United/Away Kit/Manchester United FC Away kit 13.jpg",
+                "Manchester United/Away Kit/Manchester United FC Away kit 14.jpg"
+              ]
+            },
+            "home": {
+              "folder": "Manchester United/Home Kit",
+              "cover": "Manchester United/Home Kit/Manchester United FC Home kit.jpg",
+              "images": [
+                "Manchester United/Home Kit/Manchester United FC Home kit.jpg",
+                "Manchester United/Home Kit/Manchester United FC Home kit 2.jpg",
+                "Manchester United/Home Kit/Manchester United FC Home kit 3.jpg",
+                "Manchester United/Home Kit/Manchester United FC Home kit 4.jpg",
+                "Manchester United/Home Kit/Manchester United FC Home kit 5.jpg",
+                "Manchester United/Home Kit/Manchester United FC Home kit 6.jpg",
+                "Manchester United/Home Kit/Manchester United FC Home kit 7.jpg",
+                "Manchester United/Home Kit/Manchester United FC Home kit 8.jpg",
+                "Manchester United/Home Kit/Manchester United FC Home kit 9.jpg",
+                "Manchester United/Home Kit/Manchester United FC Home kit 10.jpg",
+                "Manchester United/Home Kit/Manchester United FC Home kit 11.jpg",
+                "Manchester United/Home Kit/Manchester United FC Home kit 12.jpg",
+                "Manchester United/Home Kit/Manchester United FC Home kit 13.jpg",
+                "Manchester United/Home Kit/Manchester United FC Home kit 14.jpg",
+                "Manchester United/Home Kit/Manchester United FC Home kit 15.jpg",
+                "Manchester United/Home Kit/Manchester United FC Home kit 16.jpg",
+                "Manchester United/Home Kit/Manchester United FC Home kit 17.jpg",
+                "Manchester United/Home Kit/Manchester United FC Home kit 18.jpg",
+                "Manchester United/Home Kit/Manchester United FC Home kit 19.jpg",
+                "Manchester United/Home Kit/Manchester United FC Home kit 20.jpg",
+                "Manchester United/Home Kit/Manchester United FC Home kit 21.jpg"
+              ]
+            },
+            "third": {
+              "folder": "Manchester United/Third Kit",
+              "cover": "Manchester United/Third Kit/Manchester United FC Third kit.jpg",
+              "images": [
+                "Manchester United/Third Kit/Manchester United FC Third kit.jpg",
+                "Manchester United/Third Kit/Manchester United FC Third kit 2.jpg",
+                "Manchester United/Third Kit/Manchester United FC Third kit 3.jpg",
+                "Manchester United/Third Kit/Manchester United FC Third kit 4.jpg",
+                "Manchester United/Third Kit/Manchester United FC Third kit 5.jpg",
+                "Manchester United/Third Kit/Manchester United FC Third kit 6.jpg",
+                "Manchester United/Third Kit/Manchester United FC Third kit 7.jpg",
+                "Manchester United/Third Kit/Manchester United FC Third kit 8.jpg",
+                "Manchester United/Third Kit/Manchester United FC Third kit 9.jpg",
+                "Manchester United/Third Kit/Manchester United FC Third kit 10.jpg",
+                "Manchester United/Third Kit/Manchester United FC Third kit 11.jpg",
+                "Manchester United/Third Kit/Manchester United FC Third kit 12.jpg",
+                "Manchester United/Third Kit/Manchester United FC Third kit 13.jpg",
+                "Manchester United/Third Kit/Manchester United FC Third kit 14.jpg",
+                "Manchester United/Third Kit/Manchester United FC Third kit 15.jpg"
+              ]
+            }
+          }
+        },
+        {
+          "id": "manchester-city",
+          "folder": "Manchester City",
+          "name": "Manchester City",
+          "league": "Premier League",
+          "kits": {
+            "away": {
+              "folder": "Manchester City/Manchester City Away Kit",
+              "cover": "Manchester City/Manchester City Away Kit/Manchester City FC Away kit.jpg",
+              "images": [
+                "Manchester City/Manchester City Away Kit/Manchester City FC Away kit.jpg",
+                "Manchester City/Manchester City Away Kit/Manchester City FC Away kit 2.jpg",
+                "Manchester City/Manchester City Away Kit/Manchester City FC Away kit 3.jpg",
+                "Manchester City/Manchester City Away Kit/Manchester City FC Away kit 4.jpg",
+                "Manchester City/Manchester City Away Kit/Manchester City FC Away kit 5.jpg",
+                "Manchester City/Manchester City Away Kit/Manchester City FC Away kit 6.jpg",
+                "Manchester City/Manchester City Away Kit/Manchester City FC Away kit 7.jpg",
+                "Manchester City/Manchester City Away Kit/Manchester City FC Away kit 8.jpg",
+                "Manchester City/Manchester City Away Kit/Manchester City FC Away kit 9.jpg",
+                "Manchester City/Manchester City Away Kit/Manchester City FC Away kit 10.jpg",
+                "Manchester City/Manchester City Away Kit/Manchester City FC Away kit 11.jpg"
+              ]
+            },
+            "home": {
+              "folder": "Manchester City/Manchester City Home Kit",
+              "cover": "Manchester City/Manchester City Home Kit/Manchester City FC Home kit.jpg",
+              "images": [
+                "Manchester City/Manchester City Home Kit/Manchester City FC Home kit.jpg",
+                "Manchester City/Manchester City Home Kit/Manchester City FC Home kit 2.jpg",
+                "Manchester City/Manchester City Home Kit/Manchester City FC Home kit 3.jpg",
+                "Manchester City/Manchester City Home Kit/Manchester City FC Home kit 4.jpg",
+                "Manchester City/Manchester City Home Kit/Manchester City FC Home kit 5.jpg",
+                "Manchester City/Manchester City Home Kit/Manchester City FC Home kit 6.jpg",
+                "Manchester City/Manchester City Home Kit/Manchester City FC Home kit 7.jpg",
+                "Manchester City/Manchester City Home Kit/Manchester City FC Home kit 8.jpg",
+                "Manchester City/Manchester City Home Kit/Manchester City FC Home kit 9.jpg",
+                "Manchester City/Manchester City Home Kit/Manchester City FC Home kit 10.jpg",
+                "Manchester City/Manchester City Home Kit/Manchester City FC Home kit 11.jpg",
+                "Manchester City/Manchester City Home Kit/Manchester City FC Home kit 12.jpg"
+              ]
+            },
+            "third": {
+              "folder": "Manchester City/Manchester City Third  Kit",
+              "cover": "Manchester City/Manchester City Third  Kit/Manchester City FC Third kit.jpg",
+              "images": [
+                "Manchester City/Manchester City Third  Kit/Manchester City FC Third kit.jpg",
+                "Manchester City/Manchester City Third  Kit/Manchester City FC Third kit 2.jpg",
+                "Manchester City/Manchester City Third  Kit/Manchester City FC Third kit 3.jpg",
+                "Manchester City/Manchester City Third  Kit/Manchester City FC Third kit 4.jpg",
+                "Manchester City/Manchester City Third  Kit/Manchester City FC Third kit 5.jpg",
+                "Manchester City/Manchester City Third  Kit/Manchester City FC Third kit 6.jpg",
+                "Manchester City/Manchester City Third  Kit/Manchester City FC Third kit 7.jpg",
+                "Manchester City/Manchester City Third  Kit/Manchester City FC Third kit 8.jpg",
+                "Manchester City/Manchester City Third  Kit/Manchester City FC Third kit 9.jpg",
+                "Manchester City/Manchester City Third  Kit/Manchester City FC Third kit 10.jpg",
+                "Manchester City/Manchester City Third  Kit/Manchester City FC Third kit 11.jpg",
+                "Manchester City/Manchester City Third  Kit/Manchester City FC Third kit 12.jpg",
+                "Manchester City/Manchester City Third  Kit/Manchester City FC Third kit 13.jpg",
+                "Manchester City/Manchester City Third  Kit/Manchester City FC Third kit 14.jpg",
+                "Manchester City/Manchester City Third  Kit/Manchester City FC Third kit 15.jpg",
+                "Manchester City/Manchester City Third  Kit/Manchester City FC Third kit 16.jpg",
+                "Manchester City/Manchester City Third  Kit/Manchester City FC Third kit 17.jpg",
+                "Manchester City/Manchester City Third  Kit/Manchester City FC Third kit 18.jpg"
+              ]
+            }
+          }
+        },
+        {
+          "id": "liverpool-fc",
+          "folder": "Liverpool FC",
+          "name": "Liverpool FC",
+          "league": "Premier League",
+          "kits": {
+            "away": {
+              "folder": "Liverpool FC/Liverpool FC Away Kit",
+              "cover": "Liverpool FC/Liverpool FC Away Kit/Liverpool FC Away kit.jpg",
+              "images": [
+                "Liverpool FC/Liverpool FC Away Kit/Liverpool FC Away kit.jpg",
+                "Liverpool FC/Liverpool FC Away Kit/Liverpool FC Away kit 2.jpg",
+                "Liverpool FC/Liverpool FC Away Kit/Liverpool FC Away kit 3.jpg",
+                "Liverpool FC/Liverpool FC Away Kit/Liverpool FC Away kit 4.jpg",
+                "Liverpool FC/Liverpool FC Away Kit/Liverpool FC Away kit 5.jpg",
+                "Liverpool FC/Liverpool FC Away Kit/Liverpool FC Away kit 6.jpg",
+                "Liverpool FC/Liverpool FC Away Kit/Liverpool FC Away kit 7.jpg",
+                "Liverpool FC/Liverpool FC Away Kit/Liverpool FC Away kit 8.jpg",
+                "Liverpool FC/Liverpool FC Away Kit/Liverpool FC Away kit 9.jpg",
+                "Liverpool FC/Liverpool FC Away Kit/Liverpool FC Away kit 10.jpg",
+                "Liverpool FC/Liverpool FC Away Kit/Liverpool FC Away kit 11.jpg",
+                "Liverpool FC/Liverpool FC Away Kit/Liverpool FC Away kit 12.jpg",
+                "Liverpool FC/Liverpool FC Away Kit/Liverpool FC Away kit 13.jpg",
+                "Liverpool FC/Liverpool FC Away Kit/Liverpool FC Away kit 14.jpg",
+                "Liverpool FC/Liverpool FC Away Kit/Liverpool FC Away kit 15.jpg",
+                "Liverpool FC/Liverpool FC Away Kit/Liverpool FC Away kit 16.jpg",
+                "Liverpool FC/Liverpool FC Away Kit/Liverpool FC Away kit 17.jpg",
+                "Liverpool FC/Liverpool FC Away Kit/Liverpool FC Away kit 18.jpg",
+                "Liverpool FC/Liverpool FC Away Kit/Liverpool FC Away kit 19.jpg",
+                "Liverpool FC/Liverpool FC Away Kit/Liverpool FC Away kit 20.jpg"
+              ]
+            },
+            "home": {
+              "folder": "Liverpool FC/Liverpool FC Home Kit",
+              "cover": "Liverpool FC/Liverpool FC Home Kit/Liverpool FC Home kit.jpg",
+              "images": [
+                "Liverpool FC/Liverpool FC Home Kit/Liverpool FC Home kit.jpg",
+                "Liverpool FC/Liverpool FC Home Kit/Liverpool FC Home kit 2.jpg",
+                "Liverpool FC/Liverpool FC Home Kit/Liverpool FC Home kit 3.jpg",
+                "Liverpool FC/Liverpool FC Home Kit/Liverpool FC Home kit 4.jpg",
+                "Liverpool FC/Liverpool FC Home Kit/Liverpool FC Home kit 5.jpg",
+                "Liverpool FC/Liverpool FC Home Kit/Liverpool FC Home kit 6.jpg",
+                "Liverpool FC/Liverpool FC Home Kit/Liverpool FC Home kit 7.jpg",
+                "Liverpool FC/Liverpool FC Home Kit/Liverpool FC Home kit 8.jpg",
+                "Liverpool FC/Liverpool FC Home Kit/Liverpool FC Home kit 9.jpg",
+                "Liverpool FC/Liverpool FC Home Kit/Liverpool FC Home kit 10.jpg",
+                "Liverpool FC/Liverpool FC Home Kit/Liverpool FC Home kit 11.jpg",
+                "Liverpool FC/Liverpool FC Home Kit/Liverpool FC Home kit 12.jpg",
+                "Liverpool FC/Liverpool FC Home Kit/Liverpool FC Home kit 13.jpg",
+                "Liverpool FC/Liverpool FC Home Kit/Liverpool FC Home kit 14.jpg",
+                "Liverpool FC/Liverpool FC Home Kit/Liverpool FC Home kit 15.jpg",
+                "Liverpool FC/Liverpool FC Home Kit/Liverpool FC Home kit 16.jpg"
+              ]
+            },
+            "third": {
+              "folder": "Liverpool FC/Liverpool FC Third  Kit",
+              "cover": "Liverpool FC/Liverpool FC Third  Kit/Liverpool FC Third kit.jpg",
+              "images": [
+                "Liverpool FC/Liverpool FC Third  Kit/Liverpool FC Third kit.jpg",
+                "Liverpool FC/Liverpool FC Third  Kit/Liverpool FC Third kit 2.jpg",
+                "Liverpool FC/Liverpool FC Third  Kit/Liverpool FC Third kit 3.jpg",
+                "Liverpool FC/Liverpool FC Third  Kit/Liverpool FC Third kit 4.jpg",
+                "Liverpool FC/Liverpool FC Third  Kit/Liverpool FC Third kit 5.jpg",
+                "Liverpool FC/Liverpool FC Third  Kit/Liverpool FC Third kit 6.jpg",
+                "Liverpool FC/Liverpool FC Third  Kit/Liverpool FC Third kit 7.jpg",
+                "Liverpool FC/Liverpool FC Third  Kit/Liverpool FC Third kit 8.jpg",
+                "Liverpool FC/Liverpool FC Third  Kit/Liverpool FC Third kit 9.jpg",
+                "Liverpool FC/Liverpool FC Third  Kit/Liverpool FC Third kit 10.jpg",
+                "Liverpool FC/Liverpool FC Third  Kit/Liverpool FC Third kit 11.jpg",
+                "Liverpool FC/Liverpool FC Third  Kit/Liverpool FC Third kit 12.jpg",
+                "Liverpool FC/Liverpool FC Third  Kit/Liverpool FC Third kit 13.jpg",
+                "Liverpool FC/Liverpool FC Third  Kit/Liverpool FC Third kit 14.jpg",
+                "Liverpool FC/Liverpool FC Third  Kit/Liverpool FC Third kit 15.jpg",
+                "Liverpool FC/Liverpool FC Third  Kit/Liverpool FC Third kit 16.jpg"
+              ]
+            }
+          }
+        },
+        {
+          "id": "chelsea-fc",
+          "folder": "Chelsea FC",
+          "name": "Chelsea FC",
+          "league": "Premier League",
+          "kits": {
+            "away": {
+              "folder": "Chelsea FC/Chelsea FC Away Kit",
+              "cover": "Chelsea FC/Chelsea FC Away Kit/Chelsea FC Away kit.jpg",
+              "images": [
+                "Chelsea FC/Chelsea FC Away Kit/Chelsea FC Away kit.jpg",
+                "Chelsea FC/Chelsea FC Away Kit/Chelsea FC Away kit 2.jpg",
+                "Chelsea FC/Chelsea FC Away Kit/Chelsea FC Away kit 3.jpg",
+                "Chelsea FC/Chelsea FC Away Kit/Chelsea FC Away kit 4.jpg",
+                "Chelsea FC/Chelsea FC Away Kit/Chelsea FC Away kit 5.jpg",
+                "Chelsea FC/Chelsea FC Away Kit/Chelsea FC Away kit 6.jpg",
+                "Chelsea FC/Chelsea FC Away Kit/Chelsea FC Away kit 7.jpg",
+                "Chelsea FC/Chelsea FC Away Kit/Chelsea FC Away kit 8.jpg",
+                "Chelsea FC/Chelsea FC Away Kit/Chelsea FC Away kit 9.jpg",
+                "Chelsea FC/Chelsea FC Away Kit/Chelsea FC Away kit 10.jpg",
+                "Chelsea FC/Chelsea FC Away Kit/Chelsea FC Away kit 11.jpg",
+                "Chelsea FC/Chelsea FC Away Kit/Chelsea FC Away kit 12.jpg",
+                "Chelsea FC/Chelsea FC Away Kit/Chelsea FC Away kit 13.jpg"
+              ]
+            },
+            "home": {
+              "folder": "Chelsea FC/Chelsea FC Home Kit",
+              "cover": "Chelsea FC/Chelsea FC Home Kit/Chelsea FC Home kit.jpg",
+              "images": [
+                "Chelsea FC/Chelsea FC Home Kit/Chelsea FC Home kit.jpg",
+                "Chelsea FC/Chelsea FC Home Kit/Chelsea FC Home kit 2.jpg",
+                "Chelsea FC/Chelsea FC Home Kit/Chelsea FC Home kit 3.jpg",
+                "Chelsea FC/Chelsea FC Home Kit/Chelsea FC Home kit 4.jpg",
+                "Chelsea FC/Chelsea FC Home Kit/Chelsea FC Home kit 5.jpg",
+                "Chelsea FC/Chelsea FC Home Kit/Chelsea FC Home kit 6.jpg",
+                "Chelsea FC/Chelsea FC Home Kit/Chelsea FC Home kit 7.jpg",
+                "Chelsea FC/Chelsea FC Home Kit/Chelsea FC Home kit 8.jpg",
+                "Chelsea FC/Chelsea FC Home Kit/Chelsea FC Home kit 9.jpg",
+                "Chelsea FC/Chelsea FC Home Kit/Chelsea FC Home kit 10.jpg",
+                "Chelsea FC/Chelsea FC Home Kit/Chelsea FC Home kit 11.jpg",
+                "Chelsea FC/Chelsea FC Home Kit/Chelsea FC Home kit 12.jpg"
+              ]
+            },
+            "third": {
+              "folder": "Chelsea FC/Chelsea FC Third Kit",
+              "cover": "Chelsea FC/Chelsea FC Third Kit/Chelsea FC Third kit.jpg",
+              "images": [
+                "Chelsea FC/Chelsea FC Third Kit/Chelsea FC Third kit.jpg",
+                "Chelsea FC/Chelsea FC Third Kit/Chelsea FC Third kit 2.jpg",
+                "Chelsea FC/Chelsea FC Third Kit/Chelsea FC Third kit 3.jpg",
+                "Chelsea FC/Chelsea FC Third Kit/Chelsea FC Third kit 4.jpg",
+                "Chelsea FC/Chelsea FC Third Kit/Chelsea FC Third kit 5.jpg",
+                "Chelsea FC/Chelsea FC Third Kit/Chelsea FC Third kit 6.jpg",
+                "Chelsea FC/Chelsea FC Third Kit/Chelsea FC Third kit 7.jpg"
+              ]
+            }
+          }
+        },
+        {
+          "id": "arsenal-fc",
+          "folder": "Arsenal FC",
+          "name": "Arsenal FC",
+          "league": "Premier League",
+          "kits": {
+            "away": {
+              "folder": "Arsenal FC/Arsenal FC Away Kit",
+              "cover": "Arsenal FC/Arsenal FC Away Kit/Arsenal FC Away kit.jpg",
+              "images": [
+                "Arsenal FC/Arsenal FC Away Kit/Arsenal FC Away kit.jpg",
+                "Arsenal FC/Arsenal FC Away Kit/Arsenal FC Away kit 2.jpg",
+                "Arsenal FC/Arsenal FC Away Kit/Arsenal FC Away kit 3.jpg",
+                "Arsenal FC/Arsenal FC Away Kit/Arsenal FC Away kit 4.jpg",
+                "Arsenal FC/Arsenal FC Away Kit/Arsenal FC Away kit 5.jpg",
+                "Arsenal FC/Arsenal FC Away Kit/Arsenal FC Away kit 6.jpg",
+                "Arsenal FC/Arsenal FC Away Kit/Arsenal FC Away kit 7.jpg",
+                "Arsenal FC/Arsenal FC Away Kit/Arsenal FC Away kit 8.jpg",
+                "Arsenal FC/Arsenal FC Away Kit/Arsenal FC Away kit 9.jpg",
+                "Arsenal FC/Arsenal FC Away Kit/Arsenal FC Away kit 10.jpg",
+                "Arsenal FC/Arsenal FC Away Kit/Arsenal FC Away kit 11.jpg",
+                "Arsenal FC/Arsenal FC Away Kit/Arsenal FC Away kit 12.jpg",
+                "Arsenal FC/Arsenal FC Away Kit/Arsenal FC Away kit 13.jpg",
+                "Arsenal FC/Arsenal FC Away Kit/Arsenal FC Away kit 14.jpg",
+                "Arsenal FC/Arsenal FC Away Kit/Arsenal FC Away kit 15.jpg",
+                "Arsenal FC/Arsenal FC Away Kit/Arsenal FC Away kit 16.jpg",
+                "Arsenal FC/Arsenal FC Away Kit/Arsenal FC Away kit 17.jpg",
+                "Arsenal FC/Arsenal FC Away Kit/Arsenal FC Away kit 18.jpg",
+                "Arsenal FC/Arsenal FC Away Kit/Arsenal FC Away kit 19.jpg"
+              ]
+            },
+            "home": {
+              "folder": "Arsenal FC/Arsenal FC Home Kit",
+              "cover": "Arsenal FC/Arsenal FC Home Kit/Arsenal FC Home kit.jpg",
+              "images": [
+                "Arsenal FC/Arsenal FC Home Kit/Arsenal FC Home kit.jpg",
+                "Arsenal FC/Arsenal FC Home Kit/Arsenal FC Home kit 2.jpg",
+                "Arsenal FC/Arsenal FC Home Kit/Arsenal FC Home kit 3.jpg",
+                "Arsenal FC/Arsenal FC Home Kit/Arsenal FC Home kit 4.jpg",
+                "Arsenal FC/Arsenal FC Home Kit/Arsenal FC Home kit 5.jpg",
+                "Arsenal FC/Arsenal FC Home Kit/Arsenal FC Home kit 6.jpg",
+                "Arsenal FC/Arsenal FC Home Kit/Arsenal FC Home kit 7.jpg",
+                "Arsenal FC/Arsenal FC Home Kit/Arsenal FC Home kit 8.jpg",
+                "Arsenal FC/Arsenal FC Home Kit/Arsenal FC Home kit 9.jpg",
+                "Arsenal FC/Arsenal FC Home Kit/Arsenal FC Home kit 10.jpg",
+                "Arsenal FC/Arsenal FC Home Kit/Arsenal FC Home kit 11.jpg",
+                "Arsenal FC/Arsenal FC Home Kit/Arsenal FC Home kit 12.jpg",
+                "Arsenal FC/Arsenal FC Home Kit/Arsenal FC Home kit 13.jpg",
+                "Arsenal FC/Arsenal FC Home Kit/Arsenal FC Home kit 14.jpg",
+                "Arsenal FC/Arsenal FC Home Kit/Arsenal FC Home kit 15.jpg",
+                "Arsenal FC/Arsenal FC Home Kit/Arsenal FC Home kit 16.jpg",
+                "Arsenal FC/Arsenal FC Home Kit/Arsenal FC Home kit 17.jpg",
+                "Arsenal FC/Arsenal FC Home Kit/Arsenal FC Home kit 18.jpg",
+                "Arsenal FC/Arsenal FC Home Kit/Arsenal FC Home kit 19.jpg"
+              ]
+            },
+            "third": {
+              "folder": "Arsenal FC/Arsenal FC Third Kit",
+              "cover": "Arsenal FC/Arsenal FC Third Kit/Arsenal FC Third kit.jpg",
+              "images": [
+                "Arsenal FC/Arsenal FC Third Kit/Arsenal FC Third kit.jpg",
+                "Arsenal FC/Arsenal FC Third Kit/Arsenal FC Third kit 2.jpg",
+                "Arsenal FC/Arsenal FC Third Kit/Arsenal FC Third kit 3.jpg",
+                "Arsenal FC/Arsenal FC Third Kit/Arsenal FC Third kit 4.jpg",
+                "Arsenal FC/Arsenal FC Third Kit/Arsenal FC Third kit 5.jpg",
+                "Arsenal FC/Arsenal FC Third Kit/Arsenal FC Third kit 6.jpg",
+                "Arsenal FC/Arsenal FC Third Kit/Arsenal FC Third kit 7.jpg",
+                "Arsenal FC/Arsenal FC Third Kit/Arsenal FC Third kit 8.jpg",
+                "Arsenal FC/Arsenal FC Third Kit/Arsenal FC Third kit 9.jpg",
+                "Arsenal FC/Arsenal FC Third Kit/Arsenal FC Third kit 10.jpg",
+                "Arsenal FC/Arsenal FC Third Kit/Arsenal FC Third kit 11.jpg",
+                "Arsenal FC/Arsenal FC Third Kit/Arsenal FC Third kit 12.jpg",
+                "Arsenal FC/Arsenal FC Third Kit/Arsenal FC Third kit 13.jpg"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "serie-a",
+      "name": "Serie A",
+      "flag": "🇮🇹",
+      "teams": [
+        {
+          "id": "juventus-fc",
+          "folder": "Juventus FC",
+          "name": "Juventus FC",
+          "league": "Serie A",
+          "kits": {
+            "away": {
+              "folder": "Juventus FC/Juventus FC Away Kit",
+              "cover": "Juventus FC/Juventus FC Away Kit/Juventus FC Away Kit.jpg",
+              "images": [
+                "Juventus FC/Juventus FC Away Kit/Juventus FC Away Kit.jpg",
+                "Juventus FC/Juventus FC Away Kit/Juventus FC Away Kit 2.jpg",
+                "Juventus FC/Juventus FC Away Kit/Juventus FC Away Kit 3.jpg",
+                "Juventus FC/Juventus FC Away Kit/Juventus FC Away Kit 4.jpg",
+                "Juventus FC/Juventus FC Away Kit/Juventus FC Away Kit 5.jpg",
+                "Juventus FC/Juventus FC Away Kit/Juventus FC Away Kit 6.jpg",
+                "Juventus FC/Juventus FC Away Kit/Juventus FC Away Kit 7.jpg",
+                "Juventus FC/Juventus FC Away Kit/Juventus FC Away Kit 8.jpg",
+                "Juventus FC/Juventus FC Away Kit/Juventus FC Away Kit 9.jpg",
+                "Juventus FC/Juventus FC Away Kit/Juventus FC Away Kit 10.jpg",
+                "Juventus FC/Juventus FC Away Kit/Juventus FC Away Kit 11.jpg",
+                "Juventus FC/Juventus FC Away Kit/Juventus FC Away Kit 12.jpg",
+                "Juventus FC/Juventus FC Away Kit/Juventus FC Away Kit 13.jpg",
+                "Juventus FC/Juventus FC Away Kit/Juventus FC Away Kit 14.jpg",
+                "Juventus FC/Juventus FC Away Kit/Juventus FC Away Kit 15.jpg",
+                "Juventus FC/Juventus FC Away Kit/Juventus FC Away Kit 16.jpg",
+                "Juventus FC/Juventus FC Away Kit/Juventus FC Away Kit 17.jpg"
+              ]
+            },
+            "home": {
+              "folder": "Juventus FC/Juventus FC Home Kit",
+              "cover": "Juventus FC/Juventus FC Home Kit/Juventus FC Home Kit.jpg",
+              "images": [
+                "Juventus FC/Juventus FC Home Kit/Juventus FC Home Kit.jpg",
+                "Juventus FC/Juventus FC Home Kit/Juventus FC Home Kit 2.jpg",
+                "Juventus FC/Juventus FC Home Kit/Juventus FC Home Kit 3.jpg",
+                "Juventus FC/Juventus FC Home Kit/Juventus FC Home Kit 4.jpg",
+                "Juventus FC/Juventus FC Home Kit/Juventus FC Home Kit 5.jpg",
+                "Juventus FC/Juventus FC Home Kit/Juventus FC Home Kit 6.jpg",
+                "Juventus FC/Juventus FC Home Kit/Juventus FC Home Kit 7.jpg",
+                "Juventus FC/Juventus FC Home Kit/Juventus FC Home Kit 8.jpg",
+                "Juventus FC/Juventus FC Home Kit/Juventus FC Home Kit 9.jpg",
+                "Juventus FC/Juventus FC Home Kit/Juventus FC Home Kit 10.jpg",
+                "Juventus FC/Juventus FC Home Kit/Juventus FC Home Kit 11.jpg",
+                "Juventus FC/Juventus FC Home Kit/Juventus FC Home Kit 12.jpg",
+                "Juventus FC/Juventus FC Home Kit/Juventus FC Home Kit 13.jpg",
+                "Juventus FC/Juventus FC Home Kit/Juventus FC Home Kit 14.jpg",
+                "Juventus FC/Juventus FC Home Kit/Juventus FC Home Kit 15.jpg",
+                "Juventus FC/Juventus FC Home Kit/Juventus FC Home Kit 16.jpg",
+                "Juventus FC/Juventus FC Home Kit/Juventus FC Home Kit 17.jpg",
+                "Juventus FC/Juventus FC Home Kit/Juventus FC Home Kit 18.jpg"
+              ]
+            },
+            "third": {
+              "folder": "Juventus FC/Juventus FC Third Kit",
+              "cover": "Juventus FC/Juventus FC Third Kit/Juventus FC Third Kit.jpg",
+              "images": [
+                "Juventus FC/Juventus FC Third Kit/Juventus FC Third Kit.jpg",
+                "Juventus FC/Juventus FC Third Kit/Juventus FC Third Kit 2.jpg",
+                "Juventus FC/Juventus FC Third Kit/Juventus FC Third Kit 3.jpg",
+                "Juventus FC/Juventus FC Third Kit/Juventus FC Third Kit 4.jpg",
+                "Juventus FC/Juventus FC Third Kit/Juventus FC Third Kit 5.jpg",
+                "Juventus FC/Juventus FC Third Kit/Juventus FC Third Kit 6.jpg",
+                "Juventus FC/Juventus FC Third Kit/Juventus FC Third Kit 7.jpg",
+                "Juventus FC/Juventus FC Third Kit/Juventus FC Third Kit 8.jpg",
+                "Juventus FC/Juventus FC Third Kit/Juventus FC Third Kit 9.jpg",
+                "Juventus FC/Juventus FC Third Kit/Juventus FC Third Kit 10.jpg",
+                "Juventus FC/Juventus FC Third Kit/Juventus FC Third Kit 11.jpg",
+                "Juventus FC/Juventus FC Third Kit/Juventus FC Third Kit 12.jpg",
+                "Juventus FC/Juventus FC Third Kit/Juventus FC Third Kit 13.jpg",
+                "Juventus FC/Juventus FC Third Kit/Juventus FC Third Kit 14.jpg",
+                "Juventus FC/Juventus FC Third Kit/Juventus FC Third Kit 15.jpg",
+                "Juventus FC/Juventus FC Third Kit/Juventus FC Third Kit 16.jpg",
+                "Juventus FC/Juventus FC Third Kit/Juventus FC Third Kit 17.jpg",
+                "Juventus FC/Juventus FC Third Kit/Juventus FC Third Kit 18.jpg"
+              ]
+            }
+          }
+        },
+        {
+          "id": "inter-milan",
+          "folder": "Inter Milan",
+          "name": "Inter Milan",
+          "league": "Serie A",
+          "kits": {
+            "away": {
+              "folder": "Inter Milan/Inter Milan Away Kit",
+              "cover": "Inter Milan/Inter Milan Away Kit/Inter Milan Away Kit (2).jpg",
+              "images": [
+                "Inter Milan/Inter Milan Away Kit/Inter Milan Away Kit (2).jpg",
+                "Inter Milan/Inter Milan Away Kit/Inter Milan Away Kit (3).jpg",
+                "Inter Milan/Inter Milan Away Kit/Inter Milan Away Kit (4).jpg",
+                "Inter Milan/Inter Milan Away Kit/Inter Milan Away Kit (5).jpg",
+                "Inter Milan/Inter Milan Away Kit/Inter Milan Away Kit (6).jpg",
+                "Inter Milan/Inter Milan Away Kit/Inter Milan Away Kit (7).jpg",
+                "Inter Milan/Inter Milan Away Kit/Inter Milan Away Kit (8).jpg",
+                "Inter Milan/Inter Milan Away Kit/Inter Milan Away Kit (9).jpg",
+                "Inter Milan/Inter Milan Away Kit/Inter Milan Away Kit.jpg"
+              ]
+            },
+            "home": {
+              "folder": "Inter Milan/Inter Milan Home Kit",
+              "cover": "Inter Milan/Inter Milan Home Kit/Inter Milan Home Kit (10).jpg",
+              "images": [
+                "Inter Milan/Inter Milan Home Kit/Inter Milan Home Kit (10).jpg",
+                "Inter Milan/Inter Milan Home Kit/Inter Milan Home Kit (11).jpg",
+                "Inter Milan/Inter Milan Home Kit/Inter Milan Home Kit (12).jpg",
+                "Inter Milan/Inter Milan Home Kit/Inter Milan Home Kit (13).jpg",
+                "Inter Milan/Inter Milan Home Kit/Inter Milan Home Kit (14).jpg",
+                "Inter Milan/Inter Milan Home Kit/Inter Milan Home Kit (15).jpg",
+                "Inter Milan/Inter Milan Home Kit/Inter Milan Home Kit (16).jpg",
+                "Inter Milan/Inter Milan Home Kit/Inter Milan Home Kit (18).jpg",
+                "Inter Milan/Inter Milan Home Kit/Inter Milan Home Kit (19).jpg",
+                "Inter Milan/Inter Milan Home Kit/Inter Milan Home Kit (2).jpg",
+                "Inter Milan/Inter Milan Home Kit/Inter Milan Home Kit (3).jpg",
+                "Inter Milan/Inter Milan Home Kit/Inter Milan Home Kit (4).jpg",
+                "Inter Milan/Inter Milan Home Kit/Inter Milan Home Kit (5).jpg",
+                "Inter Milan/Inter Milan Home Kit/Inter Milan Home Kit (6).jpg",
+                "Inter Milan/Inter Milan Home Kit/Inter Milan Home Kit (7).jpg",
+                "Inter Milan/Inter Milan Home Kit/Inter Milan Home Kit (8).jpg",
+                "Inter Milan/Inter Milan Home Kit/Inter Milan Home Kit (9).jpg",
+                "Inter Milan/Inter Milan Home Kit/Inter Milan Home Kit.jpg"
+              ]
+            },
+            "third": {
+              "folder": "Inter Milan/Inter Milan Third Kit",
+              "cover": "Inter Milan/Inter Milan Third Kit/Inter Milan Third Kit.jpg",
+              "images": [
+                "Inter Milan/Inter Milan Third Kit/Inter Milan Third Kit.jpg",
+                "Inter Milan/Inter Milan Third Kit/Inter Milan Third Kit 2.jpg",
+                "Inter Milan/Inter Milan Third Kit/Inter Milan Third Kit 3.jpg",
+                "Inter Milan/Inter Milan Third Kit/Inter Milan Third Kit 4.jpg",
+                "Inter Milan/Inter Milan Third Kit/Inter Milan Third Kit 5.jpg",
+                "Inter Milan/Inter Milan Third Kit/Inter Milan Third Kit 6.jpg",
+                "Inter Milan/Inter Milan Third Kit/Inter Milan Third Kit 7.jpg",
+                "Inter Milan/Inter Milan Third Kit/Inter Milan Third Kit 8.jpg",
+                "Inter Milan/Inter Milan Third Kit/Inter Milan Third Kit 9.jpg",
+                "Inter Milan/Inter Milan Third Kit/Inter Milan Third Kit 10.jpg",
+                "Inter Milan/Inter Milan Third Kit/Inter Milan Third Kit 11.jpg",
+                "Inter Milan/Inter Milan Third Kit/Inter Milan Third Kit 12.jpg",
+                "Inter Milan/Inter Milan Third Kit/Inter Milan Third Kit 13.jpg",
+                "Inter Milan/Inter Milan Third Kit/Inter Milan Third Kit 14.jpg"
+              ]
+            }
+          }
+        },
+        {
+          "id": "ac-milan",
+          "folder": "AC Milan",
+          "name": "AC Milan",
+          "league": "Serie A",
+          "kits": {
+            "away": {
+              "folder": "AC Milan/AC Milan Away Kit",
+              "cover": "AC Milan/AC Milan Away Kit/AC Milan Away Kit (10).jpg",
+              "images": [
+                "AC Milan/AC Milan Away Kit/AC Milan Away Kit (10).jpg",
+                "AC Milan/AC Milan Away Kit/AC Milan Away Kit (11).jpg",
+                "AC Milan/AC Milan Away Kit/AC Milan Away Kit (12).jpg",
+                "AC Milan/AC Milan Away Kit/AC Milan Away Kit (13).jpg",
+                "AC Milan/AC Milan Away Kit/AC Milan Away Kit (14).jpg",
+                "AC Milan/AC Milan Away Kit/AC Milan Away Kit (15).jpg",
+                "AC Milan/AC Milan Away Kit/AC Milan Away Kit (2).jpg",
+                "AC Milan/AC Milan Away Kit/AC Milan Away Kit (3).jpg",
+                "AC Milan/AC Milan Away Kit/AC Milan Away Kit (4).jpg",
+                "AC Milan/AC Milan Away Kit/AC Milan Away Kit (5).jpg",
+                "AC Milan/AC Milan Away Kit/AC Milan Away Kit (6).jpg",
+                "AC Milan/AC Milan Away Kit/AC Milan Away Kit (7).jpg",
+                "AC Milan/AC Milan Away Kit/AC Milan Away Kit (8).jpg",
+                "AC Milan/AC Milan Away Kit/AC Milan Away Kit (9).jpg",
+                "AC Milan/AC Milan Away Kit/AC Milan Away Kit.jpg"
+              ]
+            },
+            "home": {
+              "folder": "AC Milan/AC Milan Home Kit",
+              "cover": "AC Milan/AC Milan Home Kit/AC Milan Home Kit (10).jpg",
+              "images": [
+                "AC Milan/AC Milan Home Kit/AC Milan Home Kit (10).jpg",
+                "AC Milan/AC Milan Home Kit/AC Milan Home Kit (11).jpg",
+                "AC Milan/AC Milan Home Kit/AC Milan Home Kit (12).jpg",
+                "AC Milan/AC Milan Home Kit/AC Milan Home Kit (13).jpg",
+                "AC Milan/AC Milan Home Kit/AC Milan Home Kit (14).jpg",
+                "AC Milan/AC Milan Home Kit/AC Milan Home Kit (15).jpg",
+                "AC Milan/AC Milan Home Kit/AC Milan Home Kit (16).jpg",
+                "AC Milan/AC Milan Home Kit/AC Milan Home Kit (17).jpg",
+                "AC Milan/AC Milan Home Kit/AC Milan Home Kit (18).jpg",
+                "AC Milan/AC Milan Home Kit/AC Milan Home Kit (2).jpg",
+                "AC Milan/AC Milan Home Kit/AC Milan Home Kit (3).jpg",
+                "AC Milan/AC Milan Home Kit/AC Milan Home Kit (4).jpg",
+                "AC Milan/AC Milan Home Kit/AC Milan Home Kit (6).jpg",
+                "AC Milan/AC Milan Home Kit/AC Milan Home Kit (7).jpg",
+                "AC Milan/AC Milan Home Kit/AC Milan Home Kit (8).jpg",
+                "AC Milan/AC Milan Home Kit/AC Milan Home Kit (9).jpg",
+                "AC Milan/AC Milan Home Kit/AC Milan Home Kit.jpg",
+                "AC Milan/AC Milan Home Kit/AC Milan Home Kit 5.jpg",
+                "AC Milan/AC Milan Home Kit/AC Milan Home Kit19.jpg"
+              ]
+            },
+            "third": {
+              "folder": "AC Milan/AC Milan Third Kit",
+              "cover": "AC Milan/AC Milan Third Kit/AC Milan Third Kit (10).jpg",
+              "images": [
+                "AC Milan/AC Milan Third Kit/AC Milan Third Kit (10).jpg",
+                "AC Milan/AC Milan Third Kit/AC Milan Third Kit (11).jpg",
+                "AC Milan/AC Milan Third Kit/AC Milan Third Kit (2).jpg",
+                "AC Milan/AC Milan Third Kit/AC Milan Third Kit (3).jpg",
+                "AC Milan/AC Milan Third Kit/AC Milan Third Kit (4).jpg",
+                "AC Milan/AC Milan Third Kit/AC Milan Third Kit (5).jpg",
+                "AC Milan/AC Milan Third Kit/AC Milan Third Kit (6).jpg",
+                "AC Milan/AC Milan Third Kit/AC Milan Third Kit (7).jpg",
+                "AC Milan/AC Milan Third Kit/AC Milan Third Kit (8).jpg",
+                "AC Milan/AC Milan Third Kit/AC Milan Third Kit (9).jpg",
+                "AC Milan/AC Milan Third Kit/AC Milan Third Kit.jpg"
+              ]
+            }
+          }
+        },
+        {
+          "id": "as-roma",
+          "folder": "AS Roma",
+          "name": "AS Roma",
+          "league": "Serie A",
+          "kits": {
+            "away": {
+              "folder": "AS Roma/AS Roma Away Kit",
+              "cover": "AS Roma/AS Roma Away Kit/AS Roma Away Kit (10).jpg",
+              "images": [
+                "AS Roma/AS Roma Away Kit/AS Roma Away Kit (10).jpg",
+                "AS Roma/AS Roma Away Kit/AS Roma Away Kit (11).jpg",
+                "AS Roma/AS Roma Away Kit/AS Roma Away Kit (12).jpg",
+                "AS Roma/AS Roma Away Kit/AS Roma Away Kit (13).jpg",
+                "AS Roma/AS Roma Away Kit/AS Roma Away Kit (2).jpg",
+                "AS Roma/AS Roma Away Kit/AS Roma Away Kit (3).jpg",
+                "AS Roma/AS Roma Away Kit/AS Roma Away Kit (4).jpg",
+                "AS Roma/AS Roma Away Kit/AS Roma Away Kit (5).jpg",
+                "AS Roma/AS Roma Away Kit/AS Roma Away Kit (6).jpg",
+                "AS Roma/AS Roma Away Kit/AS Roma Away Kit (7).jpg",
+                "AS Roma/AS Roma Away Kit/AS Roma Away Kit (8).jpg",
+                "AS Roma/AS Roma Away Kit/AS Roma Away Kit (9).jpg",
+                "AS Roma/AS Roma Away Kit/AS Roma Away Kit.jpg"
+              ]
+            },
+            "home": {
+              "folder": "AS Roma/AS Roma Home Kit",
+              "cover": "AS Roma/AS Roma Home Kit/AS Roma Home Kit (10).jpg",
+              "images": [
+                "AS Roma/AS Roma Home Kit/AS Roma Home Kit (10).jpg",
+                "AS Roma/AS Roma Home Kit/AS Roma Home Kit (11).jpg",
+                "AS Roma/AS Roma Home Kit/AS Roma Home Kit (12).jpg",
+                "AS Roma/AS Roma Home Kit/AS Roma Home Kit (13).jpg",
+                "AS Roma/AS Roma Home Kit/AS Roma Home Kit (2).jpg",
+                "AS Roma/AS Roma Home Kit/AS Roma Home Kit (3).jpg",
+                "AS Roma/AS Roma Home Kit/AS Roma Home Kit (4).jpg",
+                "AS Roma/AS Roma Home Kit/AS Roma Home Kit (5).jpg",
+                "AS Roma/AS Roma Home Kit/AS Roma Home Kit (6).jpg",
+                "AS Roma/AS Roma Home Kit/AS Roma Home Kit (7).jpg",
+                "AS Roma/AS Roma Home Kit/AS Roma Home Kit (8).jpg",
+                "AS Roma/AS Roma Home Kit/AS Roma Home Kit (9).jpg",
+                "AS Roma/AS Roma Home Kit/AS Roma Home Kit.jpg"
+              ]
+            },
+            "third": {
+              "folder": "AS Roma/AS Roma Third Kit",
+              "cover": "AS Roma/AS Roma Third Kit/AS Roma Third Kit (2).jpg",
+              "images": [
+                "AS Roma/AS Roma Third Kit/AS Roma Third Kit (2).jpg",
+                "AS Roma/AS Roma Third Kit/AS Roma Third Kit (3).jpg",
+                "AS Roma/AS Roma Third Kit/AS Roma Third Kit (4).jpg",
+                "AS Roma/AS Roma Third Kit/AS Roma Third Kit (5).jpg",
+                "AS Roma/AS Roma Third Kit/AS Roma Third Kit.jpg"
+              ]
+            }
+          }
+        },
+        {
+          "id": "napoli",
+          "folder": "Napoli",
+          "name": "Napoli",
+          "league": "Serie A",
+          "kits": {
+            "away": {
+              "folder": "Napoli/Napoli Away Kit",
+              "cover": "Napoli/Napoli Away Kit/Napoli Away Kit.jpg",
+              "images": [
+                "Napoli/Napoli Away Kit/Napoli Away Kit.jpg",
+                "Napoli/Napoli Away Kit/Napoli Away Kit 2.jpg",
+                "Napoli/Napoli Away Kit/Napoli Away Kit 3.jpg",
+                "Napoli/Napoli Away Kit/Napoli Away Kit 4.jpg",
+                "Napoli/Napoli Away Kit/Napoli Away Kit 5.jpg",
+                "Napoli/Napoli Away Kit/Napoli Away Kit 6.jpg",
+                "Napoli/Napoli Away Kit/Napoli Away Kit 7.jpg",
+                "Napoli/Napoli Away Kit/Napoli Away Kit 8.jpg",
+                "Napoli/Napoli Away Kit/Napoli Away Kit 9.jpg",
+                "Napoli/Napoli Away Kit/Napoli Away Kit 10.jpg",
+                "Napoli/Napoli Away Kit/Napoli Away Kit 11.jpg",
+                "Napoli/Napoli Away Kit/Napoli Away Kit 12.jpg",
+                "Napoli/Napoli Away Kit/Napoli Away Kit 13.jpg",
+                "Napoli/Napoli Away Kit/Napoli Away Kit 14.jpg",
+                "Napoli/Napoli Away Kit/Napoli Away Kit 15.jpg",
+                "Napoli/Napoli Away Kit/Napoli Away Kit 16.jpg",
+                "Napoli/Napoli Away Kit/Napoli Away Kit 17.jpg",
+                "Napoli/Napoli Away Kit/Napoli Away Kit 18.jpg",
+                "Napoli/Napoli Away Kit/Napoli Away Kit 19.jpg",
+                "Napoli/Napoli Away Kit/Napoli Away Kit 20.jpg",
+                "Napoli/Napoli Away Kit/Napoli Away Kit 21.jpg",
+                "Napoli/Napoli Away Kit/Napoli Away Kit 22.jpg",
+                "Napoli/Napoli Away Kit/Napoli Away Kit 23.jpg",
+                "Napoli/Napoli Away Kit/Napoli Away Kit 24.jpg",
+                "Napoli/Napoli Away Kit/Napoli Away Kit 25.jpg"
+              ]
+            },
+            "home": {
+              "folder": "Napoli/Napoli Home Kit",
+              "cover": "Napoli/Napoli Home Kit/Napoli Home Kit 3.jpg",
+              "images": [
+                "Napoli/Napoli Home Kit/Napoli Home Kit 3.jpg",
+                "Napoli/Napoli Home Kit/Napoli Home Kit 20.jpg"
+              ]
+            },
+            "third": {
+              "folder": "Napoli/Napoli Third Kit",
+              "cover": "Napoli/Napoli Third Kit/Napoli Third Kit.jpg",
+              "images": [
+                "Napoli/Napoli Third Kit/Napoli Third Kit.jpg",
+                "Napoli/Napoli Third Kit/Napoli Third Kit 2.jpg",
+                "Napoli/Napoli Third Kit/Napoli Third Kit 3.jpg",
+                "Napoli/Napoli Third Kit/Napoli Third Kit 4.jpg",
+                "Napoli/Napoli Third Kit/Napoli Third Kit 5.jpg",
+                "Napoli/Napoli Third Kit/Napoli Third Kit 6.jpg",
+                "Napoli/Napoli Third Kit/Napoli Third Kit 7.jpg",
+                "Napoli/Napoli Third Kit/Napoli Third Kit 8.jpg",
+                "Napoli/Napoli Third Kit/Napoli Third Kit 9.jpg",
+                "Napoli/Napoli Third Kit/Napoli Third Kit 10.jpg",
+                "Napoli/Napoli Third Kit/Napoli Third Kit 11.jpg",
+                "Napoli/Napoli Third Kit/Napoli Third Kit 12.jpg",
+                "Napoli/Napoli Third Kit/Napoli Third Kit 13.jpg",
+                "Napoli/Napoli Third Kit/Napoli Third Kit 14.jpg",
+                "Napoli/Napoli Third Kit/Napoli Third Kit 15.jpg",
+                "Napoli/Napoli Third Kit/Napoli Third Kit 16.jpg",
+                "Napoli/Napoli Third Kit/Napoli Third Kit 17.jpg",
+                "Napoli/Napoli Third Kit/Napoli Third Kit 18.jpg",
+                "Napoli/Napoli Third Kit/Napoli Third Kit 19.jpg",
+                "Napoli/Napoli Third Kit/Napoli Third Kit 20.jpg",
+                "Napoli/Napoli Third Kit/Napoli Third Kit 21.jpg",
+                "Napoli/Napoli Third Kit/Napoli Third Kit 22.jpg",
+                "Napoli/Napoli Third Kit/Napoli Third Kit 23.jpg"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ligue-1",
+      "name": "Ligue 1",
+      "flag": "🇫🇷",
+      "teams": [
+        {
+          "id": "paris-saint-germain",
+          "folder": "Paris Saint-Germain",
+          "name": "Paris Saint-Germain",
+          "league": "Ligue 1",
+          "kits": {
+            "away": {
+              "folder": "Paris Saint-Germain/Paris Saint-Germain Away Kit",
+              "cover": "Paris Saint-Germain/Paris Saint-Germain Away Kit/Paris Saint-Germain Away Kit 8.jpg",
+              "images": [
+                "Paris Saint-Germain/Paris Saint-Germain Away Kit/Paris Saint-Germain Away Kit 8.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Away Kit/Paris Saint-Germain Away Kit 9.jpg"
+              ]
+            },
+            "home": {
+              "folder": "Paris Saint-Germain/Paris Saint-Germain Home Kit",
+              "cover": "Paris Saint-Germain/Paris Saint-Germain Home Kit/Paris Saint-Germain Home Kit.jpg",
+              "images": [
+                "Paris Saint-Germain/Paris Saint-Germain Home Kit/Paris Saint-Germain Home Kit.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Home Kit/Paris Saint-Germain Home Kit 2.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Home Kit/Paris Saint-Germain Home Kit 3.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Home Kit/Paris Saint-Germain Home Kit 4.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Home Kit/Paris Saint-Germain Home Kit 5.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Home Kit/Paris Saint-Germain Home Kit 6.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Home Kit/Paris Saint-Germain Home Kit 7.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Home Kit/Paris Saint-Germain Home Kit 8.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Home Kit/Paris Saint-Germain Home Kit 9.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Home Kit/Paris Saint-Germain Home Kit 10.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Home Kit/Paris Saint-Germain Home Kit 11.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Home Kit/Paris Saint-Germain Home Kit 12.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Home Kit/Paris Saint-Germain Home Kit 13.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Home Kit/Paris Saint-Germain Home Kit 14.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Home Kit/Paris Saint-Germain Home Kit 15.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Home Kit/Paris Saint-Germain Home Kit 16.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Home Kit/Paris Saint-Germain Home Kit 17.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Home Kit/Paris Saint-Germain Home Kit 18.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Home Kit/Paris Saint-Germain Home Kit 19.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Home Kit/Paris Saint-Germain Home Kit 20.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Home Kit/Paris Saint-Germain Home Kit 21.jpg"
+              ]
+            },
+            "third": {
+              "folder": "Paris Saint-Germain/Paris Saint-Germain Third  Kit",
+              "cover": "Paris Saint-Germain/Paris Saint-Germain Third  Kit/Paris Saint-Germain Third Kit.jpg",
+              "images": [
+                "Paris Saint-Germain/Paris Saint-Germain Third  Kit/Paris Saint-Germain Third Kit.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Third  Kit/Paris Saint-Germain Third Kit 2.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Third  Kit/Paris Saint-Germain Third Kit 3.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Third  Kit/Paris Saint-Germain Third Kit 4.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Third  Kit/Paris Saint-Germain Third Kit 5.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Third  Kit/Paris Saint-Germain Third Kit 6.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Third  Kit/Paris Saint-Germain Third Kit 7.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Third  Kit/Paris Saint-Germain Third Kit 8.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Third  Kit/Paris Saint-Germain Third Kit 9.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Third  Kit/Paris Saint-Germain Third Kit 10.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Third  Kit/Paris Saint-Germain Third Kit 11.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Third  Kit/Paris Saint-Germain Third Kit 12.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Third  Kit/Paris Saint-Germain Third Kit 13.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Third  Kit/Paris Saint-Germain Third Kit 14.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Third  Kit/Paris Saint-Germain Third Kit 15.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Third  Kit/Paris Saint-Germain Third Kit 16.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Third  Kit/Paris Saint-Germain Third Kit 17.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Third  Kit/Paris Saint-Germain Third Kit 18.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Third  Kit/Paris Saint-Germain Third Kit 19.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Third  Kit/Paris Saint-Germain Third Kit 20.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Third  Kit/Paris Saint-Germain Third Kit 21.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Third  Kit/Paris Saint-Germain Third Kit 22.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Third  Kit/Paris Saint-Germain Third Kit 23.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Third  Kit/Paris Saint-Germain Third Kit 24.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Third  Kit/Paris Saint-Germain Third Kit 25.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Third  Kit/Paris Saint-Germain Third Kit 26.jpg",
+                "Paris Saint-Germain/Paris Saint-Germain Third  Kit/Paris Saint-Germain Third Kit 27.jpg"
+              ]
+            }
+          }
+        },
+        {
+          "id": "olympique-marseille",
+          "folder": "Olympique Marseille",
+          "name": "Olympique Marseille",
+          "league": "Ligue 1",
+          "kits": {
+            "away": {
+              "folder": "Olympique Marseille/Olympique Marseille Away Kit",
+              "cover": "Olympique Marseille/Olympique Marseille Away Kit/Olympique de Marseille Away Kit.jpg",
+              "images": [
+                "Olympique Marseille/Olympique Marseille Away Kit/Olympique de Marseille Away Kit.jpg",
+                "Olympique Marseille/Olympique Marseille Away Kit/Olympique de Marseille Away Kit 2.jpg",
+                "Olympique Marseille/Olympique Marseille Away Kit/Olympique de Marseille Away Kit 3.jpg",
+                "Olympique Marseille/Olympique Marseille Away Kit/Olympique de Marseille Away Kit 4.jpg",
+                "Olympique Marseille/Olympique Marseille Away Kit/Olympique de Marseille Away Kit 5.jpg",
+                "Olympique Marseille/Olympique Marseille Away Kit/Olympique de Marseille Away Kit 6.jpg",
+                "Olympique Marseille/Olympique Marseille Away Kit/Olympique de Marseille Away Kit 7.jpg",
+                "Olympique Marseille/Olympique Marseille Away Kit/Olympique de Marseille Away Kit 8.jpg",
+                "Olympique Marseille/Olympique Marseille Away Kit/Olympique de Marseille Away Kit 9.jpg",
+                "Olympique Marseille/Olympique Marseille Away Kit/Olympique de Marseille Away Kit 10.jpg",
+                "Olympique Marseille/Olympique Marseille Away Kit/Olympique de Marseille Away Kit 11.jpg",
+                "Olympique Marseille/Olympique Marseille Away Kit/Olympique de Marseille Away Kit 12.jpg",
+                "Olympique Marseille/Olympique Marseille Away Kit/Olympique de Marseille Away Kit 13.jpg"
+              ]
+            },
+            "home": {
+              "folder": "Olympique Marseille/Olympique Marseille Home Kit",
+              "cover": "Olympique Marseille/Olympique Marseille Home Kit/Olympique de Marseille Home Kit.jpg",
+              "images": [
+                "Olympique Marseille/Olympique Marseille Home Kit/Olympique de Marseille Home Kit.jpg",
+                "Olympique Marseille/Olympique Marseille Home Kit/Olympique de Marseille Home Kit 2.jpg",
+                "Olympique Marseille/Olympique Marseille Home Kit/Olympique de Marseille Home Kit 3.jpg",
+                "Olympique Marseille/Olympique Marseille Home Kit/Olympique de Marseille Home Kit 4.jpg",
+                "Olympique Marseille/Olympique Marseille Home Kit/Olympique de Marseille Home Kit 5.jpg",
+                "Olympique Marseille/Olympique Marseille Home Kit/Olympique de Marseille Home Kit 6.jpg",
+                "Olympique Marseille/Olympique Marseille Home Kit/Olympique de Marseille Home Kit 7.jpg",
+                "Olympique Marseille/Olympique Marseille Home Kit/Olympique de Marseille Home Kit 8.jpg",
+                "Olympique Marseille/Olympique Marseille Home Kit/Olympique de Marseille Home Kit 9.jpg",
+                "Olympique Marseille/Olympique Marseille Home Kit/Olympique de Marseille Home Kit 10.jpg",
+                "Olympique Marseille/Olympique Marseille Home Kit/Olympique de Marseille Home Kit 11.jpg",
+                "Olympique Marseille/Olympique Marseille Home Kit/Olympique de Marseille Home Kit 12.jpg",
+                "Olympique Marseille/Olympique Marseille Home Kit/Olympique de Marseille Home Kit 13.jpg",
+                "Olympique Marseille/Olympique Marseille Home Kit/Olympique de Marseille Home Kit 14.jpg",
+                "Olympique Marseille/Olympique Marseille Home Kit/Olympique de Marseille Home Kit 15.jpg",
+                "Olympique Marseille/Olympique Marseille Home Kit/Olympique de Marseille Home Kit 16.jpg",
+                "Olympique Marseille/Olympique Marseille Home Kit/Olympique de Marseille Home Kit 17.jpg",
+                "Olympique Marseille/Olympique Marseille Home Kit/Olympique de Marseille Home Kit 18.jpg",
+                "Olympique Marseille/Olympique Marseille Home Kit/Olympique de Marseille Home Kit 19.jpg",
+                "Olympique Marseille/Olympique Marseille Home Kit/Olympique de Marseille Home Kit 20.jpg",
+                "Olympique Marseille/Olympique Marseille Home Kit/Olympique de Marseille Home Kit 21.jpg"
+              ]
+            },
+            "third": {
+              "folder": "Olympique Marseille/Olympique Marseille Third Kit",
+              "cover": "Olympique Marseille/Olympique Marseille Third Kit/Olympique de Marseille Third Kit.jpg",
+              "images": [
+                "Olympique Marseille/Olympique Marseille Third Kit/Olympique de Marseille Third Kit.jpg",
+                "Olympique Marseille/Olympique Marseille Third Kit/Olympique de Marseille Third Kit 2.jpg",
+                "Olympique Marseille/Olympique Marseille Third Kit/Olympique de Marseille Third Kit 3.jpg",
+                "Olympique Marseille/Olympique Marseille Third Kit/Olympique de Marseille Third Kit 4.jpg",
+                "Olympique Marseille/Olympique Marseille Third Kit/Olympique de Marseille Third Kit 5.jpg",
+                "Olympique Marseille/Olympique Marseille Third Kit/Olympique de Marseille Third Kit 6.jpg",
+                "Olympique Marseille/Olympique Marseille Third Kit/Olympique de Marseille Third Kit 7.jpg",
+                "Olympique Marseille/Olympique Marseille Third Kit/Olympique de Marseille Third Kit 8.jpg",
+                "Olympique Marseille/Olympique Marseille Third Kit/Olympique de Marseille Third Kit 9.jpg",
+                "Olympique Marseille/Olympique Marseille Third Kit/Olympique de Marseille Third Kit 10.jpg",
+                "Olympique Marseille/Olympique Marseille Third Kit/Olympique de Marseille Third Kit 11.jpg",
+                "Olympique Marseille/Olympique Marseille Third Kit/Olympique de Marseille Third Kit 12.jpg",
+                "Olympique Marseille/Olympique Marseille Third Kit/Olympique de Marseille Third Kit 13.jpg",
+                "Olympique Marseille/Olympique Marseille Third Kit/Olympique de Marseille Third Kit 14.jpg",
+                "Olympique Marseille/Olympique Marseille Third Kit/Olympique de Marseille Third Kit 15.jpg",
+                "Olympique Marseille/Olympique Marseille Third Kit/Olympique de Marseille Third Kit 16.jpg"
+              ]
+            }
+          }
+        },
+        {
+          "id": "olympique-lyonnais",
+          "folder": "Olympique Lyonnais",
+          "name": "Olympique Lyonnais",
+          "league": "Ligue 1",
+          "kits": {
+            "away": {
+              "folder": "Olympique Lyonnais/Olympique Lyonnais Away Kit",
+              "cover": "Olympique Lyonnais/Olympique Lyonnais Away Kit/Olympique Lyonnais Away Kit.jpg",
+              "images": [
+                "Olympique Lyonnais/Olympique Lyonnais Away Kit/Olympique Lyonnais Away Kit.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Away Kit/Olympique Lyonnais Away Kit 2.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Away Kit/Olympique Lyonnais Away Kit 3.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Away Kit/Olympique Lyonnais Away Kit 4.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Away Kit/Olympique Lyonnais Away Kit 5.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Away Kit/Olympique Lyonnais Away Kit 6.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Away Kit/Olympique Lyonnais Away Kit 7.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Away Kit/Olympique Lyonnais Away Kit 8.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Away Kit/Olympique Lyonnais Away Kit 9.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Away Kit/Olympique Lyonnais Away Kit 10.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Away Kit/Olympique Lyonnais Away Kit 11.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Away Kit/Olympique Lyonnais Away Kit 12.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Away Kit/Olympique Lyonnais Away Kit 13.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Away Kit/Olympique Lyonnais Away Kit 14.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Away Kit/Olympique Lyonnais Away Kit 15.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Away Kit/Olympique Lyonnais Away Kit 16.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Away Kit/Olympique Lyonnais Away Kit 17.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Away Kit/Olympique Lyonnais Away Kit 18.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Away Kit/Olympique Lyonnais Away Kit 19.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Away Kit/Olympique Lyonnais Away Kit 20.jpg"
+              ]
+            },
+            "home": {
+              "folder": "Olympique Lyonnais/Olympique Lyonnais Home Kit",
+              "cover": "Olympique Lyonnais/Olympique Lyonnais Home Kit/Olympique Lyonnais Home Kit.jpg",
+              "images": [
+                "Olympique Lyonnais/Olympique Lyonnais Home Kit/Olympique Lyonnais Home Kit.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Home Kit/Olympique Lyonnais Home Kit 2.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Home Kit/Olympique Lyonnais Home Kit 3.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Home Kit/Olympique Lyonnais Home Kit 4.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Home Kit/Olympique Lyonnais Home Kit 5.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Home Kit/Olympique Lyonnais Home Kit 6.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Home Kit/Olympique Lyonnais Home Kit 7.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Home Kit/Olympique Lyonnais Home Kit 8.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Home Kit/Olympique Lyonnais Home Kit 9.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Home Kit/Olympique Lyonnais Home Kit 10.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Home Kit/Olympique Lyonnais Home Kit 11.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Home Kit/Olympique Lyonnais Home Kit 12.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Home Kit/Olympique Lyonnais Home Kit 13.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Home Kit/Olympique Lyonnais Home Kit 14.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Home Kit/Olympique Lyonnais Home Kit 15.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Home Kit/Olympique Lyonnais Home Kit 16.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Home Kit/Olympique Lyonnais Home Kit 17.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Home Kit/Olympique Lyonnais Home Kit 18.jpg"
+              ]
+            },
+            "third": {
+              "folder": "Olympique Lyonnais/Olympique Lyonnais Third Kit",
+              "cover": "Olympique Lyonnais/Olympique Lyonnais Third Kit/Olympique Lyonnais Third Kit.jpg",
+              "images": [
+                "Olympique Lyonnais/Olympique Lyonnais Third Kit/Olympique Lyonnais Third Kit.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Third Kit/Olympique Lyonnais Third Kit 2.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Third Kit/Olympique Lyonnais Third Kit 3.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Third Kit/Olympique Lyonnais Third Kit 4.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Third Kit/Olympique Lyonnais Third Kit 5.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Third Kit/Olympique Lyonnais Third Kit 6.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Third Kit/Olympique Lyonnais Third Kit 7.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Third Kit/Olympique Lyonnais Third Kit 8.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Third Kit/Olympique Lyonnais Third Kit 9.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Third Kit/Olympique Lyonnais Third Kit 10.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Third Kit/Olympique Lyonnais Third Kit 11.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Third Kit/Olympique Lyonnais Third Kit 12.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Third Kit/Olympique Lyonnais Third Kit 13.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Third Kit/Olympique Lyonnais Third Kit 14.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Third Kit/Olympique Lyonnais Third Kit 15.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Third Kit/Olympique Lyonnais Third Kit 16.jpg",
+                "Olympique Lyonnais/Olympique Lyonnais Third Kit/Olympique Lyonnais Third Kit 17.jpg"
+              ]
+            }
+          }
+        },
+        {
+          "id": "as-monaco",
+          "folder": "AS Monaco",
+          "name": "AS Monaco",
+          "league": "Ligue 1",
+          "kits": {
+            "away": {
+              "folder": "AS Monaco/AS Monaco Away Kit",
+              "cover": "AS Monaco/AS Monaco Away Kit/AS Monaco Away Kit.jpg",
+              "images": [
+                "AS Monaco/AS Monaco Away Kit/AS Monaco Away Kit.jpg",
+                "AS Monaco/AS Monaco Away Kit/AS Monaco Away Kit 2.jpg",
+                "AS Monaco/AS Monaco Away Kit/AS Monaco Away Kit 3.jpg",
+                "AS Monaco/AS Monaco Away Kit/AS Monaco Away Kit 4.jpg",
+                "AS Monaco/AS Monaco Away Kit/AS Monaco Away Kit 5.jpg",
+                "AS Monaco/AS Monaco Away Kit/AS Monaco Away Kit 6.jpg",
+                "AS Monaco/AS Monaco Away Kit/AS Monaco Away Kit 7.jpg",
+                "AS Monaco/AS Monaco Away Kit/AS Monaco Away Kit 8.jpg",
+                "AS Monaco/AS Monaco Away Kit/AS Monaco Away Kit 9.jpg",
+                "AS Monaco/AS Monaco Away Kit/AS Monaco Away Kit 10.jpg",
+                "AS Monaco/AS Monaco Away Kit/AS Monaco Away Kit 11.jpg",
+                "AS Monaco/AS Monaco Away Kit/AS Monaco Away Kit 12.jpg",
+                "AS Monaco/AS Monaco Away Kit/AS Monaco Away Kit 13.jpg",
+                "AS Monaco/AS Monaco Away Kit/AS Monaco Away Kit 14.jpg",
+                "AS Monaco/AS Monaco Away Kit/AS Monaco Away Kit 15.jpg",
+                "AS Monaco/AS Monaco Away Kit/AS Monaco Away Kit 16.jpg",
+                "AS Monaco/AS Monaco Away Kit/AS Monaco Away Kit 17.jpg",
+                "AS Monaco/AS Monaco Away Kit/AS Monaco Away Kit 18.jpg"
+              ]
+            },
+            "home": {
+              "folder": "AS Monaco/AS Monaco Home Kit",
+              "cover": "AS Monaco/AS Monaco Home Kit/AS Monaco Home Kit.jpg",
+              "images": [
+                "AS Monaco/AS Monaco Home Kit/AS Monaco Home Kit.jpg",
+                "AS Monaco/AS Monaco Home Kit/AS Monaco Home Kit 2.jpg",
+                "AS Monaco/AS Monaco Home Kit/AS Monaco Home Kit 3.jpg",
+                "AS Monaco/AS Monaco Home Kit/AS Monaco Home Kit 4.jpg",
+                "AS Monaco/AS Monaco Home Kit/AS Monaco Home Kit 5.jpg",
+                "AS Monaco/AS Monaco Home Kit/AS Monaco Home Kit 6.jpg",
+                "AS Monaco/AS Monaco Home Kit/AS Monaco Home Kit 7.jpg",
+                "AS Monaco/AS Monaco Home Kit/AS Monaco Home Kit 8.jpg",
+                "AS Monaco/AS Monaco Home Kit/AS Monaco Home Kit 9.jpg",
+                "AS Monaco/AS Monaco Home Kit/AS Monaco Home Kit 10.jpg",
+                "AS Monaco/AS Monaco Home Kit/AS Monaco Home Kit 11.jpg",
+                "AS Monaco/AS Monaco Home Kit/AS Monaco Home Kit 12.jpg",
+                "AS Monaco/AS Monaco Home Kit/AS Monaco Home Kit 13.jpg",
+                "AS Monaco/AS Monaco Home Kit/AS Monaco Home Kit 14.jpg",
+                "AS Monaco/AS Monaco Home Kit/AS Monaco Home Kit 15.jpg",
+                "AS Monaco/AS Monaco Home Kit/AS Monaco Home Kit 16.jpg",
+                "AS Monaco/AS Monaco Home Kit/AS Monaco Home Kit 17.jpg",
+                "AS Monaco/AS Monaco Home Kit/AS Monaco Home Kit 18.jpg",
+                "AS Monaco/AS Monaco Home Kit/AS Monaco Home Kit 19.jpg",
+                "AS Monaco/AS Monaco Home Kit/AS Monaco Home Kit 20.jpg",
+                "AS Monaco/AS Monaco Home Kit/AS Monaco Home Kit 21.jpg"
+              ]
+            },
+            "third": {
+              "folder": "AS Monaco/AS Monaco Thirt Kit",
+              "cover": "AS Monaco/AS Monaco Thirt Kit/AS Monaco Third Kit.jpg",
+              "images": [
+                "AS Monaco/AS Monaco Thirt Kit/AS Monaco Third Kit.jpg",
+                "AS Monaco/AS Monaco Thirt Kit/AS Monaco Third Kit 2.jpg",
+                "AS Monaco/AS Monaco Thirt Kit/AS Monaco Third Kit 3.jpg",
+                "AS Monaco/AS Monaco Thirt Kit/AS Monaco Third Kit 4.jpg",
+                "AS Monaco/AS Monaco Thirt Kit/AS Monaco Third Kit 5.jpg",
+                "AS Monaco/AS Monaco Thirt Kit/AS Monaco Third Kit 6.jpg",
+                "AS Monaco/AS Monaco Thirt Kit/AS Monaco Third Kit 7.jpg",
+                "AS Monaco/AS Monaco Thirt Kit/AS Monaco Third Kit 8.jpg",
+                "AS Monaco/AS Monaco Thirt Kit/AS Monaco Third Kit 9.jpg",
+                "AS Monaco/AS Monaco Thirt Kit/AS Monaco Third Kit 10.jpg",
+                "AS Monaco/AS Monaco Thirt Kit/AS Monaco Third Kit 11.jpg",
+                "AS Monaco/AS Monaco Thirt Kit/AS Monaco Third Kit 12.jpg",
+                "AS Monaco/AS Monaco Thirt Kit/AS Monaco Third Kit 13.jpg",
+                "AS Monaco/AS Monaco Thirt Kit/AS Monaco Third Kit 14.jpg",
+                "AS Monaco/AS Monaco Thirt Kit/AS Monaco Third Kit 15.jpg",
+                "AS Monaco/AS Monaco Thirt Kit/AS Monaco Third Kit 16.jpg",
+                "AS Monaco/AS Monaco Thirt Kit/AS Monaco Third Kit 17.jpg",
+                "AS Monaco/AS Monaco Thirt Kit/AS Monaco Third Kit 18.jpg",
+                "AS Monaco/AS Monaco Thirt Kit/AS Monaco Third Kit 19.jpg",
+                "AS Monaco/AS Monaco Thirt Kit/AS Monaco Third Kit 20.jpg",
+                "AS Monaco/AS Monaco Thirt Kit/AS Monaco Third Kit 21.jpg"
+              ]
+            }
+          }
+        },
+        {
+          "id": "rc-lens",
+          "folder": "RC Lens",
+          "name": "RC Lens",
+          "league": "Ligue 1",
+          "kits": {
+            "away": {
+              "folder": "RC Lens/RC Lens Away Kit",
+              "cover": "RC Lens/RC Lens Away Kit/RC Lens Away Kit.jpg",
+              "images": [
+                "RC Lens/RC Lens Away Kit/RC Lens Away Kit.jpg",
+                "RC Lens/RC Lens Away Kit/RC Lens Away Kit 2.jpg",
+                "RC Lens/RC Lens Away Kit/RC Lens Away Kit 3.jpg",
+                "RC Lens/RC Lens Away Kit/RC Lens Away Kit 4.jpg",
+                "RC Lens/RC Lens Away Kit/RC Lens Away Kit 5.jpg",
+                "RC Lens/RC Lens Away Kit/RC Lens Away Kit 6.jpg",
+                "RC Lens/RC Lens Away Kit/RC Lens Away Kit 7.jpg",
+                "RC Lens/RC Lens Away Kit/RC Lens Away Kit 8.jpg",
+                "RC Lens/RC Lens Away Kit/RC Lens Away Kit 9.jpg",
+                "RC Lens/RC Lens Away Kit/RC Lens Away Kit 10.jpg",
+                "RC Lens/RC Lens Away Kit/RC Lens Away Kit 11.jpg",
+                "RC Lens/RC Lens Away Kit/RC Lens Away Kit 12.jpg",
+                "RC Lens/RC Lens Away Kit/RC Lens Away Kit 13.jpg",
+                "RC Lens/RC Lens Away Kit/RC Lens Away Kit 14.jpg",
+                "RC Lens/RC Lens Away Kit/RC Lens Away Kit 15.jpg",
+                "RC Lens/RC Lens Away Kit/RC Lens Away Kit 16.jpg",
+                "RC Lens/RC Lens Away Kit/RC Lens Away Kit 17.jpg",
+                "RC Lens/RC Lens Away Kit/RC Lens Away Kit 18.jpg",
+                "RC Lens/RC Lens Away Kit/RC Lens Away Kit 19.jpg",
+                "RC Lens/RC Lens Away Kit/RC Lens Away Kit 20.jpg",
+                "RC Lens/RC Lens Away Kit/RC Lens Away Kit 21.jpg",
+                "RC Lens/RC Lens Away Kit/RC Lens Away Kit 22.jpg",
+                "RC Lens/RC Lens Away Kit/RC Lens Away Kit 23.jpg"
+              ]
+            },
+            "home": {
+              "folder": "RC Lens/RC Lens Home Kit",
+              "cover": "RC Lens/RC Lens Home Kit/RC Lens Home Kit.jpg",
+              "images": [
+                "RC Lens/RC Lens Home Kit/RC Lens Home Kit.jpg",
+                "RC Lens/RC Lens Home Kit/RC Lens Home Kit 2.jpg",
+                "RC Lens/RC Lens Home Kit/RC Lens Home Kit 3.jpg",
+                "RC Lens/RC Lens Home Kit/RC Lens Home Kit 4.jpg",
+                "RC Lens/RC Lens Home Kit/RC Lens Home Kit 5.jpg",
+                "RC Lens/RC Lens Home Kit/RC Lens Home Kit 6.jpg",
+                "RC Lens/RC Lens Home Kit/RC Lens Home Kit 7.jpg",
+                "RC Lens/RC Lens Home Kit/RC Lens Home Kit 8.jpg",
+                "RC Lens/RC Lens Home Kit/RC Lens Home Kit 9.jpg",
+                "RC Lens/RC Lens Home Kit/RC Lens Home Kit 10.jpg",
+                "RC Lens/RC Lens Home Kit/RC Lens Home Kit 11.jpg",
+                "RC Lens/RC Lens Home Kit/RC Lens Home Kit 12.jpg"
+              ]
+            },
+            "third": {
+              "folder": "RC Lens/RC Lens Third Kit",
+              "cover": "RC Lens/RC Lens Third Kit/RC Lens Third Kit.jpg",
+              "images": [
+                "RC Lens/RC Lens Third Kit/RC Lens Third Kit.jpg",
+                "RC Lens/RC Lens Third Kit/RC Lens Third Kit 2.jpg",
+                "RC Lens/RC Lens Third Kit/RC Lens Third Kit 3.jpg",
+                "RC Lens/RC Lens Third Kit/RC Lens Third Kit 4.jpg",
+                "RC Lens/RC Lens Third Kit/RC Lens Third Kit 5.jpg",
+                "RC Lens/RC Lens Third Kit/RC Lens Third Kit 6.jpg",
+                "RC Lens/RC Lens Third Kit/RC Lens Third Kit 7.jpg",
+                "RC Lens/RC Lens Third Kit/RC Lens Third Kit 8.jpg",
+                "RC Lens/RC Lens Third Kit/RC Lens Third Kit 9.jpg",
+                "RC Lens/RC Lens Third Kit/RC Lens Third Kit 10.jpg",
+                "RC Lens/RC Lens Third Kit/RC Lens Third Kit 11.jpg"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "eredivisie",
+      "name": "Eredivisie",
+      "flag": "🇳🇱",
+      "teams": [
+        {
+          "id": "ajax",
+          "folder": "Ajax",
+          "name": "Ajax Amsterdam",
+          "league": "Eredivisie",
+          "kits": {
+            "away": {
+              "folder": "Ajax/Ajax Amsterdam Away Kit",
+              "cover": "Ajax/Ajax Amsterdam Away Kit/Ajax Away Kit.jpg",
+              "images": [
+                "Ajax/Ajax Amsterdam Away Kit/Ajax Away Kit.jpg",
+                "Ajax/Ajax Amsterdam Away Kit/Ajax Away Kit 2.jpg",
+                "Ajax/Ajax Amsterdam Away Kit/Ajax Away Kit 3.jpg",
+                "Ajax/Ajax Amsterdam Away Kit/Ajax Away Kit 4.jpg",
+                "Ajax/Ajax Amsterdam Away Kit/Ajax Away Kit 5.jpg",
+                "Ajax/Ajax Amsterdam Away Kit/Ajax Away Kit 6.jpg",
+                "Ajax/Ajax Amsterdam Away Kit/Ajax Away Kit 7.jpg",
+                "Ajax/Ajax Amsterdam Away Kit/Ajax Away Kit 8.jpg",
+                "Ajax/Ajax Amsterdam Away Kit/Ajax Away Kit 9.jpg",
+                "Ajax/Ajax Amsterdam Away Kit/Ajax Away Kit 10.jpg",
+                "Ajax/Ajax Amsterdam Away Kit/Ajax Away Kit 11.jpg",
+                "Ajax/Ajax Amsterdam Away Kit/Ajax Away Kit 12.jpg",
+                "Ajax/Ajax Amsterdam Away Kit/Ajax Away Kit 13.jpg",
+                "Ajax/Ajax Amsterdam Away Kit/Ajax Away Kit 14.jpg",
+                "Ajax/Ajax Amsterdam Away Kit/Ajax Away Kit 15.jpg",
+                "Ajax/Ajax Amsterdam Away Kit/Ajax Away Kit 16.jpg",
+                "Ajax/Ajax Amsterdam Away Kit/Ajax Away Kit 17.jpg",
+                "Ajax/Ajax Amsterdam Away Kit/Ajax Away Kit 18.jpg",
+                "Ajax/Ajax Amsterdam Away Kit/Ajax Away Kit 19.jpg"
+              ]
+            },
+            "home": {
+              "folder": "Ajax/Ajax Amsterdam Home Kit",
+              "cover": "Ajax/Ajax Amsterdam Home Kit/Ajax Home Kit.jpg",
+              "images": [
+                "Ajax/Ajax Amsterdam Home Kit/Ajax Home Kit.jpg",
+                "Ajax/Ajax Amsterdam Home Kit/Ajax Home Kit 2.jpg",
+                "Ajax/Ajax Amsterdam Home Kit/Ajax Home Kit 3.jpg",
+                "Ajax/Ajax Amsterdam Home Kit/Ajax Home Kit 4.jpg",
+                "Ajax/Ajax Amsterdam Home Kit/Ajax Home Kit 5.jpg",
+                "Ajax/Ajax Amsterdam Home Kit/Ajax Home Kit 6.jpg",
+                "Ajax/Ajax Amsterdam Home Kit/Ajax Home Kit 7.jpg",
+                "Ajax/Ajax Amsterdam Home Kit/Ajax Home Kit 8.jpg",
+                "Ajax/Ajax Amsterdam Home Kit/Ajax Home Kit 9.jpg",
+                "Ajax/Ajax Amsterdam Home Kit/Ajax Home Kit 10.jpg",
+                "Ajax/Ajax Amsterdam Home Kit/Ajax Home Kit 11.jpg",
+                "Ajax/Ajax Amsterdam Home Kit/Ajax Home Kit 12.jpg",
+                "Ajax/Ajax Amsterdam Home Kit/Ajax Home Kit 13.jpg",
+                "Ajax/Ajax Amsterdam Home Kit/Ajax Home Kit 14.jpg",
+                "Ajax/Ajax Amsterdam Home Kit/Ajax Home Kit 15.jpg",
+                "Ajax/Ajax Amsterdam Home Kit/Ajax Home Kit 16.jpg",
+                "Ajax/Ajax Amsterdam Home Kit/Ajax Home Kit 17.jpg",
+                "Ajax/Ajax Amsterdam Home Kit/Ajax Home Kit 18.jpg",
+                "Ajax/Ajax Amsterdam Home Kit/Ajax Home Kit 19.jpg",
+                "Ajax/Ajax Amsterdam Home Kit/Ajax Home Kit 20.jpg",
+                "Ajax/Ajax Amsterdam Home Kit/Ajax Home Kit 21.jpg"
+              ]
+            },
+            "third": {
+              "folder": "Ajax/Ajax Amsterdam Third Kit",
+              "cover": "Ajax/Ajax Amsterdam Third Kit/Ajax Third Kit.jpg",
+              "images": [
+                "Ajax/Ajax Amsterdam Third Kit/Ajax Third Kit.jpg",
+                "Ajax/Ajax Amsterdam Third Kit/Ajax Third Kit 2.jpg",
+                "Ajax/Ajax Amsterdam Third Kit/Ajax Third Kit 3.jpg",
+                "Ajax/Ajax Amsterdam Third Kit/Ajax Third Kit 4.jpg",
+                "Ajax/Ajax Amsterdam Third Kit/Ajax Third Kit 5.jpg",
+                "Ajax/Ajax Amsterdam Third Kit/Ajax Third Kit 6.jpg",
+                "Ajax/Ajax Amsterdam Third Kit/Ajax Third Kit 7.jpg",
+                "Ajax/Ajax Amsterdam Third Kit/Ajax Third Kit 8.jpg",
+                "Ajax/Ajax Amsterdam Third Kit/Ajax Third Kit 9.jpg",
+                "Ajax/Ajax Amsterdam Third Kit/Ajax Third Kit 10.jpg",
+                "Ajax/Ajax Amsterdam Third Kit/Ajax Third Kit 11.jpg",
+                "Ajax/Ajax Amsterdam Third Kit/Ajax Third Kit 12.jpg",
+                "Ajax/Ajax Amsterdam Third Kit/Ajax Third Kit 13.jpg",
+                "Ajax/Ajax Amsterdam Third Kit/Ajax Third Kit 14.jpg",
+                "Ajax/Ajax Amsterdam Third Kit/Ajax Third Kit 15.jpg"
+              ]
+            }
+          }
+        },
+        {
+          "id": "psv-eindhoven",
+          "folder": "PSV Eindhoven",
+          "name": "PSV Eindhoven",
+          "league": "Eredivisie",
+          "kits": {
+            "away": {
+              "folder": "PSV Eindhoven/PSV Eindhoven Away Kit",
+              "cover": "PSV Eindhoven/PSV Eindhoven Away Kit/PSV Eindhoven Away Kit.jpg",
+              "images": [
+                "PSV Eindhoven/PSV Eindhoven Away Kit/PSV Eindhoven Away Kit.jpg",
+                "PSV Eindhoven/PSV Eindhoven Away Kit/PSV Eindhoven Away Kit 2.jpg",
+                "PSV Eindhoven/PSV Eindhoven Away Kit/PSV Eindhoven Away Kit 3.jpg",
+                "PSV Eindhoven/PSV Eindhoven Away Kit/PSV Eindhoven Away Kit 4.jpg",
+                "PSV Eindhoven/PSV Eindhoven Away Kit/PSV Eindhoven Away Kit 5.jpg",
+                "PSV Eindhoven/PSV Eindhoven Away Kit/PSV Eindhoven Away Kit 7.jpg",
+                "PSV Eindhoven/PSV Eindhoven Away Kit/PSV Eindhoven Away Kit 8.jpg",
+                "PSV Eindhoven/PSV Eindhoven Away Kit/PSV Eindhoven Away Kit 9.jpg",
+                "PSV Eindhoven/PSV Eindhoven Away Kit/PSV Eindhoven Away Kit 10.jpg",
+                "PSV Eindhoven/PSV Eindhoven Away Kit/PSV Eindhoven Away Kit 11.jpg",
+                "PSV Eindhoven/PSV Eindhoven Away Kit/PSV Eindhoven Away Kit 12.jpg",
+                "PSV Eindhoven/PSV Eindhoven Away Kit/PSV Eindhoven Away Kit 13.jpg",
+                "PSV Eindhoven/PSV Eindhoven Away Kit/PSV Eindhoven Away Kit 14.jpg",
+                "PSV Eindhoven/PSV Eindhoven Away Kit/PSV Eindhoven Away Kit 15.jpg",
+                "PSV Eindhoven/PSV Eindhoven Away Kit/PSV Eindhoven Away Kit 16.jpg",
+                "PSV Eindhoven/PSV Eindhoven Away Kit/PSV Eindhoven Away Kit 17.jpg",
+                "PSV Eindhoven/PSV Eindhoven Away Kit/PSV Eindhoven Away Kit 18.jpg",
+                "PSV Eindhoven/PSV Eindhoven Away Kit/PSV Eindhoven Away Kit 19.jpg"
+              ]
+            },
+            "home": {
+              "folder": "PSV Eindhoven/PSV Eindhoven Home Kit",
+              "cover": "PSV Eindhoven/PSV Eindhoven Home Kit/PSV Eindhoven Home Kit.jpg",
+              "images": [
+                "PSV Eindhoven/PSV Eindhoven Home Kit/PSV Eindhoven Home Kit.jpg",
+                "PSV Eindhoven/PSV Eindhoven Home Kit/PSV Eindhoven Home Kit 2.jpg",
+                "PSV Eindhoven/PSV Eindhoven Home Kit/PSV Eindhoven Home Kit 3.jpg",
+                "PSV Eindhoven/PSV Eindhoven Home Kit/PSV Eindhoven Home Kit 4.jpg",
+                "PSV Eindhoven/PSV Eindhoven Home Kit/PSV Eindhoven Home Kit 5.jpg",
+                "PSV Eindhoven/PSV Eindhoven Home Kit/PSV Eindhoven Home Kit 6.jpg",
+                "PSV Eindhoven/PSV Eindhoven Home Kit/PSV Eindhoven Home Kit 7.jpg",
+                "PSV Eindhoven/PSV Eindhoven Home Kit/PSV Eindhoven Home Kit 8.jpg",
+                "PSV Eindhoven/PSV Eindhoven Home Kit/PSV Eindhoven Home Kit 9.jpg",
+                "PSV Eindhoven/PSV Eindhoven Home Kit/PSV Eindhoven Home Kit 10.jpg",
+                "PSV Eindhoven/PSV Eindhoven Home Kit/PSV Eindhoven Home Kit 11.jpg",
+                "PSV Eindhoven/PSV Eindhoven Home Kit/PSV Eindhoven Home Kit 12.jpg",
+                "PSV Eindhoven/PSV Eindhoven Home Kit/PSV Eindhoven Home Kit 13.jpg",
+                "PSV Eindhoven/PSV Eindhoven Home Kit/PSV Eindhoven Home Kit 14.jpg",
+                "PSV Eindhoven/PSV Eindhoven Home Kit/PSV Eindhoven Home Kit 15.jpg",
+                "PSV Eindhoven/PSV Eindhoven Home Kit/PSV Eindhoven Home Kit 16.jpg",
+                "PSV Eindhoven/PSV Eindhoven Home Kit/PSV Eindhoven Home Kit 17.jpg",
+                "PSV Eindhoven/PSV Eindhoven Home Kit/PSV Eindhoven Home Kit 18.jpg",
+                "PSV Eindhoven/PSV Eindhoven Home Kit/PSV Eindhoven Home Kit 19.jpg",
+                "PSV Eindhoven/PSV Eindhoven Home Kit/PSV Eindhoven Home Kit 20.jpg"
+              ]
+            },
+            "third": {
+              "folder": "PSV Eindhoven/PSV Eindhoven Third Kit",
+              "cover": "PSV Eindhoven/PSV Eindhoven Third Kit/PSV Eindhoven Third Kit.jpg",
+              "images": [
+                "PSV Eindhoven/PSV Eindhoven Third Kit/PSV Eindhoven Third Kit.jpg",
+                "PSV Eindhoven/PSV Eindhoven Third Kit/PSV Eindhoven Third Kit 2.jpg",
+                "PSV Eindhoven/PSV Eindhoven Third Kit/PSV Eindhoven Third Kit 3.jpg",
+                "PSV Eindhoven/PSV Eindhoven Third Kit/PSV Eindhoven Third Kit 4.jpg",
+                "PSV Eindhoven/PSV Eindhoven Third Kit/PSV Eindhoven Third Kit 5.jpg",
+                "PSV Eindhoven/PSV Eindhoven Third Kit/PSV Eindhoven Third Kit 6.jpg",
+                "PSV Eindhoven/PSV Eindhoven Third Kit/PSV Eindhoven Third Kit 7.jpg",
+                "PSV Eindhoven/PSV Eindhoven Third Kit/PSV Eindhoven Third Kit 8.jpg",
+                "PSV Eindhoven/PSV Eindhoven Third Kit/PSV Eindhoven Third Kit 9.jpg",
+                "PSV Eindhoven/PSV Eindhoven Third Kit/PSV Eindhoven Third Kit 10.jpg",
+                "PSV Eindhoven/PSV Eindhoven Third Kit/PSV Eindhoven Third Kit 11.jpg",
+                "PSV Eindhoven/PSV Eindhoven Third Kit/PSV Eindhoven Third Kit 12.jpg",
+                "PSV Eindhoven/PSV Eindhoven Third Kit/PSV Eindhoven Third Kit 13.jpg",
+                "PSV Eindhoven/PSV Eindhoven Third Kit/PSV Eindhoven Third Kit 14.jpg",
+                "PSV Eindhoven/PSV Eindhoven Third Kit/PSV Eindhoven Third Kit 15.jpg",
+                "PSV Eindhoven/PSV Eindhoven Third Kit/PSV Eindhoven Third Kit 16.jpg",
+                "PSV Eindhoven/PSV Eindhoven Third Kit/PSV Eindhoven Third Kit 17.jpg"
+              ]
+            }
+          }
+        },
+        {
+          "id": "feyenoord",
+          "folder": "Feyenoord",
+          "name": "Feyenoord",
+          "league": "Eredivisie",
+          "kits": {
+            "away": {
+              "folder": "Feyenoord/Feyenoord Away Kit",
+              "cover": "Feyenoord/Feyenoord Away Kit/Feyenoord Away Kit.jpg",
+              "images": [
+                "Feyenoord/Feyenoord Away Kit/Feyenoord Away Kit.jpg",
+                "Feyenoord/Feyenoord Away Kit/Feyenoord Away Kit 2.jpg",
+                "Feyenoord/Feyenoord Away Kit/Feyenoord Away Kit 3.jpg",
+                "Feyenoord/Feyenoord Away Kit/Feyenoord Away Kit 4.jpg",
+                "Feyenoord/Feyenoord Away Kit/Feyenoord Away Kit 5.jpg",
+                "Feyenoord/Feyenoord Away Kit/Feyenoord Away Kit 6.jpg",
+                "Feyenoord/Feyenoord Away Kit/Feyenoord Away Kit 7.jpg",
+                "Feyenoord/Feyenoord Away Kit/Feyenoord Away Kit 8.jpg",
+                "Feyenoord/Feyenoord Away Kit/Feyenoord Away Kit 9.jpg",
+                "Feyenoord/Feyenoord Away Kit/Feyenoord Away Kit 10.jpg",
+                "Feyenoord/Feyenoord Away Kit/Feyenoord Away Kit 11.jpg",
+                "Feyenoord/Feyenoord Away Kit/Feyenoord Away Kit 12.jpg",
+                "Feyenoord/Feyenoord Away Kit/Feyenoord Away Kit 13.jpg",
+                "Feyenoord/Feyenoord Away Kit/Feyenoord Away Kit 14.jpg",
+                "Feyenoord/Feyenoord Away Kit/Feyenoord Away Kit 15.jpg"
+              ]
+            },
+            "home": {
+              "folder": "Feyenoord/Feyenoord Home Kit",
+              "cover": "Feyenoord/Feyenoord Home Kit/Feyenoord Home Kit.jpg",
+              "images": [
+                "Feyenoord/Feyenoord Home Kit/Feyenoord Home Kit.jpg",
+                "Feyenoord/Feyenoord Home Kit/Feyenoord Home Kit 2.jpg",
+                "Feyenoord/Feyenoord Home Kit/Feyenoord Home Kit 3.jpg",
+                "Feyenoord/Feyenoord Home Kit/Feyenoord Home Kit 4.jpg",
+                "Feyenoord/Feyenoord Home Kit/Feyenoord Home Kit 5.jpg",
+                "Feyenoord/Feyenoord Home Kit/Feyenoord Home Kit 6.jpg",
+                "Feyenoord/Feyenoord Home Kit/Feyenoord Home Kit 7.jpg",
+                "Feyenoord/Feyenoord Home Kit/Feyenoord Home Kit 8.jpg",
+                "Feyenoord/Feyenoord Home Kit/Feyenoord Home Kit 9.jpg",
+                "Feyenoord/Feyenoord Home Kit/Feyenoord Home Kit 10.jpg",
+                "Feyenoord/Feyenoord Home Kit/Feyenoord Home Kit 11.jpg",
+                "Feyenoord/Feyenoord Home Kit/Feyenoord Home Kit 12.jpg"
+              ]
+            },
+            "third": {
+              "folder": "Feyenoord/Feyenoord Third Kit",
+              "cover": "Feyenoord/Feyenoord Third Kit/Feyenoord Third Kit.jpg",
+              "images": [
+                "Feyenoord/Feyenoord Third Kit/Feyenoord Third Kit.jpg",
+                "Feyenoord/Feyenoord Third Kit/Feyenoord Third Kit 2.jpg",
+                "Feyenoord/Feyenoord Third Kit/Feyenoord Third Kit 3.jpg",
+                "Feyenoord/Feyenoord Third Kit/Feyenoord Third Kit 4.jpg",
+                "Feyenoord/Feyenoord Third Kit/Feyenoord Third Kit 5.jpg",
+                "Feyenoord/Feyenoord Third Kit/Feyenoord Third Kit 6.jpg",
+                "Feyenoord/Feyenoord Third Kit/Feyenoord Third Kit 7.jpg",
+                "Feyenoord/Feyenoord Third Kit/Feyenoord Third Kit 8.jpg",
+                "Feyenoord/Feyenoord Third Kit/Feyenoord Third Kit 9.jpg",
+                "Feyenoord/Feyenoord Third Kit/Feyenoord Third Kit 10.jpg",
+                "Feyenoord/Feyenoord Third Kit/Feyenoord Third Kit 11.jpg"
+              ]
+            }
+          }
+        },
+        {
+          "id": "az-alkmaar",
+          "folder": "AZ Alkmaar",
+          "name": "AZ Alkmaar",
+          "league": "Eredivisie",
+          "kits": {
+            "away": {
+              "folder": "AZ Alkmaar/AZ Alkmaar Away Kit",
+              "cover": "AZ Alkmaar/AZ Alkmaar Away Kit/AZ Alkmaar Away Kit.jpg",
+              "images": [
+                "AZ Alkmaar/AZ Alkmaar Away Kit/AZ Alkmaar Away Kit.jpg",
+                "AZ Alkmaar/AZ Alkmaar Away Kit/AZ Alkmaar Away Kit 2.jpg",
+                "AZ Alkmaar/AZ Alkmaar Away Kit/AZ Alkmaar Away Kit 3.jpg",
+                "AZ Alkmaar/AZ Alkmaar Away Kit/AZ Alkmaar Away Kit 4.jpg",
+                "AZ Alkmaar/AZ Alkmaar Away Kit/AZ Alkmaar Away Kit 5.jpg",
+                "AZ Alkmaar/AZ Alkmaar Away Kit/AZ Alkmaar Away Kit 6.jpg",
+                "AZ Alkmaar/AZ Alkmaar Away Kit/AZ Alkmaar Away Kit 7.jpg",
+                "AZ Alkmaar/AZ Alkmaar Away Kit/AZ Alkmaar Away Kit 8.jpg",
+                "AZ Alkmaar/AZ Alkmaar Away Kit/AZ Alkmaar Away Kit 9.jpg",
+                "AZ Alkmaar/AZ Alkmaar Away Kit/AZ Alkmaar Away Kit 10.jpg",
+                "AZ Alkmaar/AZ Alkmaar Away Kit/AZ Alkmaar Away Kit 11.jpg",
+                "AZ Alkmaar/AZ Alkmaar Away Kit/AZ Alkmaar Away Kit 12.jpg",
+                "AZ Alkmaar/AZ Alkmaar Away Kit/AZ Alkmaar Away Kit 13.jpg",
+                "AZ Alkmaar/AZ Alkmaar Away Kit/AZ Alkmaar Away Kit 14.jpg",
+                "AZ Alkmaar/AZ Alkmaar Away Kit/AZ Alkmaar Away Kit 15.jpg",
+                "AZ Alkmaar/AZ Alkmaar Away Kit/AZ Alkmaar Away Kit 16.jpg",
+                "AZ Alkmaar/AZ Alkmaar Away Kit/AZ Alkmaar Away Kit 17.jpg",
+                "AZ Alkmaar/AZ Alkmaar Away Kit/AZ Alkmaar Away Kit 18.jpg",
+                "AZ Alkmaar/AZ Alkmaar Away Kit/AZ Alkmaar Away Kit 19.jpg",
+                "AZ Alkmaar/AZ Alkmaar Away Kit/AZ Alkmaar Away Kit 20.jpg",
+                "AZ Alkmaar/AZ Alkmaar Away Kit/AZ Alkmaar Away Kit 21.jpg",
+                "AZ Alkmaar/AZ Alkmaar Away Kit/AZ Alkmaar Away Kit 22.jpg"
+              ]
+            },
+            "home": {
+              "folder": "AZ Alkmaar/AZ Alkmaar Home Kit",
+              "cover": "AZ Alkmaar/AZ Alkmaar Home Kit/AZ Alkmaar Home Kit.jpg",
+              "images": [
+                "AZ Alkmaar/AZ Alkmaar Home Kit/AZ Alkmaar Home Kit.jpg",
+                "AZ Alkmaar/AZ Alkmaar Home Kit/AZ Alkmaar Home Kit 2.jpg",
+                "AZ Alkmaar/AZ Alkmaar Home Kit/AZ Alkmaar Home Kit 3.jpg",
+                "AZ Alkmaar/AZ Alkmaar Home Kit/AZ Alkmaar Home Kit 4.jpg",
+                "AZ Alkmaar/AZ Alkmaar Home Kit/AZ Alkmaar Home Kit 5.jpg",
+                "AZ Alkmaar/AZ Alkmaar Home Kit/AZ Alkmaar Home Kit 6.jpg",
+                "AZ Alkmaar/AZ Alkmaar Home Kit/AZ Alkmaar Home Kit 7.jpg",
+                "AZ Alkmaar/AZ Alkmaar Home Kit/AZ Alkmaar Home Kit 8.jpg",
+                "AZ Alkmaar/AZ Alkmaar Home Kit/AZ Alkmaar Home Kit 9.jpg",
+                "AZ Alkmaar/AZ Alkmaar Home Kit/AZ Alkmaar Home Kit 10.jpg",
+                "AZ Alkmaar/AZ Alkmaar Home Kit/AZ Alkmaar Home Kit 11.jpg",
+                "AZ Alkmaar/AZ Alkmaar Home Kit/AZ Alkmaar Home Kit 12.jpg",
+                "AZ Alkmaar/AZ Alkmaar Home Kit/AZ Alkmaar Home Kit 13.jpg"
+              ]
+            },
+            "third": {
+              "folder": "AZ Alkmaar/AZ Alkmaar Third Kit",
+              "cover": "AZ Alkmaar/AZ Alkmaar Third Kit/AZ Alkmaar Third Kit.jpg",
+              "images": [
+                "AZ Alkmaar/AZ Alkmaar Third Kit/AZ Alkmaar Third Kit.jpg",
+                "AZ Alkmaar/AZ Alkmaar Third Kit/AZ Alkmaar Third Kit 2.jpg",
+                "AZ Alkmaar/AZ Alkmaar Third Kit/AZ Alkmaar Third Kit 3.jpg",
+                "AZ Alkmaar/AZ Alkmaar Third Kit/AZ Alkmaar Third Kit 4.jpg",
+                "AZ Alkmaar/AZ Alkmaar Third Kit/AZ Alkmaar Third Kit 5.jpg",
+                "AZ Alkmaar/AZ Alkmaar Third Kit/AZ Alkmaar Third Kit 6.jpg",
+                "AZ Alkmaar/AZ Alkmaar Third Kit/AZ Alkmaar Third Kit 7.jpg",
+                "AZ Alkmaar/AZ Alkmaar Third Kit/AZ Alkmaar Third Kit 8.jpg",
+                "AZ Alkmaar/AZ Alkmaar Third Kit/AZ Alkmaar Third Kit 9.jpg",
+                "AZ Alkmaar/AZ Alkmaar Third Kit/AZ Alkmaar Third Kit 10.jpg",
+                "AZ Alkmaar/AZ Alkmaar Third Kit/AZ Alkmaar Third Kit 11.jpg",
+                "AZ Alkmaar/AZ Alkmaar Third Kit/AZ Alkmaar Third Kit 12.jpg",
+                "AZ Alkmaar/AZ Alkmaar Third Kit/AZ Alkmaar Third Kit 13.jpg",
+                "AZ Alkmaar/AZ Alkmaar Third Kit/AZ Alkmaar Third Kit 14.jpg",
+                "AZ Alkmaar/AZ Alkmaar Third Kit/AZ Alkmaar Third Kit 15.jpg"
+              ]
+            }
+          }
+        },
+        {
+          "id": "vitesse",
+          "folder": "Vitesse",
+          "name": "Vitesse",
+          "league": "Eredivisie",
+          "kits": {
+            "away": {
+              "folder": "Vitesse/Vitesse Away Kit",
+              "cover": "Vitesse/Vitesse Away Kit/Vitesse Away Kit.jpg",
+              "images": [
+                "Vitesse/Vitesse Away Kit/Vitesse Away Kit.jpg",
+                "Vitesse/Vitesse Away Kit/Vitesse Away Kit 2.jpg",
+                "Vitesse/Vitesse Away Kit/Vitesse Away Kit 3.jpg",
+                "Vitesse/Vitesse Away Kit/Vitesse Away Kit 4.jpg",
+                "Vitesse/Vitesse Away Kit/Vitesse Away Kit 5.jpg",
+                "Vitesse/Vitesse Away Kit/Vitesse Away Kit 6.jpg",
+                "Vitesse/Vitesse Away Kit/Vitesse Away Kit 7.jpg",
+                "Vitesse/Vitesse Away Kit/Vitesse Away Kit 8.jpg",
+                "Vitesse/Vitesse Away Kit/Vitesse Away Kit 9.jpg",
+                "Vitesse/Vitesse Away Kit/Vitesse Away Kit 10.jpg",
+                "Vitesse/Vitesse Away Kit/Vitesse Away Kit 11.jpg",
+                "Vitesse/Vitesse Away Kit/Vitesse Away Kit 12.jpg",
+                "Vitesse/Vitesse Away Kit/Vitesse Away Kit 13.jpg"
+              ]
+            },
+            "home": {
+              "folder": "Vitesse/Vitesse Home Kit",
+              "cover": "Vitesse/Vitesse Home Kit/Vitesse Home Kit.jpg",
+              "images": [
+                "Vitesse/Vitesse Home Kit/Vitesse Home Kit.jpg",
+                "Vitesse/Vitesse Home Kit/Vitesse Home Kit 2.jpg",
+                "Vitesse/Vitesse Home Kit/Vitesse Home Kit 3.jpg",
+                "Vitesse/Vitesse Home Kit/Vitesse Home Kit 4.jpg",
+                "Vitesse/Vitesse Home Kit/Vitesse Home Kit 5.jpg",
+                "Vitesse/Vitesse Home Kit/Vitesse Home Kit 6.jpg",
+                "Vitesse/Vitesse Home Kit/Vitesse Home Kit 7.jpg",
+                "Vitesse/Vitesse Home Kit/Vitesse Home Kit 8.jpg",
+                "Vitesse/Vitesse Home Kit/Vitesse Home Kit 9.jpg",
+                "Vitesse/Vitesse Home Kit/Vitesse Home Kit 10.jpg",
+                "Vitesse/Vitesse Home Kit/Vitesse Home Kit 11.jpg",
+                "Vitesse/Vitesse Home Kit/Vitesse Home Kit 12.jpg",
+                "Vitesse/Vitesse Home Kit/Vitesse Home Kit 13.jpg",
+                "Vitesse/Vitesse Home Kit/Vitesse Home Kit 14.jpg",
+                "Vitesse/Vitesse Home Kit/Vitesse Home Kit 15.jpg"
+              ]
+            },
+            "third": {
+              "folder": "Vitesse/Vitesse Third Kit",
+              "cover": "Vitesse/Vitesse Third Kit/Vitesse Third Kit.jpg",
+              "images": [
+                "Vitesse/Vitesse Third Kit/Vitesse Third Kit.jpg",
+                "Vitesse/Vitesse Third Kit/Vitesse Third Kit 2.jpg",
+                "Vitesse/Vitesse Third Kit/Vitesse Third Kit 3.jpg",
+                "Vitesse/Vitesse Third Kit/Vitesse Third Kit 4.jpg",
+                "Vitesse/Vitesse Third Kit/Vitesse Third Kit 5.jpg",
+                "Vitesse/Vitesse Third Kit/Vitesse Third Kit 6.jpg",
+                "Vitesse/Vitesse Third Kit/Vitesse Third Kit 7.jpg",
+                "Vitesse/Vitesse Third Kit/Vitesse Third Kit 8.jpg",
+                "Vitesse/Vitesse Third Kit/Vitesse Third Kit 9.jpg",
+                "Vitesse/Vitesse Third Kit/Vitesse Third Kit 10.jpg",
+                "Vitesse/Vitesse Third Kit/Vitesse Third Kit 11.jpg",
+                "Vitesse/Vitesse Third Kit/Vitesse Third Kit 12.jpg",
+                "Vitesse/Vitesse Third Kit/Vitesse Third Kit 13.jpg",
+                "Vitesse/Vitesse Third Kit/Vitesse Third Kit 14.jpg",
+                "Vitesse/Vitesse Third Kit/Vitesse Third Kit 15.jpg",
+                "Vitesse/Vitesse Third Kit/Vitesse Third Kit 16.jpg",
+                "Vitesse/Vitesse Third Kit/Vitesse Third Kit 17.jpg"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "primeira-liga",
+      "name": "Primeira Liga",
+      "flag": "🇵🇹",
+      "teams": [
+        {
+          "id": "benfica",
+          "folder": "Benfica",
+          "name": "Benfica",
+          "league": "Primeira Liga",
+          "kits": {
+            "away": {
+              "folder": "Benfica/Benfica Away Kit",
+              "cover": "Benfica/Benfica Away Kit/SL Benfica Away Kit.jpg",
+              "images": [
+                "Benfica/Benfica Away Kit/SL Benfica Away Kit.jpg",
+                "Benfica/Benfica Away Kit/SL Benfica Away Kit 2.jpg",
+                "Benfica/Benfica Away Kit/SL Benfica Away Kit 3.jpg",
+                "Benfica/Benfica Away Kit/SL Benfica Away Kit 4.jpg",
+                "Benfica/Benfica Away Kit/SL Benfica Away Kit 5.jpg",
+                "Benfica/Benfica Away Kit/SL Benfica Away Kit 6.jpg",
+                "Benfica/Benfica Away Kit/SL Benfica Away Kit 7.jpg",
+                "Benfica/Benfica Away Kit/SL Benfica Away Kit 8.jpg",
+                "Benfica/Benfica Away Kit/SL Benfica Away Kit 9.jpg",
+                "Benfica/Benfica Away Kit/SL Benfica Away Kit 10.jpg",
+                "Benfica/Benfica Away Kit/SL Benfica Away Kit 11.jpg"
+              ]
+            },
+            "home": {
+              "folder": "Benfica/Benfica Home Kit",
+              "cover": "Benfica/Benfica Home Kit/SL Benfica Home Kit.jpg",
+              "images": [
+                "Benfica/Benfica Home Kit/SL Benfica Home Kit.jpg",
+                "Benfica/Benfica Home Kit/SL Benfica Home Kit 2.jpg",
+                "Benfica/Benfica Home Kit/SL Benfica Home Kit 3.jpg",
+                "Benfica/Benfica Home Kit/SL Benfica Home Kit 4.jpg",
+                "Benfica/Benfica Home Kit/SL Benfica Home Kit 5.jpg",
+                "Benfica/Benfica Home Kit/SL Benfica Home Kit 6.jpg",
+                "Benfica/Benfica Home Kit/SL Benfica Home Kit 7.jpg",
+                "Benfica/Benfica Home Kit/SL Benfica Home Kit 8.jpg",
+                "Benfica/Benfica Home Kit/SL Benfica Home Kit 9.jpg",
+                "Benfica/Benfica Home Kit/SL Benfica Home Kit 10.jpg",
+                "Benfica/Benfica Home Kit/SL Benfica Home Kit 11.jpg",
+                "Benfica/Benfica Home Kit/SL Benfica Home Kit 12.jpg",
+                "Benfica/Benfica Home Kit/SL Benfica Home Kit 13.jpg",
+                "Benfica/Benfica Home Kit/SL Benfica Home Kit 14.jpg",
+                "Benfica/Benfica Home Kit/SL Benfica Home Kit 15.jpg",
+                "Benfica/Benfica Home Kit/SL Benfica Home Kit 16.jpg",
+                "Benfica/Benfica Home Kit/SL Benfica Home Kit 17.jpg"
+              ]
+            },
+            "third": {
+              "folder": "Benfica/Benfica Third Kit",
+              "cover": "Benfica/Benfica Third Kit/SL Benfica Third Kit.jpg",
+              "images": [
+                "Benfica/Benfica Third Kit/SL Benfica Third Kit.jpg",
+                "Benfica/Benfica Third Kit/SL Benfica Third Kit 2.jpg",
+                "Benfica/Benfica Third Kit/SL Benfica Third Kit 3.jpg",
+                "Benfica/Benfica Third Kit/SL Benfica Third Kit 4.jpg",
+                "Benfica/Benfica Third Kit/SL Benfica Third Kit 5.jpg",
+                "Benfica/Benfica Third Kit/SL Benfica Third Kit 6.jpg",
+                "Benfica/Benfica Third Kit/SL Benfica Third Kit 7.jpg",
+                "Benfica/Benfica Third Kit/SL Benfica Third Kit 8.jpg",
+                "Benfica/Benfica Third Kit/SL Benfica Third Kit 9.jpg"
+              ]
+            }
+          }
+        },
+        {
+          "id": "fc-porto",
+          "folder": "FC Porto",
+          "name": "FC Porto",
+          "league": "Primeira Liga",
+          "kits": {
+            "away": {
+              "folder": "FC Porto/FC Porto Away Kit",
+              "cover": "FC Porto/FC Porto Away Kit/FC Porto Away Kit.jpg",
+              "images": [
+                "FC Porto/FC Porto Away Kit/FC Porto Away Kit.jpg",
+                "FC Porto/FC Porto Away Kit/FC Porto Away Kit 2.jpg",
+                "FC Porto/FC Porto Away Kit/FC Porto Away Kit 3.jpg",
+                "FC Porto/FC Porto Away Kit/FC Porto Away Kit 4.jpg",
+                "FC Porto/FC Porto Away Kit/FC Porto Away Kit 5.jpg",
+                "FC Porto/FC Porto Away Kit/FC Porto Away Kit 6.jpg",
+                "FC Porto/FC Porto Away Kit/FC Porto Away Kit 7.jpg",
+                "FC Porto/FC Porto Away Kit/FC Porto Away Kit 8.jpg",
+                "FC Porto/FC Porto Away Kit/FC Porto Away Kit 9.jpg",
+                "FC Porto/FC Porto Away Kit/FC Porto Away Kit 10.jpg",
+                "FC Porto/FC Porto Away Kit/FC Porto Away Kit 11.jpg",
+                "FC Porto/FC Porto Away Kit/FC Porto Away Kit 12.jpg",
+                "FC Porto/FC Porto Away Kit/FC Porto Away Kit 13.jpg"
+              ]
+            },
+            "home": {
+              "folder": "FC Porto/FC Porto Home Kit",
+              "cover": "FC Porto/FC Porto Home Kit/FC Porto Home Kit.jpg",
+              "images": [
+                "FC Porto/FC Porto Home Kit/FC Porto Home Kit.jpg",
+                "FC Porto/FC Porto Home Kit/FC Porto Home Kit 2.jpg",
+                "FC Porto/FC Porto Home Kit/FC Porto Home Kit 3.jpg",
+                "FC Porto/FC Porto Home Kit/FC Porto Home Kit 4.jpg",
+                "FC Porto/FC Porto Home Kit/FC Porto Home Kit 5.jpg",
+                "FC Porto/FC Porto Home Kit/FC Porto Home Kit 6.jpg",
+                "FC Porto/FC Porto Home Kit/FC Porto Home Kit 7.jpg",
+                "FC Porto/FC Porto Home Kit/FC Porto Home Kit 8.jpg",
+                "FC Porto/FC Porto Home Kit/FC Porto Home Kit 9.jpg",
+                "FC Porto/FC Porto Home Kit/FC Porto Home Kit 10.jpg",
+                "FC Porto/FC Porto Home Kit/FC Porto Home Kit 11.jpg",
+                "FC Porto/FC Porto Home Kit/FC Porto Home Kit 12.jpg",
+                "FC Porto/FC Porto Home Kit/FC Porto Home Kit 13.jpg",
+                "FC Porto/FC Porto Home Kit/FC Porto Home Kit 14.jpg"
+              ]
+            },
+            "third": {
+              "folder": "FC Porto/FC Porto Third Kit",
+              "cover": "FC Porto/FC Porto Third Kit/FC Porto Third Kit.jpg",
+              "images": [
+                "FC Porto/FC Porto Third Kit/FC Porto Third Kit.jpg",
+                "FC Porto/FC Porto Third Kit/FC Porto Third Kit 2.jpg",
+                "FC Porto/FC Porto Third Kit/FC Porto Third Kit 3.jpg",
+                "FC Porto/FC Porto Third Kit/FC Porto Third Kit 4.jpg",
+                "FC Porto/FC Porto Third Kit/FC Porto Third Kit 5.jpg",
+                "FC Porto/FC Porto Third Kit/FC Porto Third Kit 6.jpg",
+                "FC Porto/FC Porto Third Kit/FC Porto Third Kit 7.jpg",
+                "FC Porto/FC Porto Third Kit/FC Porto Third Kit 8.jpg",
+                "FC Porto/FC Porto Third Kit/FC Porto Third Kit 9.jpg",
+                "FC Porto/FC Porto Third Kit/FC Porto Third Kit 10.jpg",
+                "FC Porto/FC Porto Third Kit/FC Porto Third Kit 11.jpg",
+                "FC Porto/FC Porto Third Kit/FC Porto Third Kit 12.jpg",
+                "FC Porto/FC Porto Third Kit/FC Porto Third Kit 13.jpg",
+                "FC Porto/FC Porto Third Kit/FC Porto Third Kit 14.jpg",
+                "FC Porto/FC Porto Third Kit/FC Porto Third Kit 15.jpg",
+                "FC Porto/FC Porto Third Kit/FC Porto Third Kit 16.jpg",
+                "FC Porto/FC Porto Third Kit/FC Porto Third Kit 17.jpg"
+              ]
+            }
+          }
+        },
+        {
+          "id": "sporting-cp",
+          "folder": "Sporting CP",
+          "name": "Sporting CP",
+          "league": "Primeira Liga",
+          "kits": {
+            "away": {
+              "folder": "Sporting CP/Sporting CP Away Kit",
+              "cover": "Sporting CP/Sporting CP Away Kit/Sporting CP Away Kit.jpg",
+              "images": [
+                "Sporting CP/Sporting CP Away Kit/Sporting CP Away Kit.jpg",
+                "Sporting CP/Sporting CP Away Kit/Sporting CP Away Kit 2.jpg",
+                "Sporting CP/Sporting CP Away Kit/Sporting CP Away Kit 3.jpg",
+                "Sporting CP/Sporting CP Away Kit/Sporting CP Away Kit 4.jpg",
+                "Sporting CP/Sporting CP Away Kit/Sporting CP Away Kit 5.jpg",
+                "Sporting CP/Sporting CP Away Kit/Sporting CP Away Kit 6.jpg",
+                "Sporting CP/Sporting CP Away Kit/Sporting CP Away Kit 7.jpg",
+                "Sporting CP/Sporting CP Away Kit/Sporting CP Away Kit 8.jpg",
+                "Sporting CP/Sporting CP Away Kit/Sporting CP Away Kit 9.jpg",
+                "Sporting CP/Sporting CP Away Kit/Sporting CP Away Kit 10.jpg"
+              ]
+            },
+            "home": {
+              "folder": "Sporting CP/Sporting CP Home Kit",
+              "cover": "Sporting CP/Sporting CP Home Kit/Sporting CP Home Kit.jpg",
+              "images": [
+                "Sporting CP/Sporting CP Home Kit/Sporting CP Home Kit.jpg",
+                "Sporting CP/Sporting CP Home Kit/Sporting CP Home Kit 2.jpg",
+                "Sporting CP/Sporting CP Home Kit/Sporting CP Home Kit 3.jpg",
+                "Sporting CP/Sporting CP Home Kit/Sporting CP Home Kit 4.jpg",
+                "Sporting CP/Sporting CP Home Kit/Sporting CP Home Kit 5.jpg",
+                "Sporting CP/Sporting CP Home Kit/Sporting CP Home Kit 6.jpg",
+                "Sporting CP/Sporting CP Home Kit/Sporting CP Home Kit 7.jpg",
+                "Sporting CP/Sporting CP Home Kit/Sporting CP Home Kit 8.jpg",
+                "Sporting CP/Sporting CP Home Kit/Sporting CP Home Kit 9.jpg",
+                "Sporting CP/Sporting CP Home Kit/Sporting CP Home Kit 10.jpg",
+                "Sporting CP/Sporting CP Home Kit/Sporting CP Home Kit 11.jpg",
+                "Sporting CP/Sporting CP Home Kit/Sporting CP Home Kit 12.jpg",
+                "Sporting CP/Sporting CP Home Kit/Sporting CP Home Kit 13.jpg",
+                "Sporting CP/Sporting CP Home Kit/Sporting CP Home Kit 14.jpg",
+                "Sporting CP/Sporting CP Home Kit/Sporting CP Home Kit 15.jpg",
+                "Sporting CP/Sporting CP Home Kit/Sporting CP Home Kit 16.jpg"
+              ]
+            },
+            "third": {
+              "folder": "Sporting CP/Sporting CP Third Kit",
+              "cover": "Sporting CP/Sporting CP Third Kit/Sporting CP Third Kit.jpg",
+              "images": [
+                "Sporting CP/Sporting CP Third Kit/Sporting CP Third Kit.jpg",
+                "Sporting CP/Sporting CP Third Kit/Sporting CP Third Kit 2.jpg",
+                "Sporting CP/Sporting CP Third Kit/Sporting CP Third Kit 3.jpg",
+                "Sporting CP/Sporting CP Third Kit/Sporting CP Third Kit 4.jpg",
+                "Sporting CP/Sporting CP Third Kit/Sporting CP Third Kit 5.jpg",
+                "Sporting CP/Sporting CP Third Kit/Sporting CP Third Kit 6.jpg",
+                "Sporting CP/Sporting CP Third Kit/Sporting CP Third Kit 7.jpg",
+                "Sporting CP/Sporting CP Third Kit/Sporting CP Third Kit 8.jpg",
+                "Sporting CP/Sporting CP Third Kit/Sporting CP Third Kit 9.jpg",
+                "Sporting CP/Sporting CP Third Kit/Sporting CP Third Kit 10.jpg",
+                "Sporting CP/Sporting CP Third Kit/Sporting CP Third Kit 11.jpg",
+                "Sporting CP/Sporting CP Third Kit/Sporting CP Third Kit 12.jpg",
+                "Sporting CP/Sporting CP Third Kit/Sporting CP Third Kit 13.jpg"
+              ]
+            }
+          }
+        },
+        {
+          "id": "braga",
+          "folder": "Braga",
+          "name": "SC Braga",
+          "league": "Primeira Liga",
+          "kits": {
+            "away": {
+              "folder": "Braga/Braga Away Kit",
+              "cover": "Braga/Braga Away Kit/SC Braga Away Kit.jpg",
+              "images": [
+                "Braga/Braga Away Kit/SC Braga Away Kit.jpg",
+                "Braga/Braga Away Kit/SC Braga Away Kit 2.jpg",
+                "Braga/Braga Away Kit/SC Braga Away Kit 3.jpg",
+                "Braga/Braga Away Kit/SC Braga Away Kit 4.jpg",
+                "Braga/Braga Away Kit/SC Braga Away Kit 5.jpg",
+                "Braga/Braga Away Kit/SC Braga Away Kit 6.jpg",
+                "Braga/Braga Away Kit/SC Braga Away Kit 7.jpg",
+                "Braga/Braga Away Kit/SC Braga Away Kit 8.jpg"
+              ]
+            },
+            "home": {
+              "folder": "Braga/Braga Home Kit",
+              "cover": "Braga/Braga Home Kit/SC Braga Home Kit.jpg",
+              "images": [
+                "Braga/Braga Home Kit/SC Braga Home Kit.jpg",
+                "Braga/Braga Home Kit/SC Braga Home Kit 2.jpg",
+                "Braga/Braga Home Kit/SC Braga Home Kit 3.jpg",
+                "Braga/Braga Home Kit/SC Braga Home Kit 4.jpg",
+                "Braga/Braga Home Kit/SC Braga Home Kit 5.jpg",
+                "Braga/Braga Home Kit/SC Braga Home Kit 6.jpg",
+                "Braga/Braga Home Kit/SC Braga Home Kit 7.jpg",
+                "Braga/Braga Home Kit/SC Braga Home Kit 8.jpg",
+                "Braga/Braga Home Kit/SC Braga Home Kit 9.jpg"
+              ]
+            },
+            "third": {
+              "folder": "Braga/Braga Third Kit",
+              "cover": "Braga/Braga Third Kit/SC Braga Third Kit.jpg",
+              "images": [
+                "Braga/Braga Third Kit/SC Braga Third Kit.jpg",
+                "Braga/Braga Third Kit/SC Braga Third Kit 2.jpg",
+                "Braga/Braga Third Kit/SC Braga Third Kit 3.jpg",
+                "Braga/Braga Third Kit/SC Braga Third Kit 4.jpg",
+                "Braga/Braga Third Kit/SC Braga Third Kit 5.jpg",
+                "Braga/Braga Third Kit/SC Braga Third Kit 6.jpg",
+                "Braga/Braga Third Kit/SC Braga Third Kit 7.jpg",
+                "Braga/Braga Third Kit/SC Braga Third Kit 8.jpg",
+                "Braga/Braga Third Kit/SC Braga Third Kit 9.jpg"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "super-lig",
+      "name": "Süper Lig",
+      "flag": "🇹🇷",
+      "teams": [
+        {
+          "id": "galatasaray",
+          "folder": "Galatasaray",
+          "name": "Galatasaray",
+          "league": "Süper Lig",
+          "kits": {
+            "away": {
+              "folder": "Galatasaray/Galatasaray Away  Kit",
+              "cover": "Galatasaray/Galatasaray Away  Kit/Galatasaray Away Kit.jpg",
+              "images": [
+                "Galatasaray/Galatasaray Away  Kit/Galatasaray Away Kit.jpg",
+                "Galatasaray/Galatasaray Away  Kit/Galatasaray Away Kit 2.jpg",
+                "Galatasaray/Galatasaray Away  Kit/Galatasaray Away Kit 3.jpg",
+                "Galatasaray/Galatasaray Away  Kit/Galatasaray Away Kit 4.jpg",
+                "Galatasaray/Galatasaray Away  Kit/Galatasaray Away Kit 5.jpg",
+                "Galatasaray/Galatasaray Away  Kit/Galatasaray Away Kit 6.jpg",
+                "Galatasaray/Galatasaray Away  Kit/Galatasaray Away Kit 7.jpg",
+                "Galatasaray/Galatasaray Away  Kit/Galatasaray Away Kit 8.jpg",
+                "Galatasaray/Galatasaray Away  Kit/Galatasaray Away Kit 9.jpg",
+                "Galatasaray/Galatasaray Away  Kit/Galatasaray Away Kit 10.jpg",
+                "Galatasaray/Galatasaray Away  Kit/Galatasaray Away Kit 11.jpg",
+                "Galatasaray/Galatasaray Away  Kit/Galatasaray Away Kit 12.jpg",
+                "Galatasaray/Galatasaray Away  Kit/Galatasaray Away Kit 13.jpg",
+                "Galatasaray/Galatasaray Away  Kit/Galatasaray Away Kit 14.jpg",
+                "Galatasaray/Galatasaray Away  Kit/Galatasaray Away Kit 15.jpg",
+                "Galatasaray/Galatasaray Away  Kit/Galatasaray Away Kit 16.jpg"
+              ]
+            },
+            "home": {
+              "folder": "Galatasaray/Galatasaray Home Kit",
+              "cover": "Galatasaray/Galatasaray Home Kit/Galatasaray Home Kit.jpg",
+              "images": [
+                "Galatasaray/Galatasaray Home Kit/Galatasaray Home Kit.jpg",
+                "Galatasaray/Galatasaray Home Kit/Galatasaray Home Kit 2.jpg",
+                "Galatasaray/Galatasaray Home Kit/Galatasaray Home Kit 3.jpg",
+                "Galatasaray/Galatasaray Home Kit/Galatasaray Home Kit 4.jpg",
+                "Galatasaray/Galatasaray Home Kit/Galatasaray Home Kit 5.jpg",
+                "Galatasaray/Galatasaray Home Kit/Galatasaray Home Kit 6.jpg",
+                "Galatasaray/Galatasaray Home Kit/Galatasaray Home Kit 7.jpg",
+                "Galatasaray/Galatasaray Home Kit/Galatasaray Home Kit 8.jpg",
+                "Galatasaray/Galatasaray Home Kit/Galatasaray Home Kit 9.jpg",
+                "Galatasaray/Galatasaray Home Kit/Galatasaray Home Kit 10.jpg",
+                "Galatasaray/Galatasaray Home Kit/Galatasaray Home Kit 11.jpg",
+                "Galatasaray/Galatasaray Home Kit/Galatasaray Home Kit 12.jpg",
+                "Galatasaray/Galatasaray Home Kit/Galatasaray Home Kit 13.jpg",
+                "Galatasaray/Galatasaray Home Kit/Galatasaray Home Kit 14.jpg",
+                "Galatasaray/Galatasaray Home Kit/Galatasaray Home Kit 15.jpg"
+              ]
+            },
+            "third": {
+              "folder": "Galatasaray/Galatasaray Third Kit",
+              "cover": "Galatasaray/Galatasaray Third Kit/Galatasaray Third Kit.jpg",
+              "images": [
+                "Galatasaray/Galatasaray Third Kit/Galatasaray Third Kit.jpg",
+                "Galatasaray/Galatasaray Third Kit/Galatasaray Third Kit 2.jpg",
+                "Galatasaray/Galatasaray Third Kit/Galatasaray Third Kit 3.jpg",
+                "Galatasaray/Galatasaray Third Kit/Galatasaray Third Kit 4.jpg",
+                "Galatasaray/Galatasaray Third Kit/Galatasaray Third Kit 5.jpg",
+                "Galatasaray/Galatasaray Third Kit/Galatasaray Third Kit 6.jpg",
+                "Galatasaray/Galatasaray Third Kit/Galatasaray Third Kit 7.jpg",
+                "Galatasaray/Galatasaray Third Kit/Galatasaray Third Kit 8.jpg",
+                "Galatasaray/Galatasaray Third Kit/Galatasaray Third Kit 9.jpg",
+                "Galatasaray/Galatasaray Third Kit/Galatasaray Third Kit 10.jpg",
+                "Galatasaray/Galatasaray Third Kit/Galatasaray Third Kit 11.jpg",
+                "Galatasaray/Galatasaray Third Kit/Galatasaray Third Kit 12.jpg",
+                "Galatasaray/Galatasaray Third Kit/Galatasaray Third Kit 13.jpg",
+                "Galatasaray/Galatasaray Third Kit/Galatasaray Third Kit 14.jpg"
+              ]
+            }
+          }
+        },
+        {
+          "id": "fenerbahce",
+          "folder": "Fenerbahce",
+          "name": "Fenerbahçe",
+          "league": "Süper Lig",
+          "kits": {
+            "away": {
+              "folder": "Fenerbahce/Fenerbahce Away Kit",
+              "cover": "Fenerbahce/Fenerbahce Away Kit/Fenerbahçe Away Kit.jpg",
+              "images": [
+                "Fenerbahce/Fenerbahce Away Kit/Fenerbahçe Away Kit.jpg",
+                "Fenerbahce/Fenerbahce Away Kit/Fenerbahçe Away Kit 2.jpg",
+                "Fenerbahce/Fenerbahce Away Kit/Fenerbahçe Away Kit 3.jpg",
+                "Fenerbahce/Fenerbahce Away Kit/Fenerbahçe Away Kit 4.jpg",
+                "Fenerbahce/Fenerbahce Away Kit/Fenerbahçe Away Kit 5.jpg",
+                "Fenerbahce/Fenerbahce Away Kit/Fenerbahçe Away Kit 6.jpg",
+                "Fenerbahce/Fenerbahce Away Kit/Fenerbahçe Away Kit 7.jpg",
+                "Fenerbahce/Fenerbahce Away Kit/Fenerbahçe Away Kit 8.jpg",
+                "Fenerbahce/Fenerbahce Away Kit/Fenerbahçe Away Kit 9.jpg",
+                "Fenerbahce/Fenerbahce Away Kit/Fenerbahçe Away Kit 10.jpg",
+                "Fenerbahce/Fenerbahce Away Kit/Fenerbahçe Away Kit 11.jpg",
+                "Fenerbahce/Fenerbahce Away Kit/Fenerbahçe Away Kit 12.jpg",
+                "Fenerbahce/Fenerbahce Away Kit/Fenerbahçe Away Kit 13.jpg",
+                "Fenerbahce/Fenerbahce Away Kit/Fenerbahçe Away Kit 14.jpg",
+                "Fenerbahce/Fenerbahce Away Kit/Fenerbahçe Away Kit 15.jpg",
+                "Fenerbahce/Fenerbahce Away Kit/Fenerbahçe Away Kit 16.jpg",
+                "Fenerbahce/Fenerbahce Away Kit/Fenerbahçe Away Kit 17.jpg",
+                "Fenerbahce/Fenerbahce Away Kit/Fenerbahçe Away Kit 18.jpg",
+                "Fenerbahce/Fenerbahce Away Kit/Fenerbahçe Away Kit 19.jpg",
+                "Fenerbahce/Fenerbahce Away Kit/Fenerbahçe Away Kit 20.jpg"
+              ]
+            },
+            "home": {
+              "folder": "Fenerbahce/Fenerbahce Home Kit",
+              "cover": "Fenerbahce/Fenerbahce Home Kit/Fenerbahçe Home Kit.jpg",
+              "images": [
+                "Fenerbahce/Fenerbahce Home Kit/Fenerbahçe Home Kit.jpg",
+                "Fenerbahce/Fenerbahce Home Kit/Fenerbahçe Home Kit 2.jpg",
+                "Fenerbahce/Fenerbahce Home Kit/Fenerbahçe Home Kit 3.jpg",
+                "Fenerbahce/Fenerbahce Home Kit/Fenerbahçe Home Kit 4.jpg",
+                "Fenerbahce/Fenerbahce Home Kit/Fenerbahçe Home Kit 5.jpg",
+                "Fenerbahce/Fenerbahce Home Kit/Fenerbahçe Home Kit 6.jpg",
+                "Fenerbahce/Fenerbahce Home Kit/Fenerbahçe Home Kit 7.jpg",
+                "Fenerbahce/Fenerbahce Home Kit/Fenerbahçe Home Kit 8.jpg",
+                "Fenerbahce/Fenerbahce Home Kit/Fenerbahçe Home Kit 9.jpg",
+                "Fenerbahce/Fenerbahce Home Kit/Fenerbahçe Home Kit 10.jpg",
+                "Fenerbahce/Fenerbahce Home Kit/Fenerbahçe Home Kit 11.jpg",
+                "Fenerbahce/Fenerbahce Home Kit/Fenerbahçe Home Kit 12.jpg",
+                "Fenerbahce/Fenerbahce Home Kit/Fenerbahçe Home Kit 13.jpg",
+                "Fenerbahce/Fenerbahce Home Kit/Fenerbahçe Home Kit 14.jpg",
+                "Fenerbahce/Fenerbahce Home Kit/Fenerbahçe Home Kit 15.jpg",
+                "Fenerbahce/Fenerbahce Home Kit/Fenerbahçe Home Kit 16.jpg",
+                "Fenerbahce/Fenerbahce Home Kit/Fenerbahçe Home Kit 17.jpg",
+                "Fenerbahce/Fenerbahce Home Kit/Fenerbahçe Home Kit 18.jpg",
+                "Fenerbahce/Fenerbahce Home Kit/Fenerbahçe Home Kit 19.jpg",
+                "Fenerbahce/Fenerbahce Home Kit/Fenerbahçe Home Kit 20.jpg",
+                "Fenerbahce/Fenerbahce Home Kit/Fenerbahçe Home Kit 21.jpg",
+                "Fenerbahce/Fenerbahce Home Kit/Fenerbahçe Home Kit 22.jpg",
+                "Fenerbahce/Fenerbahce Home Kit/Fenerbahçe Home Kit 23.jpg",
+                "Fenerbahce/Fenerbahce Home Kit/Fenerbahçe Home Kit 24.jpg",
+                "Fenerbahce/Fenerbahce Home Kit/Fenerbahçe Home Kit 25.jpg",
+                "Fenerbahce/Fenerbahce Home Kit/Fenerbahçe Home Kit 26.jpg",
+                "Fenerbahce/Fenerbahce Home Kit/Fenerbahçe Home Kit 27.jpg",
+                "Fenerbahce/Fenerbahce Home Kit/Fenerbahçe Home Kit 28.jpg"
+              ]
+            },
+            "third": {
+              "folder": "Fenerbahce/Fenerbahce Third Kit",
+              "cover": "Fenerbahce/Fenerbahce Third Kit/Fenerbahçe Third Kit.jpg",
+              "images": [
+                "Fenerbahce/Fenerbahce Third Kit/Fenerbahçe Third Kit.jpg",
+                "Fenerbahce/Fenerbahce Third Kit/Fenerbahçe Third Kit 2.jpg",
+                "Fenerbahce/Fenerbahce Third Kit/Fenerbahçe Third Kit 3.jpg",
+                "Fenerbahce/Fenerbahce Third Kit/Fenerbahçe Third Kit 4.jpg",
+                "Fenerbahce/Fenerbahce Third Kit/Fenerbahçe Third Kit 5.jpg",
+                "Fenerbahce/Fenerbahce Third Kit/Fenerbahçe Third Kit 6.jpg",
+                "Fenerbahce/Fenerbahce Third Kit/Fenerbahçe Third Kit 7.jpg",
+                "Fenerbahce/Fenerbahce Third Kit/Fenerbahçe Third Kit 8.jpg",
+                "Fenerbahce/Fenerbahce Third Kit/Fenerbahçe Third Kit 9.jpg",
+                "Fenerbahce/Fenerbahce Third Kit/Fenerbahçe Third Kit 10.jpg",
+                "Fenerbahce/Fenerbahce Third Kit/Fenerbahçe Third Kit 11.jpg",
+                "Fenerbahce/Fenerbahce Third Kit/Fenerbahçe Third Kit 12.jpg",
+                "Fenerbahce/Fenerbahce Third Kit/Fenerbahçe Third Kit 13.jpg",
+                "Fenerbahce/Fenerbahce Third Kit/Fenerbahçe Third Kit 14.jpg",
+                "Fenerbahce/Fenerbahce Third Kit/Fenerbahçe Third Kit 15.jpg",
+                "Fenerbahce/Fenerbahce Third Kit/Fenerbahçe Third Kit 16.jpg",
+                "Fenerbahce/Fenerbahce Third Kit/Fenerbahçe Third Kit 17.jpg",
+                "Fenerbahce/Fenerbahce Third Kit/Fenerbahçe Third Kit 18.jpg"
+              ]
+            }
+          }
+        },
+        {
+          "id": "besiktas",
+          "folder": "Besiktas",
+          "name": "Beşiktaş",
+          "league": "Süper Lig",
+          "kits": {
+            "away": {
+              "folder": "Besiktas/Besiktas Away Kit",
+              "cover": "Besiktas/Besiktas Away Kit/Beşiktaş Away Kit.jpg",
+              "images": [
+                "Besiktas/Besiktas Away Kit/Beşiktaş Away Kit.jpg",
+                "Besiktas/Besiktas Away Kit/Beşiktaş Away Kit 2.jpg",
+                "Besiktas/Besiktas Away Kit/Beşiktaş Away Kit 3.jpg",
+                "Besiktas/Besiktas Away Kit/Beşiktaş Away Kit 4.jpg",
+                "Besiktas/Besiktas Away Kit/Beşiktaş Away Kit 5.jpg",
+                "Besiktas/Besiktas Away Kit/Beşiktaş Away Kit 6.jpg",
+                "Besiktas/Besiktas Away Kit/Beşiktaş Away Kit 7.jpg",
+                "Besiktas/Besiktas Away Kit/Beşiktaş Away Kit 8.jpg",
+                "Besiktas/Besiktas Away Kit/Beşiktaş Away Kit 9.jpg",
+                "Besiktas/Besiktas Away Kit/Beşiktaş Away Kit 10.jpg",
+                "Besiktas/Besiktas Away Kit/Beşiktaş Away Kit 11.jpg",
+                "Besiktas/Besiktas Away Kit/Beşiktaş Away Kit 12.jpg"
+              ]
+            },
+            "home": {
+              "folder": "Besiktas/Besiktas Home Kit",
+              "cover": "Besiktas/Besiktas Home Kit/Beşiktaş Home Kit.jpg",
+              "images": [
+                "Besiktas/Besiktas Home Kit/Beşiktaş Home Kit.jpg",
+                "Besiktas/Besiktas Home Kit/Beşiktaş Home Kit 2.jpg",
+                "Besiktas/Besiktas Home Kit/Beşiktaş Home Kit 3.jpg",
+                "Besiktas/Besiktas Home Kit/Beşiktaş Home Kit 4.jpg",
+                "Besiktas/Besiktas Home Kit/Beşiktaş Home Kit 5.jpg",
+                "Besiktas/Besiktas Home Kit/Beşiktaş Home Kit 6.jpg",
+                "Besiktas/Besiktas Home Kit/Beşiktaş Home Kit 7.jpg",
+                "Besiktas/Besiktas Home Kit/Beşiktaş Home Kit 8.jpg",
+                "Besiktas/Besiktas Home Kit/Beşiktaş Home Kit 9.jpg",
+                "Besiktas/Besiktas Home Kit/Beşiktaş Home Kit 10.jpg",
+                "Besiktas/Besiktas Home Kit/Beşiktaş Home Kit 11.jpg",
+                "Besiktas/Besiktas Home Kit/Beşiktaş Home Kit 12.jpg",
+                "Besiktas/Besiktas Home Kit/Beşiktaş Home Kit 13.jpg",
+                "Besiktas/Besiktas Home Kit/Beşiktaş Home Kit 14.jpg",
+                "Besiktas/Besiktas Home Kit/Beşiktaş Home Kit 15.jpg",
+                "Besiktas/Besiktas Home Kit/Beşiktaş Home Kit 16.jpg",
+                "Besiktas/Besiktas Home Kit/Beşiktaş Home Kit 17.jpg"
+              ]
+            },
+            "third": {
+              "folder": "Besiktas/Besiktas Third Kit",
+              "cover": "Besiktas/Besiktas Third Kit/Beşiktaş Third Kit.jpg",
+              "images": [
+                "Besiktas/Besiktas Third Kit/Beşiktaş Third Kit.jpg",
+                "Besiktas/Besiktas Third Kit/Beşiktaş Third Kit 2.jpg",
+                "Besiktas/Besiktas Third Kit/Beşiktaş Third Kit 3.jpg",
+                "Besiktas/Besiktas Third Kit/Beşiktaş Third Kit 4.jpg",
+                "Besiktas/Besiktas Third Kit/Beşiktaş Third Kit 5.jpg",
+                "Besiktas/Besiktas Third Kit/Beşiktaş Third Kit 6.jpg",
+                "Besiktas/Besiktas Third Kit/Beşiktaş Third Kit 7.jpg",
+                "Besiktas/Besiktas Third Kit/Beşiktaş Third Kit 8.jpg",
+                "Besiktas/Besiktas Third Kit/Beşiktaş Third Kit 9.jpg",
+                "Besiktas/Besiktas Third Kit/Beşiktaş Third Kit 10.jpg",
+                "Besiktas/Besiktas Third Kit/Beşiktaş Third Kit 11.jpg",
+                "Besiktas/Besiktas Third Kit/Beşiktaş Third Kit 12.jpg",
+                "Besiktas/Besiktas Third Kit/Beşiktaş Third Kit 13.jpg",
+                "Besiktas/Besiktas Third Kit/Beşiktaş Third Kit 14.jpg",
+                "Besiktas/Besiktas Third Kit/Beşiktaş Third Kit 15.jpg",
+                "Besiktas/Besiktas Third Kit/Beşiktaş Third Kit 16.jpg"
+              ]
+            }
+          }
+        },
+        {
+          "id": "trabzonspor",
+          "folder": "Trabzonspor",
+          "name": "Trabzonspor",
+          "league": "Süper Lig",
+          "kits": {
+            "away": {
+              "folder": "Trabzonspor/Trabzonspor Away Kit",
+              "cover": "Trabzonspor/Trabzonspor Away Kit/Trabzonspor Away Kit.jpg",
+              "images": [
+                "Trabzonspor/Trabzonspor Away Kit/Trabzonspor Away Kit.jpg",
+                "Trabzonspor/Trabzonspor Away Kit/Trabzonspor Away Kit 2.jpg",
+                "Trabzonspor/Trabzonspor Away Kit/Trabzonspor Away Kit 3.jpg",
+                "Trabzonspor/Trabzonspor Away Kit/Trabzonspor Away Kit 4.jpg",
+                "Trabzonspor/Trabzonspor Away Kit/Trabzonspor Away Kit 5.jpg",
+                "Trabzonspor/Trabzonspor Away Kit/Trabzonspor Away Kit 6.jpg",
+                "Trabzonspor/Trabzonspor Away Kit/Trabzonspor Away Kit 7.jpg",
+                "Trabzonspor/Trabzonspor Away Kit/Trabzonspor Away Kit 8.jpg"
+              ]
+            },
+            "home": {
+              "folder": "Trabzonspor/Trabzonspor Home Kit",
+              "cover": "Trabzonspor/Trabzonspor Home Kit/Trabzonspor Home Kit.jpg",
+              "images": [
+                "Trabzonspor/Trabzonspor Home Kit/Trabzonspor Home Kit.jpg",
+                "Trabzonspor/Trabzonspor Home Kit/Trabzonspor Home Kit 2.jpg",
+                "Trabzonspor/Trabzonspor Home Kit/Trabzonspor Home Kit 3.jpg",
+                "Trabzonspor/Trabzonspor Home Kit/Trabzonspor Home Kit 4.jpg",
+                "Trabzonspor/Trabzonspor Home Kit/Trabzonspor Home Kit 5.jpg",
+                "Trabzonspor/Trabzonspor Home Kit/Trabzonspor Home Kit 6.jpg",
+                "Trabzonspor/Trabzonspor Home Kit/Trabzonspor Home Kit 7.jpg",
+                "Trabzonspor/Trabzonspor Home Kit/Trabzonspor Home Kit 8.jpg",
+                "Trabzonspor/Trabzonspor Home Kit/Trabzonspor Home Kit 9.jpg",
+                "Trabzonspor/Trabzonspor Home Kit/Trabzonspor Home Kit 10.jpg",
+                "Trabzonspor/Trabzonspor Home Kit/Trabzonspor Home Kit 11.jpg",
+                "Trabzonspor/Trabzonspor Home Kit/Trabzonspor Home Kit 12.jpg"
+              ]
+            },
+            "third": {
+              "folder": "Trabzonspor/Trabzonspor Third Kit",
+              "cover": "Trabzonspor/Trabzonspor Third Kit/Trabzonspor Third Kit.jpg",
+              "images": [
+                "Trabzonspor/Trabzonspor Third Kit/Trabzonspor Third Kit.jpg",
+                "Trabzonspor/Trabzonspor Third Kit/Trabzonspor Third Kit 2.jpg",
+                "Trabzonspor/Trabzonspor Third Kit/Trabzonspor Third Kit 3.jpg",
+                "Trabzonspor/Trabzonspor Third Kit/Trabzonspor Third Kit 4.jpg",
+                "Trabzonspor/Trabzonspor Third Kit/Trabzonspor Third Kit 5.jpg",
+                "Trabzonspor/Trabzonspor Third Kit/Trabzonspor Third Kit 6.jpg",
+                "Trabzonspor/Trabzonspor Third Kit/Trabzonspor Third Kit 7.jpg",
+                "Trabzonspor/Trabzonspor Third Kit/Trabzonspor Third Kit 8.jpg",
+                "Trabzonspor/Trabzonspor Third Kit/Trabzonspor Third Kit 9.jpg",
+                "Trabzonspor/Trabzonspor Third Kit/Trabzonspor Third Kit 10.jpg",
+                "Trabzonspor/Trabzonspor Third Kit/Trabzonspor Third Kit 11.jpg",
+                "Trabzonspor/Trabzonspor Third Kit/Trabzonspor Third Kit 12.jpg",
+                "Trabzonspor/Trabzonspor Third Kit/Trabzonspor Third Kit 13.jpg",
+                "Trabzonspor/Trabzonspor Third Kit/Trabzonspor Third Kit 14.jpg"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
