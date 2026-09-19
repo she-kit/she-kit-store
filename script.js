@@ -680,39 +680,40 @@ function resetCustomizationForm() {
 window.addEventListener('load', () => {
     applyLanguage(currentLanguage);
 });
-// --- תיקון 1 + 2: הוספת לוגיקה לחישוב 20₪ לשם ומספר ---
-function updateTotalPrice() {
-    let base = 99; // מחיר בסיס לדוגמה, התאם למשתנה המחיר הקיים אצלך
+// לוגיקת תוספת 20₪ לשם או מספר וחישוב מחיר מעודכן
+function calculatePrice() {
+    let basePrice = 99; // מחיר הבסיס
     let extras = 0;
-    
-    const nameInput = document.getElementById('playerName'); // שדה שם/אוחז
-    const numberInput = document.getElementById('playerNumber'); // שדה מספר
-    
+
+    const nameInput = document.getElementById('playerName');
+    const numberInput = document.getElementById('playerNumber');
+
     if ((nameInput && nameInput.value.trim() !== '') || (numberInput && numberInput.value.trim() !== '')) {
         extras += 20; // תוספת 20 ש"ח לשם או מספר
     }
-    
-    // בדיקת פאצ'ים או תוספות אחרות אם קיימים...
-    
-    const totalElement = document.getElementById('totalPrice');
-    if (totalElement) {
-        totalElement.textContent = (base + extras) + '₪';
+
+    // בדיקת תוספות נוספות כמו פאצ'ים ומכנסות אם קיימים
+    document.querySelectorAll('.addon:checked, input[name="shortsPack"]:checked').forEach(() => {
+        extras += 5; // או לפי התוספת המוגדרת
+    });
+
+    const totalPrice = basePrice + extras;
+    const totalEl = document.getElementById('totalPrice');
+    if (totalEl) {
+        totalEl.textContent = totalPrice + '₪';
     }
 }
 
-// הפעלת האזנה לשינויים בשדות השם והמספר
+// האזנה לשינויים בשדות כדי לעדכן מחיר בזמן אמת
 document.addEventListener('input', (e) => {
     if (e.target.id === 'playerName' || e.target.id === 'playerNumber') {
-        updateTotalPrice();
+        calculatePrice();
     }
 });
 
-
-// --- תיקון 3: הוספת טופס בקשות מיוחדות והעלאת קובץ לתחתית עמוד הבית ---
+// --- טופס בקשות מיוחדות והעלאת קובץ בתחתית עמוד הבית ---
 function renderCustomRequestSection() {
     const mainContainer = document.querySelector('main') || document.body;
-    
-    // בדיקה שהטופס לא נטען פעמיים
     if (document.getElementById('customRequestSection')) return;
 
     const section = document.createElement('section');
@@ -743,7 +744,6 @@ function renderCustomRequestSection() {
     });
 }
 
-// הפעלת יצירת הטופס בטעינת העמוד
 window.addEventListener('DOMContentLoaded', () => {
     renderCustomRequestSection();
 });
