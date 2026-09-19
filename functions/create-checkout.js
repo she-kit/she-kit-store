@@ -1,6 +1,6 @@
-const stripe = require('stripe')('כאן_תדביק_את_המפתח_הסודי_שלך');
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
-exports.handler = async (event) => {
+exports.handler = async function(event, context) {
     if (event.httpMethod !== 'POST') {
         return { statusCode: 405, body: 'Method Not Allowed' };
     }
@@ -12,20 +12,18 @@ exports.handler = async (event) => {
             payment_method_types: ['card'],
             line_items: items,
             mode: 'payment',
-            success_url: `${event.headers.origin || 'https://she-kit.netlify.app'}?success=true`,
-            cancel_url: `${event.headers.origin || 'https://she-kit.netlify.app'}?canceled=true`,
-            customer_email: customer ? customer.email : undefined,
+            success_url: `${event.headers.origin}/?success=true`,
+            cancel_url: `${event.headers.origin}/?canceled=true`,
         });
 
         return {
             statusCode: 200,
-            body: JSON.stringify({ id: session.id }),
+            body: JSON.stringify({ id: session.id })
         };
     } catch (error) {
-        console.error('Stripe error:', error);
         return {
             statusCode: 500,
-            body: JSON.stringify({ error: error.message }),
+            body: JSON.stringify({ error: error.message })
         };
     }
 };
