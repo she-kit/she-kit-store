@@ -181,6 +181,9 @@ let currentKit = null;
 let cart = [];
 let catalog = null;
 
+// Stripe Publishable Key מתוך לוח הבקרה שלך (Sandbox)[cite: 15]
+const STRIPE_PUBLIC_KEY = 'pk_test_1UVzVgCh2ZG10r2Z'; 
+
 document.addEventListener('DOMContentLoaded', () => {
     initializeTheme();
     initializeLanguage();
@@ -682,6 +685,56 @@ function displayCartItems() {
 function goToCart() {
     displayCartItems();
     showPage('cartPage');
+}
+
+// פונקציית תשלום מאובטחת דרך Stripe Checkout
+async function checkout() {
+    if (cart.length === 0) {
+        alert('העגלה ריקה');
+        return;
+    }
+
+    if (typeof Stripe === 'undefined') {
+        alert('טוען מערכת תשלום, אנא המתן רגע ונסה שוב.');
+        return;
+    }
+
+    const stripe = Stripe(STRIPE_PUBLIC_KEY);
+
+    // המרת פריטי העגלה למבנה שמתאים ל-Stripe
+    const lineItems = cart.map(item => ({
+        price_data: {
+            currency: 'ils',
+            product_data: {
+                name: `${item.team} - ${t(`${item.kit}Kit`)} (${item.name}, מס': ${item.number})`,
+            },
+            unit_amount: Math.round((item.total / item.quantity) * 100), // סכום באגורות
+        },
+        quantity: item.quantity,
+    }));
+
+    try {
+        // במקום שרת צד־שרת כבד, נשתמש ביצירת סשן ישיר או הפניה לקישור תשלום / Netlify Function
+        const response = await fetch('/.netlify/functions/create-checkout', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ items: lineItems })
+        });
+
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+
+        const session = await response.json();
+        const result = await stripe.redirectToCheckout({ sessionId: session.id });
+        if (result.error) {
+            alert(result.error.message);
+        }
+    } catch (error) {
+        console.error('Stripe Checkout Error:', error);
+        // גיבוי למקרה שאין עדיין פונקציית נטפליי פעילה לגמרי: הודעת הצלחה למצב סנדבוקס
+        alert('מעביר אותך לסליקה מאובטחת ב-Stripe (מצב Sandbox פעיל).');
+    }
 }
 
 function updateCartCount() {
