@@ -705,8 +705,8 @@ function goToCartFromForm() {
     goToCart();
 }
 
-// תהליך סליקה ישיר דרך Stripe Payment Link (עוקף שרת ונטפליי)
-function processSecureCheckout(event) {
+// תהליך סליקה דרך הפונקציה של Netlify ו-Stripe
+async function processSecureCheckout(event) {
     event.preventDefault();
 
     if (cart.length === 0) {
@@ -725,16 +725,42 @@ function processSecureCheckout(event) {
         notes: document.getElementById('shipNotes').value
     };
 
-    // שמירת פרטי הלקוח מקומית
     localStorage.setItem('lastCustomer', JSON.stringify(customer));
 
-    // החלף את המחרוזת למטה בקישור התשלום שלך מ-Stripe (לדוגמה: 'https://buy.stripe.com/test_...')
-    const stripePaymentLink = 'https://buy.stripe.com/test_your_link_here';
+    // המרת הפריטים בעגלה למבנה שדורש Stripe
+    const lineItems = cart.map(item => {
+        return {
+            price_data: {
+                currency: 'ils',
+                product_data: {
+                    name: `${item.team} - ${item.kit} Kit (${item.size})`,
+                },
+                unit_amount: Math.round((item.total / item.quantity) * 100), // סכום באגורות
+            },
+            quantity: item.quantity,
+        };
+    });
 
-    if (stripePaymentLink && stripePaymentLink.startsWith('http')) {
-        window.location.href = stripePaymentLink;
-    } else {
-        alert('נא להגדיר את קישור התשלום של Stripe בקוד.');
+    try {
+        const response = await fetch('/.netlify/functions/create-checkout', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ items: lineItems, customer: customer }),
+        });
+
+        const data = await response.json();
+
+        if (data.id) {
+            const stripe = Stripe(STRIPE_PUBLIC_KEY);
+            await stripe.redirectToCheckout({ sessionId: data.id });
+        } else {
+            alert('שגיאה ביצירת סשן תשלום: ' + (data.error || 'נסה שוב'));
+        }
+    } catch (error) {
+        console.error('Checkout error:', error);
+        alert('שגיאה בתקשורת עם שרת התשלומים.');
     }
 }
 
