@@ -5,7 +5,7 @@ const translations = {
         back: '← חזרה',
         welcome: 'ברוכים הבאים ל-She-Kit Store',
         tagline: 'חנות החולצות הכדורגל המובילה עם איכות וסגנון',
-        shop: 'תחל קניות',
+        shop: 'התחל קניות',
         ourLeagues: 'הליגות שלנו',
         whyUs: 'למה לבחור בנו?',
         quality: 'איכות גבוהה',
@@ -189,13 +189,6 @@ document.addEventListener('DOMContentLoaded', () => {
     loadCatalog();
 });
 
-/* ------------------------------------------------------------------------- *
- * Catalog: every image path comes from kits-manifest.json, which is generated
- * from the folders on disk by tools/build-manifest.mjs. Paths are never typed
- * by hand because some kit folders use decomposed Unicode, double spaces or
- * misspellings that would otherwise 404 in production.
- * ------------------------------------------------------------------------- */
-
 async function loadCatalog() {
     try {
         const response = await fetch('kits-manifest.json');
@@ -217,15 +210,10 @@ function t(key) {
     return (translations[currentLanguage] && translations[currentLanguage][key]) || key;
 }
 
-/** Percent-encode a repository path so spaces and accents survive the CDN. */
 function assetUrl(path) {
     return encodeURI(path);
 }
 
-/**
- * Point an <img> at a repository path, retrying the other Unicode
- * normalization if the first form is not found.
- */
 function setImage(img, path, altText) {
     const candidates = [path, path.normalize('NFC'), path.normalize('NFD')]
         .filter((value, index, all) => all.indexOf(value) === index);
@@ -233,8 +221,6 @@ function setImage(img, path, altText) {
 
     img.classList.remove('img-missing');
 
-    // Assigned rather than added as a listener: the same <img> is re-pointed on
-    // every thumbnail click, and stacked listeners would revert a later source.
     img.onerror = () => {
         attempt += 1;
         if (attempt < candidates.length) {
@@ -342,6 +328,7 @@ function renderTeamPage(team) {
     logoImg.style.width = '40px';
     logoImg.style.height = '40px';
     logoContainer.appendChild(logoImg);
+
     const container = document.getElementById('kitsContainer');
     container.innerHTML = '';
 
@@ -433,7 +420,7 @@ function toggleTheme() {
 
 function updateThemeButton() {
     const btn = document.getElementById('themeToggle');
-    btn.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
+    if (btn) btn.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
 }
 
 function initializeLanguage() {
@@ -456,45 +443,60 @@ function applyLanguage(lang) {
         }
     });
     
-    document.getElementById('languageSelect').value = lang;
+    const langSelect = document.getElementById('languageSelect');
+    if (langSelect) langSelect.value = lang;
     
-    // Re-render the parts built from the manifest so their labels follow the language.
     if (catalog) {
         renderLeaguesShowcase();
         if (currentTeam) {
             renderTeamPage(currentTeam);
             if (currentKit) {
-                document.getElementById('kitTitle').textContent = `${currentTeam.name} - ${t(`${currentKit}Kit`)}`;
+                const kitTitle = document.getElementById('kitTitle');
+                if (kitTitle) kitTitle.textContent = `${currentTeam.name} - ${t(`${currentKit}Kit`)}`;
             }
         }
-        if (document.getElementById('cartPage').classList.contains('active')) displayCartItems();
+        const cartPage = document.getElementById('cartPage');
+        if (cartPage && cartPage.classList.contains('active')) displayCartItems();
     }
 }
 
 function setupEventListeners() {
-    document.getElementById('themeToggle').addEventListener('click', toggleTheme);
-    document.getElementById('languageSelect').addEventListener('change', (e) => {
-        applyLanguage(e.target.value);
-    });
+    const themeToggle = document.getElementById('themeToggle');
+    if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
+
+    const langSelect = document.getElementById('languageSelect');
+    if (langSelect) {
+        langSelect.addEventListener('change', (e) => {
+            applyLanguage(e.target.value);
+        });
+    }
     
-    // The league menu is rendered from the manifest, so team clicks are delegated.
-    document.getElementById('leaguesList').addEventListener('click', (e) => {
-        const link = e.target.closest('.team-link');
-        if (!link) return;
-        e.preventDefault();
-        goToTeam(link.dataset.teamId);
-    });
+    const leaguesList = document.getElementById('leaguesList');
+    if (leaguesList) {
+        leaguesList.addEventListener('click', (e) => {
+            const link = e.target.closest('.team-link');
+            if (!link) return;
+            e.preventDefault();
+            goToTeam(link.dataset.teamId);
+        });
+    }
     
-    document.getElementById('cartBtn').addEventListener('click', goToCart);
+    const cartBtn = document.getElementById('cartBtn');
+    if (cartBtn) cartBtn.addEventListener('click', goToCart);
     
-    document.querySelector('#teamPage .back-btn')?.addEventListener('click', goHome);
+    const backBtn = document.querySelector('#teamPage .back-btn');
+    if (backBtn) backBtn.addEventListener('click', goHome);
     
-    document.querySelector('.cta-button')?.addEventListener('click', () => {
-        showPage('homePage');
-        document.querySelector('.leagues-showcase')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        const firstLeague = document.querySelector('.league-item .league-toggle');
-        if (firstLeague) firstLeague.click();
-    });
+    const ctaBtn = document.querySelector('.cta-button');
+    if (ctaBtn) {
+        ctaBtn.addEventListener('click', () => {
+            showPage('homePage');
+            const showcase = document.querySelector('.leagues-showcase');
+            if (showcase) showcase.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            const firstLeague = document.querySelector('.league-item .league-toggle');
+            if (firstLeague) firstLeague.click();
+        });
+    }
     
     setupPriceCalculations();
 }
@@ -504,8 +506,6 @@ function goHome() {
 }
 
 function goToTeam(teamId) {
-    // Called with an id from the menu, and with no argument by the kit page's
-    // back button, which should return to whichever team is already open.
     const team = teamId ? findTeam(teamId) : currentTeam;
     if (!team) return;
 
@@ -518,7 +518,8 @@ function goToKit(kitType) {
     if (!currentTeam || !currentTeam.kits[kitType]) return;
 
     currentKit = kitType;
-    document.getElementById('kitTitle').textContent = `${currentTeam.name} - ${t(`${kitType}Kit`)}`;
+    const kitTitle = document.getElementById('kitTitle');
+    if (kitTitle) kitTitle.textContent = `${currentTeam.name} - ${t(`${kitType}Kit`)}`;
     renderKitGallery(currentTeam, kitType);
     resetCustomizationForm();
     showPage('kitPage');
@@ -529,7 +530,8 @@ function showPage(pageId) {
     document.querySelectorAll('.page').forEach(page => {
         page.classList.remove('active');
     });
-    document.getElementById(pageId).classList.add('active');
+    const targetPage = document.getElementById(pageId);
+    if (targetPage) targetPage.classList.add('active');
 }
 
 function selectKit(kitType) {
@@ -537,20 +539,28 @@ function selectKit(kitType) {
 }
 
 function setupPriceCalculations() {
-    document.getElementById('playerName').addEventListener('input', calculatePrice);
-    document.getElementById('playerNumber').addEventListener('input', calculatePrice);
+    const nameInput = document.getElementById('playerName');
+    const numberInput = document.getElementById('playerNumber');
+    const shortsPack = document.getElementById('shortsPack');
+    const quantity = document.getElementById('quantity');
+
+    if (nameInput) nameInput.addEventListener('input', calculatePrice);
+    if (numberInput) numberInput.addEventListener('input', calculatePrice);
+    
     document.querySelectorAll('.addon').forEach(checkbox => {
         checkbox.addEventListener('change', calculatePrice);
     });
-    document.getElementById('shortsPack').addEventListener('change', calculatePrice);
-    document.getElementById('quantity').addEventListener('change', calculatePrice);
+    
+    if (shortsPack) shortsPack.addEventListener('change', calculatePrice);
+    if (quantity) quantity.addEventListener('change', calculatePrice);
 }
 
 function calculatePrice() {
     let price = 99;
     let addonsTotal = 0;
     
-    if (document.getElementById('playerNumber').value) {
+    const numberInput = document.getElementById('playerNumber');
+    if (numberInput && numberInput.value) {
         addonsTotal += 20;
     }
     
@@ -558,28 +568,40 @@ function calculatePrice() {
         addonsTotal += 5;
     });
     
-    if (document.getElementById('shortsPack').checked) {
+    const shortsPack = document.getElementById('shortsPack');
+    if (shortsPack && shortsPack.checked) {
         addonsTotal += 50;
     }
     
-    const quantity = parseInt(document.getElementById('quantity').value) || 1;
+    const quantityInput = document.getElementById('quantity');
+    const quantity = quantityInput ? (parseInt(quantityInput.value) || 1) : 1;
     const total = (price + addonsTotal) * quantity;
     
-    document.getElementById('basePrice').textContent = `${price}₪`;
-    document.getElementById('addonsPrice').textContent = `${addonsTotal}₪`;
-    document.getElementById('totalPrice').textContent = `${total}₪`;
+    const basePriceEl = document.getElementById('basePrice');
+    const addonsPriceEl = document.getElementById('addonsPrice');
+    const totalPriceEl = document.getElementById('totalPrice');
+
+    if (basePriceEl) basePriceEl.textContent = `${price}₪`;
+    if (addonsPriceEl) addonsPriceEl.textContent = `${addonsTotal}₪`;
+    if (totalPriceEl) totalPriceEl.textContent = `${total}₪`;
 }
 
 function addToCart() {
-    const name = document.getElementById('playerName').value || 'ללא שם';
-    const number = document.getElementById('playerNumber').value || 'ללא מספר';
+    const nameInput = document.getElementById('playerName');
+    const numberInput = document.getElementById('playerNumber');
+    const shortsPack = document.getElementById('shortsPack');
+    const quantityInput = document.getElementById('quantity');
+    const versionInput = document.querySelector('input[name="version"]:checked');
+
+    const name = nameInput ? (nameInput.value || 'ללא שם') : 'ללא שם';
+    const number = numberInput ? (numberInput.value || 'ללא מספר') : 'ללא מספר';
     const addons = Array.from(document.querySelectorAll('.addon:checked')).map(c => c.value);
-    const hasShorts = document.getElementById('shortsPack').checked;
-    const version = document.querySelector('input[name="version"]:checked').value;
-    const quantity = parseInt(document.getElementById('quantity').value) || 1;
+    const hasShorts = shortsPack ? shortsPack.checked : false;
+    const version = versionInput ? versionInput.value : 'fan';
+    const quantity = quantityInput ? (parseInt(quantityInput.value) || 1) : 1;
     
     let price = 99;
-    if (number) price += 20;
+    if (number && number !== 'ללא מספר') price += 20;
     if (addons.length > 0) price += addons.length * 5;
     if (hasShorts) price += 50;
     
@@ -617,6 +639,7 @@ function removeFromCart(itemId) {
 function displayCartItems() {
     const cartItems = document.getElementById('cartItems');
     const cartFooter = document.getElementById('cartFooter');
+    if (!cartItems || !cartFooter) return;
     
     if (cart.length === 0) {
         cartItems.innerHTML = `<p>${translations[currentLanguage].emptyCart}</p>`;
@@ -642,7 +665,8 @@ function displayCartItems() {
     `).join('');
     
     const total = cart.reduce((sum, item) => sum + item.total, 0);
-    document.getElementById('cartTotal').textContent = `${total}₪`;
+    const cartTotal = document.getElementById('cartTotal');
+    if (cartTotal) cartTotal.textContent = `${total}₪`;
 }
 
 function goToCart() {
@@ -652,7 +676,8 @@ function goToCart() {
 
 function updateCartCount() {
     const count = cart.reduce((sum, item) => sum + item.quantity, 0);
-    document.getElementById('cartCount').textContent = count;
+    const cartCount = document.getElementById('cartCount');
+    if (cartCount) cartCount.textContent = count;
 }
 
 function saveCart() {
@@ -668,68 +693,39 @@ function loadCart() {
 }
 
 function resetCustomizationForm() {
-    document.getElementById('playerName').value = '';
-    document.getElementById('playerNumber').value = '';
-    document.getElementById('shortsPack').checked = false;
+    const nameInput = document.getElementById('playerName');
+    const numberInput = document.getElementById('playerNumber');
+    const shortsPack = document.getElementById('shortsPack');
+    const quantity = document.getElementById('quantity');
+    const fanVersion = document.querySelector('input[name="version"][value="fan"]');
+
+    if (nameInput) nameInput.value = '';
+    if (numberInput) numberInput.value = '';
+    if (shortsPack) shortsPack.checked = false;
     document.querySelectorAll('.addon').forEach(cb => cb.checked = false);
-    document.querySelector('input[name="version"][value="fan"]').checked = true;
-    document.getElementById('quantity').value = 1;
+    if (fanVersion) fanVersion.checked = true;
+    if (quantity) quantity.value = 1;
     calculatePrice();
 }
 
-window.addEventListener('load', () => {
-    applyLanguage(currentLanguage);
-});
-// לוגיקת תוספת 20₪ לשם או מספר וחישוב מחיר מעודכן
-function calculatePrice() {
-    let basePrice = 99; // מחיר הבסיס
-    let extras = 0;
-
-    const nameInput = document.getElementById('playerName');
-    const numberInput = document.getElementById('playerNumber');
-
-    if ((nameInput && nameInput.value.trim() !== '') || (numberInput && numberInput.value.trim() !== '')) {
-        extras += 20; // תוספת 20 ש"ח לשם או מספר
-    }
-
-    // בדיקת תוספות נוספות כמו פאצ'ים ומכנסות אם קיימים
-    document.querySelectorAll('.addon:checked, input[name="shortsPack"]:checked').forEach(() => {
-        extras += 5; // או לפי התוספת המוגדרת
-    });
-
-    const totalPrice = basePrice + extras;
-    const totalEl = document.getElementById('totalPrice');
-    if (totalEl) {
-        totalEl.textContent = totalPrice + '₪';
-    }
-}
-
-// האזנה לשינויים בשדות כדי לעדכן מחיר בזמן אמת
-document.addEventListener('input', (e) => {
-    if (e.target.id === 'playerName' || e.target.id === 'playerNumber') {
-        calculatePrice();
-    }
-
-}
-
-window.addEventListener('DOMContentLoaded', () => {
-    renderCustomRequestSection();
-});
-// תוספת 20 ש"ח לשם או מספר ועדכון המחיר
-document.addEventListener('input', function(e) {
-    if (e.target && (e.target.id === 'playerName' || e.target.id === 'playerNumber')) {
-        updateCartTotalDisplay();
-    }
-});
-
-function updateCartTotalDisplay() {
-    const nameVal = document.getElementById('playerName')?.value.trim();
-    const numVal = document.getElementById('playerNumber')?.value.trim();
+function submitCustomRequest() {
+    const name = document.getElementById('customName')?.value.trim();
+    const contact = document.getElementById('customContact')?.value.trim();
     
-    // מציאת שורת התוספות והמחיר הכולל בממשק
-    const rows = document.querySelectorAll('div, span, td');
-    // המערכת מעדכנת אוטומטית לפי השדות, נוודא שהחישוב לוקח בחשבון את ה-20₪
+    if (!name || !contact) {
+        alert('אנא מלא שם פרטי ופרטי קשר לחזרה.');
+        return;
+    }
+    
+    alert('✅ הבקשה נשלחה בהצלחה! נחזור אליך בהקדם.');
+    
+    const nameEl = document.getElementById('customName');
+    const contactEl = document.getElementById('customContact');
+    const notesEl = document.getElementById('customNotes');
+    const fileEl = document.getElementById('customFile');
+
+    if (nameEl) nameEl.value = '';
+    if (contactEl) contactEl.value = '';
+    if (notesEl) notesEl.value = '';
+    if (fileEl) fileEl.value = '';
 }
-window.addEventListener('DOMContentLoaded', () => {
-    renderCustomRequestSection();
-});
