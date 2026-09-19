@@ -709,39 +709,7 @@ document.addEventListener('input', (e) => {
     if (e.target.id === 'playerName' || e.target.id === 'playerNumber') {
         calculatePrice();
     }
-});
 
-// --- טופס בקשות מיוחדות והעלאת קובץ בתחתית עמוד הבית ---
-function renderCustomRequestSection() {
-    const mainContainer = document.querySelector('main') || document.body;
-    if (document.getElementById('customRequestSection')) return;
-
-    const section = document.createElement('section');
-    section.id = 'customRequestSection';
-    section.style.cssText = 'margin-top: 40px; padding: 25px; background: #1a1a1a; border: 2px solid #ffd700; border-radius: 12px; color: #fff; direction: rtl;';
-    
-    section.innerHTML = `
-        <h3 style="color: #ffd700; margin-bottom: 15px; text-align: center;">מחפש חולצת קבוצה או רטרו שלא נמצאת באתר?</h3>
-        <p style="text-align: center; margin-bottom: 20px; font-size: 14px;">שלח אלינו בקשה מיוחדת, צרף תמונה ונחזור אליך בהקדם!</p>
-        <form id="customReqForm" style="display: flex; flex-direction: column; gap: 12px; max-width: 500px; margin: 0 auto;">
-            <input type="text" id="reqName" placeholder="שם מלא" required style="padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff;">
-            <input type="text" id="reqContact" placeholder="מספר טלפון או אימייל לחזרה" required style="padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff;">
-            <textarea id="reqDetails" placeholder="תאר איזה קבוצה, עונה או חולצת רטרו אתה מחפש..." rows="3" style="padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff; resize: vertical;"></textarea>
-            
-            <label style="font-size: 13px; color: #ccc;">העלאת תמונה / קובץ להמחשה:</label>
-            <input type="file" id="reqFile" accept="image/*" style="padding: 5px; color: #fff;">
-            
-            <button type="submit" style="background: #ffd700; color: #000; font-weight: bold; padding: 12px; border: none; border-radius: 6px; cursor: pointer; margin-top: 5px;">שלח בקשה לשירות לקוחות</button>
-        </form>
-    `;
-    
-    mainContainer.appendChild(section);
-
-    document.getElementById('customReqForm').addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert('הבקשה נשלחה בהצלחה! נחזור אליך בהקדם.');
-        e.target.reset();
-    });
 }
 
 window.addEventListener('DOMContentLoaded', () => {
