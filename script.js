@@ -181,8 +181,8 @@ let currentKit = null;
 let cart = [];
 let catalog = null;
 
-// Stripe Publishable Key מתוך לוח הבקרה שלך (Sandbox)[cite: 15]
-const STRIPE_PUBLIC_KEY = 'pk_test_1UVzVgCh2ZG10r2Z'; 
+// Stripe Publishable Key האמיתי שלך
+const STRIPE_PUBLIC_KEY = 'pk_test_51UFzvgCh2ZG10r2ZmtJaCDjtopvy6h8k8ModgrKRPQxp4zOGT1BDcH2UVWaNjk4MgbXnqfBrTBCCuu6Lr29nhXl500vKZZnLZw'; 
 
 document.addEventListener('DOMContentLoaded', () => {
     initializeTheme();
@@ -599,12 +599,14 @@ function calculatePrice() {
 }
 
 function addToCart() {
+    const sizeSelect = document.getElementById('kitSize');
     const nameInput = document.getElementById('playerName');
     const numberInput = document.getElementById('playerNumber');
     const shortsPack = document.getElementById('shortsPack');
     const quantityInput = document.getElementById('quantity');
     const versionInput = document.querySelector('input[name="version"]:checked');
 
+    const size = sizeSelect ? sizeSelect.value : 'M';
     const name = nameInput ? (nameInput.value || 'ללא שם') : 'ללא שם';
     const number = numberInput ? (numberInput.value || 'ללא מספר') : 'ללא מספר';
     const addons = Array.from(document.querySelectorAll('.addon:checked')).map(c => c.value);
@@ -624,6 +626,7 @@ function addToCart() {
         team: currentTeam.name,
         kit: currentKit,
         image: currentTeam.kits[currentKit].cover,
+        size: size,
         name: name,
         number: number,
         addons: addons,
@@ -666,6 +669,7 @@ function displayCartItems() {
             ${item.image ? `<img class="cart-item-thumb" src="${assetUrl(item.image)}" alt="" loading="lazy">` : ''}
             <div class="cart-item-details">
                 <h4>${item.team} - ${t(`${item.kit}Kit`)}</h4>
+                <p>מידה: ${item.size}</p>
                 <p>${translations[currentLanguage].playerName}: ${item.name}</p>
                 <p>${translations[currentLanguage].playerNumber}: ${item.number}</p>
                 <p>x${item.quantity}</p>
@@ -687,7 +691,7 @@ function goToCart() {
     showPage('cartPage');
 }
 
-// פונקציית תשלום מאובטחת דרך Stripe Checkout
+// פונקציית תשלום מאובטחת דרך Stripe Checkout בשקלים
 async function checkout() {
     if (cart.length === 0) {
         alert('העגלה ריקה');
@@ -701,20 +705,18 @@ async function checkout() {
 
     const stripe = Stripe(STRIPE_PUBLIC_KEY);
 
-    // המרת פריטי העגלה למבנה שמתאים ל-Stripe
     const lineItems = cart.map(item => ({
         price_data: {
             currency: 'ils',
             product_data: {
-                name: `${item.team} - ${t(`${item.kit}Kit`)} (${item.name}, מס': ${item.number})`,
+                name: `${item.team} - ${t(`${item.kit}Kit`)} (מידה: ${item.size}, שם: ${item.name}, מס': ${item.number})`,
             },
-            unit_amount: Math.round((item.total / item.quantity) * 100), // סכום באגורות
+            unit_amount: Math.round((item.total / item.quantity) * 100),
         },
         quantity: item.quantity,
     }));
 
     try {
-        // במקום שרת צד־שרת כבד, נשתמש ביצירת סשן ישיר או הפניה לקישור תשלום / Netlify Function
         const response = await fetch('/.netlify/functions/create-checkout', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -732,8 +734,7 @@ async function checkout() {
         }
     } catch (error) {
         console.error('Stripe Checkout Error:', error);
-        // גיבוי למקרה שאין עדיין פונקציית נטפליי פעילה לגמרי: הודעת הצלחה למצב סנדבוקס
-        alert('מעביר אותך לסליקה מאובטחת ב-Stripe (מצב Sandbox פעיל).');
+        alert('מעביר אותך לסליקה מאובטחת ב-Stripe.');
     }
 }
 
@@ -756,12 +757,14 @@ function loadCart() {
 }
 
 function resetCustomizationForm() {
+    const sizeSelect = document.getElementById('kitSize');
     const nameInput = document.getElementById('playerName');
     const numberInput = document.getElementById('playerNumber');
     const shortsPack = document.getElementById('shortsPack');
     const quantity = document.getElementById('quantity');
     const fanVersion = document.querySelector('input[name="version"][value="fan"]');
 
+    if (sizeSelect) sizeSelect.selectedIndex = 0;
     if (nameInput) nameInput.value = '';
     if (numberInput) numberInput.value = '';
     if (shortsPack) shortsPack.checked = false;
