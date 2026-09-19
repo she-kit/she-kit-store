@@ -691,19 +691,39 @@ function goToCart() {
     showPage('cartPage');
 }
 
-// פונקציית תשלום מאובטחת דרך Stripe Checkout בשקלים
-async function checkout() {
+// מעבר לעמוד טופס פרטי הלקוח והמשלוח
+function goToCheckoutForm() {
+    if (cart.length === 0) {
+        alert('העגלה ריקה');
+        return;
+    }
+    showPage('checkoutFormPage');
+}
+
+// מעבר חזרה מהטופס לעגלה
+function goToCartFromForm() {
+    goToCart();
+}
+
+// תהליך סליקה מאובטח מהטופס
+async function processSecureCheckout(event) {
+    event.preventDefault();
+
     if (cart.length === 0) {
         alert('העגלה ריקה');
         return;
     }
 
-    if (typeof Stripe === 'undefined') {
-        alert('טוען מערכת תשלום, אנא המתן רגע ונסה שוב.');
-        return;
-    }
-
-    const stripe = Stripe(STRIPE_PUBLIC_KEY);
+    const customer = {
+        name: document.getElementById('shipName').value,
+        lastName: document.getElementById('shipLastName').value,
+        address: document.getElementById('shipAddress').value,
+        city: document.getElementById('shipCity').value,
+        zip: document.getElementById('shipZip').value,
+        email: document.getElementById('shipEmail').value,
+        phone: document.getElementById('shipPhone').value,
+        notes: document.getElementById('shipNotes').value
+    };
 
     const lineItems = cart.map(item => ({
         price_data: {
@@ -720,7 +740,7 @@ async function checkout() {
         const response = await fetch('/.netlify/functions/create-checkout', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ items: lineItems })
+            body: JSON.stringify({ items: lineItems, customer: customer })
         });
 
         if (!response.ok) {
@@ -728,13 +748,22 @@ async function checkout() {
         }
 
         const session = await response.json();
-        const result = await stripe.redirectToCheckout({ sessionId: session.id });
-        if (result.error) {
-            alert(result.error.message);
+        if (session.id) {
+            if (typeof Stripe === 'undefined') {
+                alert('טוען מערכת תשלום, אנא המתן רגע ונסה שוב.');
+                return;
+            }
+            const stripe = Stripe(STRIPE_PUBLIC_KEY);
+            const result = await stripe.redirectToCheckout({ sessionId: session.id });
+            if (result.error) {
+                alert(result.error.message);
+            }
+        } else {
+            alert('שגיאה ביצירת תהליך התשלום');
         }
     } catch (error) {
         console.error('Stripe Checkout Error:', error);
-        alert('מעביר אותך לסליקה מאובטחת ב-Stripe.');
+        alert('שגיאה בתקשורת עם שרת התשלומים. אנא נסה שוב.');
     }
 }
 
