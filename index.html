@@ -232,8 +232,72 @@
                         <span data-translate="cartTotal">סה"כ:</span>
                         <span id="cartTotal">0₪</span>
                     </div>
-                    <button class="checkout-btn" onclick="checkout()" data-translate="checkout">תהליך קנייה</button>
+                    <button class="checkout-btn" onclick="goToCheckoutForm()" data-translate="checkout">תהליך קנייה</button>
                 </div>
+            </div>
+        </section>
+
+        <!-- Checkout / Shipping Form Page (שבלונת פרטי הלקוח והמשלוח) -->
+        <section id="checkoutFormPage" class="page hidden">
+            <div class="cart-header">
+                <button class="back-btn" onclick="goToCart()" data-translate="back">← חזרה</button>
+                <h2>פרטי משלוח ותשלום</h2>
+            </div>
+
+            <div class="customization-form" style="max-width: 600px; margin: 20px auto; background: var(--dark-secondary); padding: 25px; border-radius: 12px; border: 1px solid #444;">
+                <form id="shippingForm" onsubmit="processSecureCheckout(event)">
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label style="display: block; margin-bottom: 5px; color: #fff;">שם (Name):</label>
+                        <input type="text" id="shipName" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff;">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label style="display: block; margin-bottom: 5px; color: #fff;">שם משפחה (Last name):</label>
+                        <input type="text" id="shipLastName" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff;">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label style="display: block; margin-bottom: 5px; color: #fff;">כתובת (Address):</label>
+                        <input type="text" id="shipAddress" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff;">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label style="display: block; margin-bottom: 5px; color: #fff;">עיר (City):</label>
+                        <input type="text" id="shipCity" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff;">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label style="display: block; margin-bottom: 5px; color: #fff;">מיקוד (Zip Code):</label>
+                        <input type="text" id="shipZip" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff;">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label style="display: block; margin-bottom: 5px; color: #fff;">מייל (Email):</label>
+                        <input type="email" id="shipEmail" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff;">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 15px;">
+                        <label style="display: block; margin-bottom: 5px; color: #fff;">מספר טלפון (972+):</label>
+                        <input type="tel" id="shipPhone" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff;">
+                    </div>
+
+                    <div style="background: #1a1a1a; padding: 15px; border-radius: 8px; margin-bottom: 20px; font-size: 14px; color: #ccc; border-right: 4px solid var(--primary-color);">
+                        <p style="margin: 5px 0;">• כאמור המשלוח מגיע לנקודת חלוקה בקרבת מקום המגורים</p>
+                        <p style="margin: 5px 0;">• זמני אספקה 14-21 ימי עסקים מרגע השליוח (3-5 ימים להוצאת המשלוח)</p>
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 5px; color: #fff;">הערות:</label>
+                        <textarea id="shipNotes" style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff; height: 70px;"></textarea>
+                    </div>
+
+                    <div style="text-align: center; margin-bottom: 20px; font-size: 13px; color: #aaa; border: 1px dashed #444; padding: 10px; border-radius: 6px;">
+                        <p style="margin: 3px 0;">שיהיה אפשרות לשלם בפייפאל, הכנסת פרטי ויזה לאפל פיי וגוגל פיי</p>
+                        <p style="margin: 3px 0; color: var(--primary-color);">כל התשלום עוברים לחשבון שלי: Kfirbenariez@gmail.com</p>
+                    </div>
+
+                    <button type="submit" class="checkout-btn" style="width: 100%; padding: 15px; background: var(--primary-color); color: var(--dark-bg); font-weight: bold; border: none; border-radius: 6px; cursor: pointer; font-size: 16px;">תשלום מאובטח</button>
+                </form>
             </div>
         </section>
     </main>
