@@ -699,7 +699,8 @@ html[data-theme="light"] #shippingForm label {
 }
 
 html[data-theme="light"] #shippingForm input,
-html[data-theme="light"] #shippingForm textarea {
+html[data-theme="light"] #shippingForm textarea,
+html[data-theme="light"] #shippingForm select {
     background-color: #ffffff !important;
     color: #111111 !important;
     border: 1px solid #cccccc !important;
