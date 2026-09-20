@@ -53,20 +53,26 @@
                 <div class="leagues-grid" id="leaguesGrid"></div>
             </div>
 
-            <!-- טופס בקשה מיוחדת ממוקם מעל "למה לבחור בנו" -->
+            <!-- טופס בקשה מיוחדת מוגדר עם Netlify Forms לשליחת מיילים אוטומטית -->
             <section class="custom-request-section" style="padding: 30px 20px; background: var(--dark-secondary); border-radius: 12px; border: 2px solid var(--primary-color); margin-bottom: 30px;">
                 <h3 style="color: var(--primary-color); text-align: center; margin-bottom: 10px;">מחפש חולצת קבוצה או רטרו שלא נמצאת באתר?</h3>
                 <p style="text-align: center; color: #fff; margin-bottom: 20px;">שלח אלינו בקשה מיוחדת, צרף תמונה ונחזור אליך בהקדם!</p>
-                <div style="max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px;">
-                    <input type="text" id="customName" placeholder="שם מלא" style="padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff;">
-                    <input type="text" id="customContact" placeholder="מספר טלפון או אימייל לחזרה" style="padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff;">
-                    <textarea id="customNotes" placeholder="תיאור אודות קבוצה, עונה או חולצה רטרו, מידת פאץ'..." style="padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff; height: 80px;"></textarea>
+                
+                <form name="custom-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px;">
+                    <input type="hidden" name="form-name" value="custom-request">
+                    <p style="display: none;"><label>Don't fill this out: <input name="bot-field" /></label></p>
+                    
+                    <input type="text" id="customName" name="name" placeholder="שם מלא" required style="padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff;">
+                    <input type="text" id="customContact" name="contact" placeholder="מספר טלפון או אימייל לחזרה" required style="padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff;">
+                    <textarea id="customNotes" name="notes" placeholder="תיאור אודות קבוצה, עונה או חולצה רטרו, מידת פאץ'..." style="padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff; height: 80px;"></textarea>
+                    
                     <div>
                         <label style="color: #ccc; display: block; margin-bottom: 5px;">העלאת תמונה / קובץ להמחשה:</label>
-                        <input type="file" id="customFile" style="color: #fff;">
+                        <input type="file" id="customFile" name="attachment" style="color: #fff;">
                     </div>
-                    <button type="button" onclick="submitCustomRequest()" style="background: var(--primary-color); color: var(--dark-bg); font-weight: bold; padding: 12px; border: none; border-radius: 6px; cursor: pointer;">שלח בקשה לשירות לקוחות</button>
-                </div>
+                    
+                    <button type="submit" style="background: var(--primary-color); color: var(--dark-bg); font-weight: bold; padding: 12px; border: none; border-radius: 6px; cursor: pointer;">שלח בקשה לשירות לקוחות</button>
+                </form>
             </section>
 
             <div class="info-section">
