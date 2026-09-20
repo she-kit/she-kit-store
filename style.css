@@ -460,6 +460,8 @@ body {
 
 .form-group input[type="text"],
 .form-group input[type="number"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
 .form-group select {
     width: 100%;
     padding: 10px;
@@ -687,6 +689,25 @@ body {
 .checkout-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px var(--primary-color);
+}
+
+/* Light Mode Fixes for Checkout & Inputs */
+html[data-theme="light"] #checkoutFormPage label,
+html[data-theme="light"] #checkoutFormPage h2,
+html[data-theme="light"] #shippingForm label {
+    color: #111 !important;
+}
+
+html[data-theme="light"] #shippingForm input,
+html[data-theme="light"] #shippingForm textarea {
+    background-color: #ffffff !important;
+    color: #111111 !important;
+    border: 1px solid #cccccc !important;
+}
+
+html[data-theme="light"] #shippingForm input::placeholder,
+html[data-theme="light"] #shippingForm textarea::placeholder {
+    color: #666666 !important;
 }
 
 /* Responsive Design */
