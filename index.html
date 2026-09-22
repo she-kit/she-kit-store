@@ -7,6 +7,34 @@
     <!-- Stripe JavaScript Library -->
     <script src="https://js.stripe.com/v3/"></script>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Responsive Mobile Fixes */
+        @media screen and (max-width: 768px) {
+            body {
+                flex-direction: column !important;
+                display: block !important;
+            }
+            .sidebar {
+                width: 100% !important;
+                height: auto !important;
+                position: relative !important;
+                box-sizing: border-box;
+            }
+            .main-content {
+                margin-right: 0 !important;
+                width: 100% !important;
+                padding: 10px !important;
+                box-sizing: border-box;
+            }
+            .leagues-grid, .info-grid {
+                grid-template-columns: 1fr !important;
+            }
+            input, select, textarea {
+                max-width: 100% !important;
+                box-sizing: border-box;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation & Sidebar -->
@@ -54,24 +82,24 @@
             </div>
 
             <!-- טופס בקשה מיוחדת מוגדר עם Netlify Forms לשליחת מיילים אוטומטית -->
-            <section class="custom-request-section" style="padding: 30px 20px; background: var(--dark-secondary); border-radius: 12px; border: 2px solid var(--primary-color); margin-bottom: 30px;">
+            <section class="custom-request-section" style="padding: 30px 20px; background: var(--dark-secondary); border-radius: 12px; border: 2px solid var(--primary-color); margin-bottom: 30px; box-sizing: border-box;">
                 <h3 style="color: var(--primary-color); text-align: center; margin-bottom: 10px;">מחפש חולצת קבוצה או רטרו שלא נמצאת באתר?</h3>
                 <p style="text-align: center; color: #fff; margin-bottom: 20px;">שלח אלינו בקשה מיוחדת, צרף תמונה ונחזור אליך בהקדם!</p>
                 
-                <form name="custom-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px;">
+                <form name="custom-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px; box-sizing: border-box;">
                     <input type="hidden" name="form-name" value="custom-request">
                     <p style="display: none;"><label>Don't fill this out: <input name="bot-field" /></label></p>
                     
-                    <input type="text" id="customName" name="name" placeholder="שם מלא" required style="padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff;">
-                    <input type="text" id="customContact" name="contact" placeholder="מספר טלפון או אימייל לחזרה" required style="padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff;">
-                    <textarea id="customNotes" name="notes" placeholder="תיאור אודות קבוצה, עונה או חולצה רטרו, מידת פאץ'..." style="padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff; height: 80px;"></textarea>
+                    <input type="text" id="customName" name="name" placeholder="שם מלא" required style="padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff; width: 100%; box-sizing: border-box;">
+                    <input type="text" id="customContact" name="contact" placeholder="מספר טלפון או אימייל לחזרה" required style="padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff; width: 100%; box-sizing: border-box;">
+                    <textarea id="customNotes" name="notes" placeholder="תיאור אודות קבוצה, עונה או חולצה רטרו, מידת פאץ'..." style="padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff; height: 80px; width: 100%; box-sizing: border-box;"></textarea>
                     
                     <div>
                         <label style="color: #ccc; display: block; margin-bottom: 5px;">העלאת תמונה / קובץ להמחשה:</label>
-                        <input type="file" id="customFile" name="attachment" style="color: #fff;">
+                        <input type="file" id="customFile" name="attachment" style="color: #fff; width: 100%; box-sizing: border-box;">
                     </div>
                     
-                    <button type="submit" style="background: var(--primary-color); color: var(--dark-bg); font-weight: bold; padding: 12px; border: none; border-radius: 6px; cursor: pointer;">שלח בקשה לשירות לקוחות</button>
+                    <button type="submit" style="background: var(--primary-color); color: var(--dark-bg); font-weight: bold; padding: 12px; border: none; border-radius: 6px; cursor: pointer; width: 100%;">שלח בקשה לשירות לקוחות</button>
                 </form>
             </section>
 
@@ -131,7 +159,7 @@
                 <!-- בחירת מידה מדויקת לפי הטבלה -->
                 <div class="form-group">
                     <label for="kitSize">מידה</label>
-                    <select id="kitSize" class="form-control" style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff;">
+                    <select id="kitSize" class="form-control" style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff; box-sizing: border-box;">
                         <optgroup label="מבוגרים">
                             <option value="S">S (גובה 162-170 ס״מ)</option>
                             <option value="M">M (גובה 170-175 ס״מ)</option>
@@ -153,13 +181,13 @@
 
                 <div class="form-group">
                     <label for="playerName" data-translate="playerName">שם שחקן/אוהד</label>
-                    <input type="text" id="playerName" placeholder="הכנס שם" maxlength="20">
+                    <input type="text" id="playerName" placeholder="הכנס שם" maxlength="20" style="width: 100%; box-sizing: border-box;">
                     <small data-translate="nameNote">עד 20 תווים</small>
                 </div>
 
                 <div class="form-group">
                     <label for="playerNumber" data-translate="playerNumber">מספר</label>
-                    <input type="number" id="playerNumber" min="0" max="99">
+                    <input type="number" id="playerNumber" min="0" max="99" style="width: 100%; box-sizing: border-box;">
                     <small data-translate="numberCost">+20₪</small>
                 </div>
 
@@ -196,7 +224,7 @@
 
                 <div class="form-group">
                     <label for="quantity" data-translate="quantity">כמות</label>
-                    <input type="number" id="quantity" min="1" value="1">
+                    <input type="number" id="quantity" min="1" value="1" style="width: 100%; box-sizing: border-box;">
                 </div>
 
                 <div class="price-summary">
@@ -252,41 +280,41 @@
                 <h2>פרטי משלוח ותשלום</h2>
             </div>
 
-            <div class="customization-form" style="max-width: 600px; margin: 20px auto; background: var(--dark-secondary); padding: 25px; border-radius: 12px; border: 1px solid #444;">
+            <div class="customization-form" style="max-width: 600px; margin: 20px auto; background: var(--dark-secondary); padding: 25px; border-radius: 12px; border: 1px solid #444; box-sizing: border-box;">
                 <form id="shippingForm" onsubmit="processSecureCheckout(event)">
                     <div class="form-group" style="margin-bottom: 15px;">
                         <label style="display: block; margin-bottom: 5px; color: #fff;">שם (Name):</label>
-                        <input type="text" id="shipName" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff;">
+                        <input type="text" id="shipName" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff; box-sizing: border-box;">
                     </div>
 
                     <div class="form-group" style="margin-bottom: 15px;">
                         <label style="display: block; margin-bottom: 5px; color: #fff;">שם משפחה (Last name):</label>
-                        <input type="text" id="shipLastName" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff;">
+                        <input type="text" id="shipLastName" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff; box-sizing: border-box;">
                     </div>
 
                     <div class="form-group" style="margin-bottom: 15px;">
                         <label style="display: block; margin-bottom: 5px; color: #fff;">כתובת (Address):</label>
-                        <input type="text" id="shipAddress" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff;">
+                        <input type="text" id="shipAddress" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff; box-sizing: border-box;">
                     </div>
 
                     <div class="form-group" style="margin-bottom: 15px;">
                         <label style="display: block; margin-bottom: 5px; color: #fff;">עיר (City):</label>
-                        <input type="text" id="shipCity" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff;">
+                        <input type="text" id="shipCity" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff; box-sizing: border-box;">
                     </div>
 
                     <div class="form-group" style="margin-bottom: 15px;">
                         <label style="display: block; margin-bottom: 5px; color: #fff;">מיקוד (Zip Code):</label>
-                        <input type="text" id="shipZip" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff;">
+                        <input type="text" id="shipZip" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff; box-sizing: border-box;">
                     </div>
 
                     <div class="form-group" style="margin-bottom: 15px;">
                         <label style="display: block; margin-bottom: 5px; color: #fff;">מייל (Email):</label>
-                        <input type="email" id="shipEmail" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff;">
+                        <input type="email" id="shipEmail" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff; box-sizing: border-box;">
                     </div>
 
                     <div class="form-group" style="margin-bottom: 15px;">
                         <label style="display: block; margin-bottom: 5px; color: #fff;">מספר טלפון (972+):</label>
-                        <input type="tel" id="shipPhone" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff;">
+                        <input type="tel" id="shipPhone" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff; box-sizing: border-box;">
                     </div>
 
                     <div style="background: #1a1a1a; padding: 15px; border-radius: 8px; margin-bottom: 20px; font-size: 14px; color: #ccc; border-right: 4px solid var(--primary-color);">
@@ -296,7 +324,7 @@
 
                     <div class="form-group" style="margin-bottom: 20px;">
                         <label style="display: block; margin-bottom: 5px; color: #fff;">הערות:</label>
-                        <textarea id="shipNotes" style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff; height: 70px;"></textarea>
+                        <textarea id="shipNotes" style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #fff; height: 70px; box-sizing: border-box;"></textarea>
                     </div>
 
                     <button type="submit" class="checkout-btn" style="width: 100%; padding: 15px; background: var(--primary-color); color: var(--dark-bg); font-weight: bold; border: none; border-radius: 6px; cursor: pointer; font-size: 16px;">תשלום מאובטח</button>
