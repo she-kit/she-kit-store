@@ -22,6 +22,7 @@
             }
             .main-content {
                 margin-right: 0 !important;
+                margin-left: 0 !important;
                 width: 100% !important;
                 padding: 10px !important;
                 box-sizing: border-box;
@@ -83,6 +84,7 @@
                 <button id="themeToggle" class="theme-btn" title="החלף ערכת צבעים">🌙</button>
                 <select id="languageSelect" class="lang-select">
                     <option value="he">עברית</option>
+                    <option value="ar">العربية</option>
                     <option value="en">English</option>
                     <option value="fr">Français</option>
                     <option value="ru">Русский</option>
@@ -110,7 +112,7 @@
                 <div class="hero-content">
                     <h2 data-translate="welcome">ברוכים הבאים ל-She-Kit Store</h2>
                     <p data-translate="tagline">חנות החולצות הכדורגל המובילה עם איכות וסגנון</p>
-                    <button class="cta-button" data-translate="shop">התחל קניות</button>
+                    <button class="cta-button" data-translate="shop" onclick="scrollToLeagues()">התחל קניות</button>
                 </div>
             </div>
 
@@ -121,23 +123,23 @@
 
             <!-- טופס בקשה מיוחדת מוגדר עם Netlify Forms לשליחת מיילים אוטומטית -->
             <section class="custom-request-section" style="padding: 30px 20px; background: var(--dark-secondary); border-radius: 12px; border: 2px solid var(--primary-color); margin-bottom: 30px; box-sizing: border-box;">
-                <h3 style="text-align: center; margin-bottom: 10px;">מחפש חולצת קבוצה או רטרו שלא נמצאת באתר?</h3>
-                <p style="text-align: center; margin-bottom: 20px;">שלח אלינו בקשה מיוחדת, צרף תמונה ונחזור אליך בהקדם!</p>
+                <h3 data-translate="customTitle" style="text-align: center; margin-bottom: 10px;">מחפש חולצת קבוצה או רטרו שלא נמצאת באתר?</h3>
+                <p data-translate="customSubtitle" style="text-align: center; margin-bottom: 20px;">שלח אלינו בקשה מיוחדת, צרף תמונה ונחזור אליך בהקדם!</p>
                 
                 <form name="custom-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px; box-sizing: border-box;">
                     <input type="hidden" name="form-name" value="custom-request">
                     <p style="display: none;"><label>Don't fill this out: <input name="bot-field" /></label></p>
                     
-                    <input type="text" id="customName" name="name" placeholder="שם מלא" required style="padding: 10px; border-radius: 6px; border: 1px solid #444; width: 100%; box-sizing: border-box;">
-                    <input type="text" id="customContact" name="contact" placeholder="מספר טלפון או אימייל לחזרה" required style="padding: 10px; border-radius: 6px; border: 1px solid #444; width: 100%; box-sizing: border-box;">
-                    <textarea id="customNotes" name="notes" placeholder="תיאור אודות קבוצה, עונה או חולצה רטרו, מידת פאץ'..." style="padding: 10px; border-radius: 6px; border: 1px solid #444; height: 80px; width: 100%; box-sizing: border-box;"></textarea>
+                    <input type="text" id="customName" name="name" data-translate-placeholder="namePlaceholder" placeholder="שם מלא" required style="padding: 10px; border-radius: 6px; border: 1px solid #444; width: 100%; box-sizing: border-box;">
+                    <input type="text" id="customContact" name="contact" data-translate-placeholder="contactPlaceholder" placeholder="מספר טלפון או אימייל לחזרה" required style="padding: 10px; border-radius: 6px; border: 1px solid #444; width: 100%; box-sizing: border-box;">
+                    <textarea id="customNotes" name="notes" data-translate-placeholder="notesPlaceholder" placeholder="תיאור אודות קבוצה, עונה או חולצה רטרו, מידת פאץ'..." style="padding: 10px; border-radius: 6px; border: 1px solid #444; height: 80px; width: 100%; box-sizing: border-box;"></textarea>
                     
                     <div>
-                        <label style="display: block; margin-bottom: 5px;">העלאת תמונה / קובץ להמחשה:</label>
+                        <label data-translate="uploadLabel" style="display: block; margin-bottom: 5px;">העלאת תמונה / קובץ להמחשה:</label>
                         <input type="file" id="customFile" name="attachment" style="width: 100%; box-sizing: border-box;">
                     </div>
                     
-                    <button type="submit" style="background: var(--primary-color); color: var(--dark-bg); font-weight: bold; padding: 12px; border: none; border-radius: 6px; cursor: pointer; width: 100%;">שלח בקשה לשירות לקוחות</button>
+                    <button type="submit" data-translate="submitCustom" style="background: var(--primary-color); color: var(--dark-bg); font-weight: bold; padding: 12px; border: none; border-radius: 6px; cursor: pointer; width: 100%;">שלח בקשה לשירות לקוחות</button>
                 </form>
             </section>
 
@@ -157,7 +159,7 @@
                     <div class="info-card">
                         <span class="icon">✨</span>
                         <h4 data-translate="quality">איכות גבוהה</h4>
-                        <p>חולצות ברמה הגבוהה ביותר עם ההדפסה עמידה והאיכותית ביותר</p>
+                        <p data-translate="qualityDesc">חולצות ברמה הגבוהה ביותר עם ההדפסה עמידה והאיכותית ביותר</p>
                     </div>
                 </div>
             </div>
@@ -196,16 +198,16 @@
             <div class="customization-form">
                 <!-- בחירת מידה מדויקת לפי הטבלה -->
                 <div class="form-group">
-                    <label for="kitSize">מידה</label>
+                    <label for="kitSize" data-translate="sizeLabel">מידה</label>
                     <select id="kitSize" class="form-control" style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; box-sizing: border-box;">
-                        <optgroup label="מבוגרים">
+                        <optgroup id="adultGroup" label="מבוגרים">
                             <option value="S">S (גובה 162-170 ס״מ)</option>
                             <option value="M">M (גובה 170-175 ס״מ)</option>
                             <option value="L">L (גובה 176-180 ס״מ)</option>
                             <option value="XL">XL (גובה 180-185 ס״מ)</option>
                             <option value="XXL">XXL (גובה 185-195 ס״מ)</option>
                         </optgroup>
-                        <optgroup label="ילדים">
+                        <optgroup id="kidsGroup" label="ילדים">
                             <option value="16">מידה 16 (95-105 ס״מ)</option>
                             <option value="18">מידה 18 (105-115 ס״מ)</option>
                             <option value="20">מידה 20 (115-125 ס״מ)</option>
@@ -219,7 +221,7 @@
 
                 <div class="form-group">
                     <label for="playerName" data-translate="playerName">שם שחקן/אוהד</label>
-                    <input type="text" id="playerName" placeholder="הכנס שם" maxlength="20" style="width: 100%; box-sizing: border-box;">
+                    <input type="text" id="playerName" data-translate-placeholder="nameInputPlaceholder" placeholder="הכנס שם" maxlength="20" style="width: 100%; box-sizing: border-box;">
                     <small data-translate="nameNote">עד 20 תווים</small>
                 </div>
 
@@ -232,9 +234,9 @@
                 <div class="form-group">
                     <label data-translate="patches">פאצ'ים</label>
                     <div class="checkboxes">
-                        <label><input type="checkbox" class="addon" value="patch1"> ליגה (5₪)</label>
-                        <label><input type="checkbox" class="addon" value="patch2"> ליגת אלופות (5₪)</label>
-                        <label><input type="checkbox" class="addon" value="patch3"> אחר (5₪)</label>
+                        <label><input type="checkbox" class="addon" value="patch1"> <span data-translate="patchLeague">ליגה (5₪)</span></label>
+                        <label><input type="checkbox" class="addon" value="patch2"> <span data-translate="patchUcl">ליגת אלופות (5₪)</span></label>
+                        <label><input type="checkbox" class="addon" value="patch3"> <span data-translate="patchOther">אחר (5₪)</span></label>
                     </div>
                 </div>
 
@@ -315,57 +317,57 @@
         <section id="checkoutFormPage" class="page hidden">
             <div class="cart-header">
                 <button class="back-btn" onclick="goToCart()" data-translate="back">← חזרה</button>
-                <h2>פרטי משלוח ותשלום</h2>
+                <h2 data-translate="shippingTitle">פרטי משלוח ותשלום</h2>
             </div>
 
             <div class="customization-form" style="max-width: 600px; margin: 20px auto; background: var(--dark-secondary); padding: 25px; border-radius: 12px; border: 1px solid #444; box-sizing: border-box;">
                 <form id="shippingForm" onsubmit="processSecureCheckout(event)">
                     <div class="form-group" style="margin-bottom: 15px;">
-                        <label style="display: block; margin-bottom: 5px;">שם (Name):</label>
+                        <label data-translate="labelName" style="display: block; margin-bottom: 5px;">שם (Name):</label>
                         <input type="text" id="shipName" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; box-sizing: border-box;">
                     </div>
 
                     <div class="form-group" style="margin-bottom: 15px;">
-                        <label style="display: block; margin-bottom: 5px;">שם משפחה (Last name):</label>
+                        <label data-translate="labelLastName" style="display: block; margin-bottom: 5px;">שם משפחה (Last name):</label>
                         <input type="text" id="shipLastName" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; box-sizing: border-box;">
                     </div>
 
                     <div class="form-group" style="margin-bottom: 15px;">
-                        <label style="display: block; margin-bottom: 5px;">כתובת (Address):</label>
+                        <label data-translate="labelAddress" style="display: block; margin-bottom: 5px;">כתובת (Address):</label>
                         <input type="text" id="shipAddress" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; box-sizing: border-box;">
                     </div>
 
                     <div class="form-group" style="margin-bottom: 15px;">
-                        <label style="display: block; margin-bottom: 5px;">עיר (City):</label>
+                        <label data-translate="labelCity" style="display: block; margin-bottom: 5px;">עיר (City):</label>
                         <input type="text" id="shipCity" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; box-sizing: border-box;">
                     </div>
 
                     <div class="form-group" style="margin-bottom: 15px;">
-                        <label style="display: block; margin-bottom: 5px;">מיקוד (Zip Code):</label>
+                        <label data-translate="labelZip" style="display: block; margin-bottom: 5px;">מיקוד (Zip Code):</label>
                         <input type="text" id="shipZip" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; box-sizing: border-box;">
                     </div>
 
                     <div class="form-group" style="margin-bottom: 15px;">
-                        <label style="display: block; margin-bottom: 5px;">מייל (Email):</label>
+                        <label data-translate="labelEmail" style="display: block; margin-bottom: 5px;">מייל (Email):</label>
                         <input type="email" id="shipEmail" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; box-sizing: border-box;">
                     </div>
 
                     <div class="form-group" style="margin-bottom: 15px;">
-                        <label style="display: block; margin-bottom: 5px;">מספר טלפון (972+):</label>
+                        <label data-translate="labelPhone" style="display: block; margin-bottom: 5px;">מספר טלפון:</label>
                         <input type="tel" id="shipPhone" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; box-sizing: border-box;">
                     </div>
 
                     <div style="background: #1a1a1a; padding: 15px; border-radius: 8px; margin-bottom: 20px; font-size: 14px; color: #ccc; border-right: 4px solid var(--primary-color);">
-                        <p style="margin: 5px 0;">• כאמור המשלוח מגיע לנקודת חלוקה בקרבת מקום המגורים</p>
-                        <p style="margin: 5px 0;">• זמני אספקה 14-21 ימי עסקים מרגע השליוח (3-5 ימים להוצאת המשלוח)</p>
+                        <p data-translate="shippingNote1" style="margin: 5px 0;">• כאמור המשלוח מגיע לנקודת חלוקה בקרבת מקום המגורים</p>
+                        <p data-translate="shippingNote2" style="margin: 5px 0;">• זמני אספקה 14-21 ימי עסקים מרגע השליוח (3-5 ימים להוצאת המשלוח)</p>
                     </div>
 
                     <div class="form-group" style="margin-bottom: 20px;">
-                        <label style="display: block; margin-bottom: 5px;">הערות:</label>
+                        <label data-translate="labelNotes" style="display: block; margin-bottom: 5px;">הערות:</label>
                         <textarea id="shipNotes" style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; height: 70px; box-sizing: border-box;"></textarea>
                     </div>
 
-                    <button type="submit" class="checkout-btn" style="width: 100%; padding: 15px; background: var(--primary-color); color: var(--dark-bg); font-weight: bold; border: none; border-radius: 6px; cursor: pointer; font-size: 16px;">תשלום מאובטח</button>
+                    <button type="submit" class="checkout-btn" data-translate="secureCheckout" style="width: 100%; padding: 15px; background: var(--primary-color); color: var(--dark-bg); font-weight: bold; border: none; border-radius: 6px; cursor: pointer; font-size: 16px;">תשלום מאובטח</button>
                 </form>
             </div>
         </section>
