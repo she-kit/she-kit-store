@@ -34,6 +34,24 @@
                 box-sizing: border-box;
             }
         }
+
+        /* תיקון צבעי טקסט במצב בהיר (Light Mode) */
+        body.light-mode p, 
+        body.light-mode span:not([class*="price"]), 
+        body.light-mode label, 
+        body.light-mode h3, 
+        body.light-mode h4, 
+        body.light-mode small,
+        body.light-mode div {
+            color: #111 !important;
+        }
+        body.light-mode input, 
+        body.light-mode select, 
+        body.light-mode textarea {
+            color: #111 !important;
+            background: #fff !important;
+            border-color: #ccc !important;
+        }
     </style>
 </head>
 <body>
