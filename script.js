@@ -192,38 +192,16 @@ document.addEventListener('DOMContentLoaded', () => {
     checkOrderSuccess();
 });
 
-// פונקציה שבודקת האם הגענו חזרה מסטרייפ אחרי תשלום מוצלח
-async function checkOrderSuccess() {
+// פונקציה לבדיקת חזרה מתשלום מוצלח ואיפוס עגלה
+function checkOrderSuccess() {
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.has('success')) {
-        const lastCustomer = localStorage.getItem('lastCustomer');
-        const savedCart = localStorage.getItem('sheKitCart');
-
-        if (lastCustomer && savedCart) {
-            try {
-                const customerObj = JSON.parse(lastCustomer);
-                const cartObj = JSON.parse(savedCart);
-
-                // שליחת הודעה לטלגרם עכשיו כשהתשלום הושלם באמת
-                await fetch('/.netlify/functions/send-telegram', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ customer: customerObj, cartItems: cartObj })
-                });
-            } catch (e) {
-                console.error('Failed to send success notification', e);
-            }
-        }
-
-        // איפוס העגלה
         cart = [];
         saveCart();
         updateCartCount();
         localStorage.removeItem('lastCustomer');
-        
-        // ניקוי כתובת ה-URL כדי שלא יריץ את זה שוב ברענון
         window.history.replaceState({}, document.title, window.location.pathname);
-        alert('🎉 התשלום בוצע בהצלחה! ההזמנה נקלטה ונשלחה אליך לטלגרם.');
+        alert('🎉 התשלום בוצע בהצלחה!');
     }
 }
 
@@ -747,18 +725,17 @@ async function processSecureCheckout(event) {
     }
 
     const customer = {
-        name: document.getElementById('shipName').value,
-        lastName: document.getElementById('shipLastName').value,
-        address: document.getElementById('shipAddress').value,
-        city: document.getElementById('shipCity').value,
-        zip: document.getElementById('shipZip').value,
-        email: document.getElementById('shipEmail').value,
-        phone: document.getElementById('shipPhone').value,
-        notes: document.getElementById('shipNotes').value
+        name: document.getElementById('shipName') ? document.getElementById('shipName').value : '',
+        lastName: document.getElementById('shipLastName') ? document.getElementById('shipLastName').value : '',
+        address: document.getElementById('shipAddress') ? document.getElementById('shipAddress').value : '',
+        city: document.getElementById('shipCity') ? document.getElementById('shipCity').value : '',
+        zip: document.getElementById('shipZip') ? document.getElementById('shipZip').value : '',
+        email: document.getElementById('shipEmail') ? document.getElementById('shipEmail').value : '',
+        phone: document.getElementById('shipPhone') ? document.getElementById('shipPhone').value : '',
+        notes: document.getElementById('shipNotes') ? document.getElementById('shipNotes').value : ''
     };
 
     localStorage.setItem('lastCustomer', JSON.stringify(customer));
-    saveCart();
 
     const lineItems = cart.map(item => {
         return {
@@ -779,7 +756,11 @@ async function processSecureCheckout(event) {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ items: lineItems }),
+            body: JSON.stringify({ 
+                items: lineItems, 
+                customer: customer,
+                cartItems: cart 
+            }),
         });
 
         const data = await response.json();
