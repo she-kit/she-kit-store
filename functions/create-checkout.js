@@ -1,4 +1,74 @@
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+const https = require('https');
+
+// פונקציית עזר לשליחת הודעה לטלגרם
+async function sendTelegramNotification(customer, cartItems) {
+    const token = process.env.TELEGRAM_BOT_TOKEN;
+    const chatId = process.env.TELEGRAM_CHAT_ID;
+
+    if (!token || !chatId) {
+        console.error('Telegram credentials are missing in environment variables.');
+        return;
+    }
+
+    // בניית טקסט ההודעה המסודר עבורך
+    let message = `🚨 **הזמנה חדשה התקבלה ב-She-Kit!** 🚨\n\n`;
+    message += `👤 **פרטי לקוח:**\n`;
+    message += `• שם: ${customer.name} ${customer.lastName}\n`;
+    message += `• כתובת: ${customer.address}, ${customer.city} (מיקוד: ${customer.zip})\n`;
+    message += `• מייל: ${customer.email}\n`;
+    message += `• טלפון: ${customer.phone}\n`;
+    if (customer.notes) {
+        message += `• הערות: ${customer.notes}\n`;
+    }
+    
+    message += `\n🛒 **פרטי המוצרים:**\n`;
+    let grandTotal = 0;
+    
+    if (cartItems && Array.isArray(cartItems)) {
+        cartItems.forEach((item, index) => {
+            message += `\n#${index + 1} - ${item.team} (${item.kit} Kit)\n`;
+            message += `• מידה: ${item.size}\n`;
+            message += `• שם להדפסה: ${item.name}\n`;
+            message += `• מספר: ${item.number}\n`;
+            message += `• גרסה: ${item.version}\n`;
+            message += `• כמות: ${item.quantity}\n`;
+            message += `• סה"כ פריט: ${item.total}₪\n`;
+            grandTotal += item.total;
+        });
+    }
+
+    message += `\n💰 **סכום כולל לתשלום: ${grandTotal}₪**`;
+
+    const data = JSON.stringify({
+        chat_id: chatId,
+        text: message,
+        parse_mode: 'Markdown'
+    });
+
+    const options = {
+        hostname: 'api.telegram.org',
+        port: 443,
+        path: `/bot${token}/sendMessage`,
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Content-Length': data.length
+        }
+    };
+
+    return new Promise((resolve, reject) => {
+        const req = https.request(options, (res) => {
+            let body = '';
+            res.on('data', (chunk) => body += chunk);
+            res.on('end', () => resolve(body));
+        });
+
+        req.on('error', (error) => reject(error));
+        req.write(data);
+        req.end();
+    });
+}
 
 exports.handler = async function(event, context) {
     if (event.httpMethod !== 'POST') {
@@ -6,8 +76,9 @@ exports.handler = async function(event, context) {
     }
 
     try {
-        const { items, customer } = JSON.parse(event.body);
+        const { items, customer, cartItems } = JSON.parse(event.body);
 
+        // יצירת סשן תשלום מול Stripe
         const session = await stripe.checkout.sessions.create({
             payment_method_types: ['card'],
             line_items: items,
@@ -16,11 +87,17 @@ exports.handler = async function(event, context) {
             cancel_url: `${event.headers.origin}/?canceled=true`,
         });
 
+        // שליחת ההודעה לטלגרם ברגע שהסשן נוצר בהצלחה והלקוח עובר לתשלום
+        if (customer && cartItems) {
+            await sendTelegramNotification(customer, cartItems);
+        }
+
         return {
             statusCode: 200,
             body: JSON.stringify({ id: session.id })
         };
     } catch (error) {
+        console.error('Checkout error:', error);
         return {
             statusCode: 500,
             body: JSON.stringify({ error: error.message })
