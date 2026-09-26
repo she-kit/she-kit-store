@@ -106,34 +106,16 @@ document.addEventListener('DOMContentLoaded', () => {
     checkOrderSuccess();
 });
 
-// בדיקת חזרה מתשלום מוצלח ושליחת נתונים לשרת באופן מאובטח
-async function checkOrderSuccess() {
+// בדיקת חזרה מתשלום מוצלח ואיפוס עגלה
+function checkOrderSuccess() {
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.has('success')) {
-        const lastCustomer = localStorage.getItem('lastCustomer');
-        const savedCart = localStorage.getItem('sheKitCart');
-
-        if (lastCustomer && savedCart) {
-            try {
-                const customer = JSON.parse(lastCustomer);
-                const cartItems = JSON.parse(savedCart);
-
-                await fetch('/.netlify/functions/send-telegram', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ customer, cartItems })
-                });
-            } catch (err) {
-                console.error('Failed to trigger telegram function', err);
-            }
-        }
-
         cart = [];
         saveCart();
         updateCartCount();
         localStorage.removeItem('lastCustomer');
         window.history.replaceState({}, document.title, window.location.pathname);
-        alert('🎉 התשלום בוצע בהצלחה וההודעה נשלחה לטלגרם!');
+        alert('🎉 התשלום בוצע בהצלחה!');
     }
 }
 
@@ -648,7 +630,7 @@ function goToCartFromForm() {
     goToCart();
 }
 
-// פונקציית סליקה מאובטחת המטפלת בכל שדות הטופס בצורה בטוחה לגמרי
+// פונקציית סליקה מאובטחת המעבירה גם את פרטי הלקוח וגם את פרטי העגלה לשרת
 async function processSecureCheckout(event) {
     if (event) event.preventDefault();
 
@@ -673,9 +655,6 @@ async function processSecureCheckout(event) {
         notes: getVal('shipNotes')
     };
 
-    localStorage.setItem('lastCustomer', JSON.stringify(customer));
-    saveCart();
-
     const lineItems = cart.map(item => {
         return {
             price_data: {
@@ -695,7 +674,11 @@ async function processSecureCheckout(event) {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ items: lineItems }),
+            body: JSON.stringify({ 
+                items: lineItems, 
+                customer: customer,
+                cartItems: cart 
+            }),
         });
 
         const data = await response.json();
@@ -753,6 +736,8 @@ function resetCustomizationForm() {
 function submitCustomRequest() {
     const name = document.getElementById('customName')?.value.trim();
     const contact = document.getElementById('customContact')?.value.trim();
+    
+    nameEl = document.getElementById('customName');
     
     if (!name || !contact) {
         alert('אנא מלא שם פרטי ופרטי קשר לחזרה.');
