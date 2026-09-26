@@ -648,7 +648,7 @@ function goToCartFromForm() {
     goToCart();
 }
 
-// פונקציה ראשית לתשלום מאובטח עם הגנה מלאה על כל שדות הטופס
+// פונקציית סליקה מאובטחת המטפלת בכל שדות הטופס בצורה בטוחה לגמרי
 async function processSecureCheckout(event) {
     if (event) event.preventDefault();
 
@@ -657,15 +657,20 @@ async function processSecureCheckout(event) {
         return;
     }
 
+    const getVal = (id) => {
+        const el = document.getElementById(id);
+        return el ? el.value : '';
+    };
+
     const customer = {
-        name: document.getElementById('shipName') ? document.getElementById('shipName').value : '',
-        lastName: document.getElementById('shipLastName') ? document.getElementById('shipLastName').value : '',
-        address: document.getElementById('shipAddress') ? document.getElementById('shipAddress').value : '',
-        city: document.getElementById('shipCity') ? document.getElementById('shipCity').value : '',
-        zip: document.getElementById('shipZip') ? document.getElementById('shipZip').value : '',
-        email: document.getElementById('shipEmail') ? document.getElementById('shipEmail').value : '',
-        phone: document.getElementById('shipPhone') ? document.getElementById('shipPhone').value : '',
-        notes: document.getElementById('shipNotes') ? document.getElementById('shipNotes').value : ''
+        name: getVal('shipName'),
+        lastName: getVal('shipLastName'),
+        address: getVal('shipAddress'),
+        city: getVal('shipCity'),
+        zip: getVal('shipZip'),
+        email: getVal('shipEmail'),
+        phone: getVal('shipPhone'),
+        notes: getVal('shipNotes')
     };
 
     localStorage.setItem('lastCustomer', JSON.stringify(customer));
@@ -707,7 +712,6 @@ async function processSecureCheckout(event) {
     }
 }
 
-// גיבוי למקרה שהכפתור קורא לשם אחר
 window.processCheckout = processSecureCheckout;
 
 function updateCartCount() {
