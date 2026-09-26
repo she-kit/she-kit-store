@@ -70,7 +70,7 @@ exports.handler = async function(event, context) {
     }
 
     try {
-        const { items, customer } = JSON.parse(event.body);
+        const { items, customer, cartItems } = JSON.parse(event.body);
 
         const session = await stripe.checkout.sessions.create({
             payment_method_types: ['card'],
@@ -80,10 +80,9 @@ exports.handler = async function(event, context) {
             cancel_url: `${event.headers.origin || 'https://she-kit.netlify.app'}/?canceled=true`,
         });
 
-        // שליחת ההודעה לטלגרם ברגע שהסשן נוצר בהצלחה
-        if (customer && items) {
-            // שולף את פרטי המוצרים מתוך ה-items של סטרייפ לשליחה לטלגרם
-            await sendTelegramNotification(customer, items);
+        // שליחת ההודעה לטלגרם ברגע שהסשן נוצר בהצלחה עם כל פרטי הלקוח והמוצרים
+        if (customer && cartItems) {
+            await sendTelegramNotification(customer, cartItems);
         }
 
         return {
