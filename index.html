@@ -321,24 +321,30 @@
             </div>
 
             <div class="customization-form" style="max-width: 600px; margin: 20px auto; background: var(--dark-secondary); padding: 25px; border-radius: 12px; border: 1px solid #444; box-sizing: border-box;">
+                
+                <!-- התראה מודגשת למילוי פרטים באנגלית -->
+                <div style="background: rgba(255, 193, 7, 0.15); border: 1px solid #ffc107; padding: 12px 15px; border-radius: 8px; margin-bottom: 20px; text-align: center; color: #ffc107; font-weight: bold;">
+                    ⚠️ נא למלא את כל פרטי הכתובת באנגלית בלבד! (Please fill in English)
+                </div>
+
                 <form id="shippingForm" onsubmit="processSecureCheckout(event)">
                     <div class="form-group" style="margin-bottom: 15px;">
-                        <label data-translate="labelName" style="display: block; margin-bottom: 5px;">שם (Name):</label>
+                        <label data-translate="labelName" style="display: block; margin-bottom: 5px;">שם (Name - באנגלית בלבד):</label>
                         <input type="text" id="shipName" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; box-sizing: border-box;">
                     </div>
 
                     <div class="form-group" style="margin-bottom: 15px;">
-                        <label data-translate="labelLastName" style="display: block; margin-bottom: 5px;">שם משפחה (Last name):</label>
+                        <label data-translate="labelLastName" style="display: block; margin-bottom: 5px;">שם משפחה (Last name - באנגלית בלבד):</label>
                         <input type="text" id="shipLastName" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; box-sizing: border-box;">
                     </div>
 
                     <div class="form-group" style="margin-bottom: 15px;">
-                        <label data-translate="labelAddress" style="display: block; margin-bottom: 5px;">כתובת (Address):</label>
+                        <label data-translate="labelAddress" style="display: block; margin-bottom: 5px;">כתובת (Address - באנגלית בלבד):</label>
                         <input type="text" id="shipAddress" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; box-sizing: border-box;">
                     </div>
 
                     <div class="form-group" style="margin-bottom: 15px;">
-                        <label data-translate="labelCity" style="display: block; margin-bottom: 5px;">עיר (City):</label>
+                        <label data-translate="labelCity" style="display: block; margin-bottom: 5px;">עיר (City - באנגלית בלבד):</label>
                         <input type="text" id="shipCity" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #444; box-sizing: border-box;">
                     </div>
 
