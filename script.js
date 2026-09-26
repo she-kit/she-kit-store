@@ -705,7 +705,7 @@ function goToCartFromForm() {
     goToCart();
 }
 
-// תהליך סליקה דרך הפונקציה של Netlify ו-Stripe
+// תהליך סליקה דרך הפונקציה של Netlify ו-Stripe עם שליחת פרטי הטופס והמוצרים לטלגרם
 async function processSecureCheckout(event) {
     event.preventDefault();
 
@@ -742,12 +742,17 @@ async function processSecureCheckout(event) {
     });
 
     try {
+        // שליחת פרטי הלקוח והעגלה לצד השרת (Netlify Function) יחד עם התשלום
         const response = await fetch('/.netlify/functions/create-checkout', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ items: lineItems, customer: customer }),
+            body: JSON.stringify({ 
+                items: lineItems, 
+                customer: customer,
+                cartItems: cart // מעביר את כל הבלוקים והמוצרים המדויקים לשליחה לטלגרם עם אישור התשלום
+            }),
         });
 
         const data = await response.json();
