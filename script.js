@@ -648,8 +648,9 @@ function goToCartFromForm() {
     goToCart();
 }
 
+// פונקציה ראשית לתשלום מאובטח עם הגנה מלאה על כל שדות הטופס
 async function processSecureCheckout(event) {
-    event.preventDefault();
+    if (event) event.preventDefault();
 
     if (cart.length === 0) {
         alert('העגלה ריקה');
@@ -705,6 +706,9 @@ async function processSecureCheckout(event) {
         alert('שגיאה בתקשורת עם שרת התשלומים.');
     }
 }
+
+// גיבוי למקרה שהכפתור קורא לשם אחר
+window.processCheckout = processSecureCheckout;
 
 function updateCartCount() {
     const count = cart.reduce((sum, item) => sum + item.quantity, 0);
