@@ -85,92 +85,6 @@ const translations = {
         photos: 'photos',
         noImages: 'No images',
         teamsLabel: 'teams'
-    },
-    fr: {
-        leagues: 'Ligues',
-        back: '← Retour',
-        welcome: 'Bienvenue chez She-Kit Store',
-        tagline: 'Le magasin de maillots de football leader avec qualité et style',
-        shop: 'Commencer les achats',
-        ourLeagues: 'Nos Ligues',
-        whyUs: 'Pourquoi nous choisir?',
-        quality: 'Haute Qualité',
-        qualityDesc: 'Maillots authentiques avec impression professionnelle',
-        delivery: 'Livraison Rapide',
-        deliveryDesc: '14-21 jours ouvrables + 3-5 jours de livraison',
-        pricing: 'Bons Prix',
-        pricingDesc: 'Maillot de base à partir de 99₪',
-        homeKit: 'Maillot Domicile',
-        awayKit: 'Maillot Extérieur',
-        thirdKit: 'Troisième Maillot',
-        select: 'Sélectionner',
-        playerName: 'Nom du Joueur/Fan',
-        nameNote: 'Jusqu\'à 20 caractères',
-        playerNumber: 'Numéro',
-        numberCost: '+20₪',
-        patches: 'Patchs',
-        addShorts: 'Ajouter Short (+50₪)',
-        version: 'Version',
-        fanVersion: 'Version Fan',
-        playerVersion: 'Version Joueur (+10₪)',
-        playerNote: 'Choisir une taille plus grande',
-        quantity: 'Quantité',
-        basePrice: 'Prix de base:',
-        addons: 'Suppléments:',
-        total: 'Total:',
-        addToCart: 'Ajouter au Panier',
-        cart: 'Panier',
-        emptyCart: 'Le panier est vide',
-        deliveryTime: 'Délai de Livraison',
-        cartTotal: 'Total:',
-        checkout: 'Passer la Commande',
-        loading: 'Chargement...',
-        photos: 'photos',
-        noImages: 'Aucune image',
-        teamsLabel: 'équipes'
-    },
-    ru: {
-        leagues: 'Лиги',
-        back: '← Назад',
-        welcome: 'Добро пожаловать в She-Kit Store',
-        tagline: 'Ведущий магазин футбольных майок с качеством и стилем',
-        shop: 'Начать покупки',
-        ourLeagues: 'Наши Лиги',
-        whyUs: 'Почему выбрать нас?',
-        quality: 'Высокое качество',
-        qualityDesc: 'Оригинальные майки с профессиональной печатью',
-        delivery: 'Быстрая доставка',
-        deliveryDesc: '14-21 рабочих дней + 3-5 дней доставки',
-        pricing: 'Хорошие цены',
-        pricingDesc: 'Базовая майка от 99₪',
-        homeKit: 'Домашняя майка',
-        awayKit: 'Выездная майка',
-        thirdKit: 'Третья майка',
-        select: 'Выбрать',
-        playerName: 'Имя игрока/фаната',
-        nameNote: 'До 20 символов',
-        playerNumber: 'Номер',
-        numberCost: '+20₪',
-        patches: 'Патчи',
-        addShorts: 'Добавить шорты (+50₪)',
-        version: 'Версия',
-        fanVersion: 'Версия фаната',
-        playerVersion: 'Версия игрока (+10₪)',
-        playerNote: 'Выберите размер больше',
-        quantity: 'Количество',
-        basePrice: 'Базовая цена:',
-        addons: 'Добавки:',
-        total: 'Итого:',
-        addToCart: 'Добавить в корзину',
-        cart: 'Корзина',
-        emptyCart: 'Корзина пуста',
-        deliveryTime: 'Время доставки',
-        cartTotal: 'Итого:',
-        checkout: 'Оформить заказ',
-        loading: 'Загрузка...',
-        photos: 'фото',
-        noImages: 'Нет изображений',
-        teamsLabel: 'команды'
     }
 };
 
@@ -183,10 +97,6 @@ let catalog = null;
 
 const STRIPE_PUBLIC_KEY = 'pk_test_51UFzvgCh2ZG10r2ZmtJaCDjtopvy6h8k8ModgrKRPQxp4zOGT1BDcH2UVWaNjk4MgbXnqfBrTBCCuu6Lr29nhXl500vKZZnLZw'; 
 
-// פרטי הטלגרם שלך להודעה ישירה עם החזרה מהתשלום
-const TELEGRAM_BOT_TOKEN = '7629672054:AAE5Nffc587h4qA58iFkUu8h2Y2F1f8q5iU'; // ה-Token שהוגדר אצלך
-const TELEGRAM_CHAT_ID = '1765141145'; // ה-Chat ID שלך[cite: 14]
-
 document.addEventListener('DOMContentLoaded', () => {
     initializeTheme();
     initializeLanguage();
@@ -196,6 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
     checkOrderSuccess();
 });
 
+// בדיקת חזרה מתשלום מוצלח ושליחת נתונים לשרת באופן מאובטח
 async function checkOrderSuccess() {
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.has('success')) {
@@ -207,46 +118,13 @@ async function checkOrderSuccess() {
                 const customer = JSON.parse(lastCustomer);
                 const cartItems = JSON.parse(savedCart);
 
-                let message = `🚨 **הזמנה חדשה התקבלה ב-She-Kit!** 🚨\n\n`;
-                message += `👤 **פרטי לקוח:**\n`;
-                message += `• שם: ${customer.name || ''} ${customer.lastName || ''}\n`;
-                message += `• כתובת: ${customer.address || ''}, ${customer.city || ''} (מיקוד: ${customer.zip || ''})\n`;
-                message += `• מייל: ${customer.email || ''}\n`;
-                message += `• טלפון: ${customer.phone || ''}\n`;
-                if (customer.notes) {
-                    message += `• הערות: ${customer.notes}\n`;
-                }
-                
-                message += `\n🛒 **פרטי המוצרים:**\n`;
-                let grandTotal = 0;
-                
-                if (cartItems && Array.isArray(cartItems)) {
-                    cartItems.forEach((item, index) => {
-                        message += `\n#${index + 1} - ${item.team || 'קבוצה'} (${item.kit || ''} Kit)\n`;
-                        message += `• מידה: ${item.size || ''}\n`;
-                        message += `• שם להדפסה: ${item.name || 'ללא'}\n`;
-                        message += `• מספר: ${item.number || 'ללא'}\n`;
-                        message += `• גרסה: ${item.version || ''}\n`;
-                        message += `• כמות: ${item.quantity || 1}\n`;
-                        message += `• סה"כ פריט: ${item.total || 0}₪\n`;
-                        grandTotal += (item.total || 0);
-                    });
-                }
-
-                message += `\n💰 **סכום כולל לתשלום: ${grandTotal}₪**`;
-
-                // שליחה ישירה לבוט טלגרם ברגע שהעסקה הושלמה
-                await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+                await fetch('/.netlify/functions/send-telegram', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        chat_id: TELEGRAM_CHAT_ID,
-                        text: message,
-                        parse_mode: 'Markdown'
-                    })
+                    body: JSON.stringify({ customer, cartItems })
                 });
             } catch (err) {
-                console.error('Telegram direct send error:', err);
+                console.error('Failed to trigger telegram function', err);
             }
         }
 
@@ -255,7 +133,7 @@ async function checkOrderSuccess() {
         updateCartCount();
         localStorage.removeItem('lastCustomer');
         window.history.replaceState({}, document.title, window.location.pathname);
-        alert('🎉 התשלום בוצע בהצלחה והודעה נשלחה לטלגרם!');
+        alert('🎉 התשלום בוצע בהצלחה וההודעה נשלחה לטלגרם!');
     }
 }
 
