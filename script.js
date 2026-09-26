@@ -181,7 +181,6 @@ let currentKit = null;
 let cart = [];
 let catalog = null;
 
-// Stripe Publishable Key האמיתי שלך
 const STRIPE_PUBLIC_KEY = 'pk_test_51UFzvgCh2ZG10r2ZmtJaCDjtopvy6h8k8ModgrKRPQxp4zOGT1BDcH2UVWaNjk4MgbXnqfBrTBCCuu6Lr29nhXl500vKZZnLZw'; 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -190,7 +189,43 @@ document.addEventListener('DOMContentLoaded', () => {
     setupEventListeners();
     loadCart();
     loadCatalog();
+    checkOrderSuccess();
 });
+
+// פונקציה שבודקת האם הגענו חזרה מסטרייפ אחרי תשלום מוצלח
+async function checkOrderSuccess() {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('success')) {
+        const lastCustomer = localStorage.getItem('lastCustomer');
+        const savedCart = localStorage.getItem('sheKitCart');
+
+        if (lastCustomer && savedCart) {
+            try {
+                const customerObj = JSON.parse(lastCustomer);
+                const cartObj = JSON.parse(savedCart);
+
+                // שליחת הודעה לטלגרם עכשיו כשהתשלום הושלם באמת
+                await fetch('/.netlify/functions/send-telegram', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ customer: customerObj, cartItems: cartObj })
+                });
+            } catch (e) {
+                console.error('Failed to send success notification', e);
+            }
+        }
+
+        // איפוס העגלה
+        cart = [];
+        saveCart();
+        updateCartCount();
+        localStorage.removeItem('lastCustomer');
+        
+        // ניקוי כתובת ה-URL כדי שלא יריץ את זה שוב ברענון
+        window.history.replaceState({}, document.title, window.location.pathname);
+        alert('🎉 התשלום בוצע בהצלחה! ההזמנה נקלטה ונשלחה אליך לטלגרם.');
+    }
+}
 
 async function loadCatalog() {
     try {
@@ -691,7 +726,6 @@ function goToCart() {
     showPage('cartPage');
 }
 
-// מעבר לעמוד טופס פרטי הלקוח והמשלוח
 function goToCheckoutForm() {
     if (cart.length === 0) {
         alert('העגלה ריקה');
@@ -700,12 +734,10 @@ function goToCheckoutForm() {
     showPage('checkoutFormPage');
 }
 
-// מעבר חזרה מהטופס לעגלה
 function goToCartFromForm() {
     goToCart();
 }
 
-// תהליך סליקה דרך הפונקציה של Netlify ו-Stripe עם שליחת פרטי הטופס והמוצרים לטלגרם
 async function processSecureCheckout(event) {
     event.preventDefault();
 
@@ -726,8 +758,8 @@ async function processSecureCheckout(event) {
     };
 
     localStorage.setItem('lastCustomer', JSON.stringify(customer));
+    saveCart();
 
-    // המרת הפריטים בעגלה למבנה שדורש Stripe
     const lineItems = cart.map(item => {
         return {
             price_data: {
@@ -735,24 +767,19 @@ async function processSecureCheckout(event) {
                 product_data: {
                     name: `${item.team} - ${item.kit} Kit (${item.size})`,
                 },
-                unit_amount: Math.round((item.total / item.quantity) * 100), // סכום באגורות
+                unit_amount: Math.round((item.total / item.quantity) * 100),
             },
             quantity: item.quantity,
         };
     });
 
     try {
-        // שליחת פרטי הלקוח והעגלה לצד השרת (Netlify Function) יחד עם התשלום
         const response = await fetch('/.netlify/functions/create-checkout', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ 
-                items: lineItems, 
-                customer: customer,
-                cartItems: cart // מעביר את כל הבלוקים והמוצרים המדויקים לשליחה לטלגרם עם אישור התשלום
-            }),
+            body: JSON.stringify({ items: lineItems }),
         });
 
         const data = await response.json();
