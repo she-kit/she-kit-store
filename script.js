@@ -183,6 +183,10 @@ let catalog = null;
 
 const STRIPE_PUBLIC_KEY = 'pk_test_51UFzvgCh2ZG10r2ZmtJaCDjtopvy6h8k8ModgrKRPQxp4zOGT1BDcH2UVWaNjk4MgbXnqfBrTBCCuu6Lr29nhXl500vKZZnLZw'; 
 
+// פרטי הטלגרם שלך להודעה ישירה עם החזרה מהתשלום
+const TELEGRAM_BOT_TOKEN = '7629672054:AAE5Nffc587h4qA58iFkUu8h2Y2F1f8q5iU'; // ה-Token שהוגדר אצלך
+const TELEGRAM_CHAT_ID = '1765141145'; // ה-Chat ID שלך[cite: 14]
+
 document.addEventListener('DOMContentLoaded', () => {
     initializeTheme();
     initializeLanguage();
@@ -192,16 +196,66 @@ document.addEventListener('DOMContentLoaded', () => {
     checkOrderSuccess();
 });
 
-// פונקציה לבדיקת חזרה מתשלום מוצלח ואיפוס עגלה
-function checkOrderSuccess() {
+async function checkOrderSuccess() {
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.has('success')) {
+        const lastCustomer = localStorage.getItem('lastCustomer');
+        const savedCart = localStorage.getItem('sheKitCart');
+
+        if (lastCustomer && savedCart) {
+            try {
+                const customer = JSON.parse(lastCustomer);
+                const cartItems = JSON.parse(savedCart);
+
+                let message = `🚨 **הזמנה חדשה התקבלה ב-She-Kit!** 🚨\n\n`;
+                message += `👤 **פרטי לקוח:**\n`;
+                message += `• שם: ${customer.name || ''} ${customer.lastName || ''}\n`;
+                message += `• כתובת: ${customer.address || ''}, ${customer.city || ''} (מיקוד: ${customer.zip || ''})\n`;
+                message += `• מייל: ${customer.email || ''}\n`;
+                message += `• טלפון: ${customer.phone || ''}\n`;
+                if (customer.notes) {
+                    message += `• הערות: ${customer.notes}\n`;
+                }
+                
+                message += `\n🛒 **פרטי המוצרים:**\n`;
+                let grandTotal = 0;
+                
+                if (cartItems && Array.isArray(cartItems)) {
+                    cartItems.forEach((item, index) => {
+                        message += `\n#${index + 1} - ${item.team || 'קבוצה'} (${item.kit || ''} Kit)\n`;
+                        message += `• מידה: ${item.size || ''}\n`;
+                        message += `• שם להדפסה: ${item.name || 'ללא'}\n`;
+                        message += `• מספר: ${item.number || 'ללא'}\n`;
+                        message += `• גרסה: ${item.version || ''}\n`;
+                        message += `• כמות: ${item.quantity || 1}\n`;
+                        message += `• סה"כ פריט: ${item.total || 0}₪\n`;
+                        grandTotal += (item.total || 0);
+                    });
+                }
+
+                message += `\n💰 **סכום כולל לתשלום: ${grandTotal}₪**`;
+
+                // שליחה ישירה לבוט טלגרם ברגע שהעסקה הושלמה
+                await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        chat_id: TELEGRAM_CHAT_ID,
+                        text: message,
+                        parse_mode: 'Markdown'
+                    })
+                });
+            } catch (err) {
+                console.error('Telegram direct send error:', err);
+            }
+        }
+
         cart = [];
         saveCart();
         updateCartCount();
         localStorage.removeItem('lastCustomer');
         window.history.replaceState({}, document.title, window.location.pathname);
-        alert('🎉 התשלום בוצע בהצלחה!');
+        alert('🎉 התשלום בוצע בהצלחה והודעה נשלחה לטלגרם!');
     }
 }
 
@@ -736,6 +790,7 @@ async function processSecureCheckout(event) {
     };
 
     localStorage.setItem('lastCustomer', JSON.stringify(customer));
+    saveCart();
 
     const lineItems = cart.map(item => {
         return {
@@ -756,11 +811,7 @@ async function processSecureCheckout(event) {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ 
-                items: lineItems, 
-                customer: customer,
-                cartItems: cart 
-            }),
+            body: JSON.stringify({ items: lineItems }),
         });
 
         const data = await response.json();
